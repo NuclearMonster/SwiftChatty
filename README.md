@@ -10,7 +10,7 @@ Chatty.
 
 # How do I use it?
 
-The first step is to make sure you have [CocoaPods](https://cocoapods.org/) installed, and then create the following Podfile:
+First, create your project in XCode and make sure you have [CocoaPods](https://cocoapods.org/) installed.  Then create the following Podfile for your project:
 
 ```
 use_frameworks!

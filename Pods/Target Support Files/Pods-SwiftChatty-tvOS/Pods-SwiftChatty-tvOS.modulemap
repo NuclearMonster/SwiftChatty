@@ -1,0 +1,6 @@
+framework module Pods_SwiftChatty_tvOS {
+  umbrella header "Pods-SwiftChatty-tvOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,2853 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		017B47F4EC53CA3CE136521E85C419E6 /* StandardOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9499BB09151F16A7701C42AA9CCB0D4D /* StandardOperators.swift */; };
+		04028AACFDD55A2FEC298A10F6D45427 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 882668D77F300403357AABF91DBEEFD8 /* Foundation.framework */; };
+		0456B9EC78033C2251550C200C91884B /* Transformers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324217DF623C26EA3045294C7AE0FABE /* Transformers.swift */; };
+		0693E88B8226A9B54672C40E464065FC /* Pods-SwiftChatty-OSX-PureJsonSerializer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CD62808C73254E6716497356B8C469FB /* Pods-SwiftChatty-OSX-PureJsonSerializer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09B268700882C466A5BA491C54B5D426 /* JsonRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E790D9EF369379FAA43AE2988ABF910 /* JsonRepresentation.swift */; };
+		0D716F0C4DF61B9A4995CCEE371A8055 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98DAFB82816A33BBF783923EC332FEEB /* Foundation.framework */; };
+		0F7841950168C844CA9270D3EB1B3029 /* Pods-SwiftChatty-OSX-Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2B545C01FCE6421A5CDAAF35070086 /* Pods-SwiftChatty-OSX-Alamofire-dummy.m */; };
+		117D8E6CB139CA8BC7DB148541624C70 /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA4BB42585F8BE17595EDD3AA944F05 /* Foundation.swift */; };
+		124A2D9A7946DE813B1CE362FFF2E9FB /* Pods-SwiftChatty-OSX-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CE20B7B27C75C60795394EA2D9A9864 /* Pods-SwiftChatty-OSX-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		130ECF963AC8A35DBB32665A2F0F9D9A /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84500323CCFA65BC30D21A05AAA8A160 /* Result.swift */; };
+		13F419637B51B08B91232C595F27A315 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CABB9003C3B6AE650D8BED1357E2F1 /* Response.swift */; };
+		1456391274EE3FD7FE8377A71526CD30 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = E243C40DC79AEEAC0142B1C9504EAECE /* Logging.swift */; };
+		14753584C7C0961B386A5F0BE81EE046 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5D5957896AC3E211D60B0190EFF731 /* Alamofire.swift */; };
+		1598174A6DC622D9864C4112C8E2FAF2 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6850DAF289ED226FC6D3A7C0CAD12939 /* Errors.swift */; };
+		15F9821EFC827A110CA3069C321B2AE2 /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1F980502934239B21DF1F2ED0D837E /* Upload.swift */; };
+		16AB3A99D6C5E1D6970217819A850879 /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D322D4A842CB223FCF955300F06F49 /* Stream.swift */; };
+		18BD1FDB3C83A04E4BF527B9BF847799 /* JsonSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE126B203A7E56BB34AA51D5EFBB43E /* JsonSerializer.swift */; };
+		1B71D2F642D7558B8EAE980A7F631E42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 882668D77F300403357AABF91DBEEFD8 /* Foundation.framework */; };
+		1BA85A04D78D763BB34BCE4A7862FA84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98DAFB82816A33BBF783923EC332FEEB /* Foundation.framework */; };
+		1F70D94503885DBBF01FEFFAE18272DF /* JsonSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE126B203A7E56BB34AA51D5EFBB43E /* JsonSerializer.swift */; };
+		1FA12687A74F8A4BE9F909400FEF2D5C /* Transformers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324217DF623C26EA3045294C7AE0FABE /* Transformers.swift */; };
+		217D4652F8BF9C9B3F2CE88AAF8F68D3 /* JsonRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E790D9EF369379FAA43AE2988ABF910 /* JsonRepresentation.swift */; };
+		246F14747D642DCD2B5E745A7BFEE0E3 /* ParseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A170974D71A9D85B70677C43C73C11D5 /* ParseError.swift */; };
+		24BC0DDECF7620118BA3AD9ECF631371 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = E243C40DC79AEEAC0142B1C9504EAECE /* Logging.swift */; };
+		25114CDD0D30B6E79462F3825D7E0812 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C3118F93B7B54FC637B0B677467500 /* ServerTrustPolicy.swift */; };
+		253FEA8985204DA043218D6F893F569C /* JsonRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E790D9EF369379FAA43AE2988ABF910 /* JsonRepresentation.swift */; };
+		257C91690CA0ABEA9E1C8AA9EBC2B6DF /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6491CBF2D8C25FD02C6EB50833C38D /* Validation.swift */; };
+		2641E44F65581B26E48EBA01A59B1D8C /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = E243C40DC79AEEAC0142B1C9504EAECE /* Logging.swift */; };
+		296EFDCF59F728C54C68D353352A03B7 /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D322D4A842CB223FCF955300F06F49 /* Stream.swift */; };
+		2A5F00DB020F6BF9890ECB4681DDE280 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5F00689DEA7BBE21C7FED01B0B265A /* Manager.swift */; };
+		2AC74D69ADB304C67D6A4D6CB1B4243D /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883056E3ABBA0AF4C048DCA8492E40CE /* ParameterEncoding.swift */; };
+		2B0C1DFBB4E518D54978F1F9F1DD7972 /* JsonConvertibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA44EFF3AFBC0D4EF2E314DE5C3E94D /* JsonConvertibleType.swift */; };
+		2B63C119E3A06CB8E0F689A5D7C26FD4 /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1F980502934239B21DF1F2ED0D837E /* Upload.swift */; };
+		2C15B0D7703CE9F78B973687B2575C63 /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D322D4A842CB223FCF955300F06F49 /* Stream.swift */; };
+		2D15C2D8A0A0D53BD60E90A46382B435 /* JsonConvertibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA44EFF3AFBC0D4EF2E314DE5C3E94D /* JsonConvertibleType.swift */; };
+		2FE23A2ACE4F649871A241F9EA292738 /* KeyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225305D211BC9F16CF2FA7A7D4CAF06B /* KeyType.swift */; };
+		3288389E92BEA245871A8DBCB5EA56F8 /* KeyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225305D211BC9F16CF2FA7A7D4CAF06B /* KeyType.swift */; };
+		3492FF9AC90E02B81AE8A992D9750017 /* MappableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952A376DA33EE317ECFA9C1F1DA71A43 /* MappableObject.swift */; };
+		357DE6946AB46AE106220E8F6B7BE653 /* Pods-SwiftChatty-tvOS-Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4A6C67670FABFDFA1A8D678DDC22B5B /* Pods-SwiftChatty-tvOS-Alamofire-dummy.m */; };
+		3820A45CB9AA0F64AF2697B3F3CA01FA /* Pods-SwiftChatty-OSX-PureJsonSerializer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 34814D9F80C6C244F8C2E53A5AED2F16 /* Pods-SwiftChatty-OSX-PureJsonSerializer-dummy.m */; };
+		3964210EB0CB88488874292CB63F58E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98DAFB82816A33BBF783923EC332FEEB /* Foundation.framework */; };
+		399E971E47161F37D0FB29F3778CF2A7 /* CollectionInitializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB691BD446D1A0A533DA40E2E0E522F /* CollectionInitializers.swift */; };
+		39AC599CC149C377C394163892EDB739 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6850DAF289ED226FC6D3A7C0CAD12939 /* Errors.swift */; };
+		3BAC077F0A1D05BEE062CD0AFA959F35 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AC3676402F05426E1A19D316DFAE0A /* Download.swift */; };
+		418CBC0380B4FCF68156AA3CCDBCE536 /* PureJsonSerializer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A954A06AD05259B307716DD76872E275 /* PureJsonSerializer.framework */; };
+		418D26B9E858E3DC18EA278C611CE544 /* CollectionInitializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB691BD446D1A0A533DA40E2E0E522F /* CollectionInitializers.swift */; };
+		444F4995E9876D0B7C8CF395FB8B5733 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EFBF514AE5645B87E1BDE2E6F19460 /* MultipartFormData.swift */; };
+		451B4EFA3C3B20379099EC8C51C064C3 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8C933D14152ACAB80407058EC3D7BA /* Error.swift */; };
+		48B1401AD07D549B81B09CA7BADFCB6E /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5CE724E31998600271B23BF1D73432 /* Map.swift */; };
+		49A9C7A7E83F791D059141BF8203FF40 /* ParseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A170974D71A9D85B70677C43C73C11D5 /* ParseError.swift */; };
+		4DD12D9C78256924B0DC9957EE90E0B6 /* PureJsonSerializer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A954A06AD05259B307716DD76872E275 /* PureJsonSerializer.framework */; };
+		5202EB11CB0184B3FBC1A7E5D6CB9AA8 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EFBF514AE5645B87E1BDE2E6F19460 /* MultipartFormData.swift */; };
+		52B36DEA94FCF7A7ABD811442B72CE1D /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5D5957896AC3E211D60B0190EFF731 /* Alamofire.swift */; };
+		535F65E3A7454254764977DFE35CA66E /* Pods-SwiftChatty-OSX-Genome-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 33215ED73CB9ABFFCFC886DB5B6496BF /* Pods-SwiftChatty-OSX-Genome-dummy.m */; };
+		538A7167B1C40F6410C9D6F2363211DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98DAFB82816A33BBF783923EC332FEEB /* Foundation.framework */; };
+		53990D5F17256D80F4C2F04522FC1A93 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C3118F93B7B54FC637B0B677467500 /* ServerTrustPolicy.swift */; };
+		5721CE4A593058E88B73028C93167E02 /* Pods-SwiftChatty-WatchOS-PureJsonSerializer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1749CCE0FAF2B82645747F7B6BACA009 /* Pods-SwiftChatty-WatchOS-PureJsonSerializer-dummy.m */; };
+		5A5B45301493145A553EC74094FEB75A /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1F980502934239B21DF1F2ED0D837E /* Upload.swift */; };
+		5B025295BE3A48CD23F945489BD1A6B3 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C3118F93B7B54FC637B0B677467500 /* ServerTrustPolicy.swift */; };
+		5B21F7D5F1B158B8E06C6FDD7BBB47DA /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EFBF514AE5645B87E1BDE2E6F19460 /* MultipartFormData.swift */; };
+		5B8E1776ED020A22EA7CD8526A31784B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89948DB95D24FEEAFC4B3145759F1CBE /* Foundation.framework */; };
+		5BB427083BDD54F7A71BA73274B4F88C /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CABB9003C3B6AE650D8BED1357E2F1 /* Response.swift */; };
+		5C65E71BE62480ABA9674B9FC8773CBB /* JsonParser+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0280BB30D523EF9403807241C5E787 /* JsonParser+Foundation.swift */; };
+		5DFA701A7D4FB2614B6D1B04C4C21988 /* SettableOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8FDE8B95EFE1DD214E2B262535DE64 /* SettableOperator.swift */; };
+		5E38E2082A71C4605C5166DFEAB1B5D8 /* Pods-SwiftChatty-tvOS-PureJsonSerializer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 87B389BE7586200DE9BC5B5EB57793FD /* Pods-SwiftChatty-tvOS-PureJsonSerializer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EBCF4D4FDE0367FC56708FD039A9681 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5F00689DEA7BBE21C7FED01B0B265A /* Manager.swift */; };
+		60F6358008128607DA6C8948E60DA901 /* JsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57C3DF002567D75624D8AC332E5F2E0 /* JsonParser.swift */; };
+		62770BF8CB7562DDCC7A821E88C68586 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89948DB95D24FEEAFC4B3145759F1CBE /* Foundation.framework */; };
+		676BB31F76B81A0A7E06D89712681C75 /* JsonSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE126B203A7E56BB34AA51D5EFBB43E /* JsonSerializer.swift */; };
+		684574FEF635BCDF6C0C4E51CD92FB8B /* SettableOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8FDE8B95EFE1DD214E2B262535DE64 /* SettableOperator.swift */; };
+		6A0DC1D8DF2FBD2B45C6914AFD0DA040 /* Pods-SwiftChatty-tvOS-Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BE33E874525246809BD45EBBE02D7C4C /* Pods-SwiftChatty-tvOS-Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A34C6D8502F4382F99C0A1966DD80ED /* Pods-SwiftChatty-tvOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB6601CB1554B5054A8249B6864A47FF /* Pods-SwiftChatty-tvOS-dummy.m */; };
+		6A89A989D88A6D19412DB39F64C76C5A /* Pods-SwiftChatty-WatchOS-Genome-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6452D23B42B6FE775CE0E25F0238C7F3 /* Pods-SwiftChatty-WatchOS-Genome-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B70F361530F326E2F71E2726DEEA21B /* ParseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A170974D71A9D85B70677C43C73C11D5 /* ParseError.swift */; };
+		6DB9BF5D5B73E0C6C7B8EC9D9EACC83A /* Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD86FC5559430FF618204B668C5AD6A /* Json.swift */; };
+		6E5DA897673AE2B61976902DBC14A097 /* KeyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225305D211BC9F16CF2FA7A7D4CAF06B /* KeyType.swift */; };
+		6ED547B51463D8ADD191EF765E5568BC /* JsonConvertibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA44EFF3AFBC0D4EF2E314DE5C3E94D /* JsonConvertibleType.swift */; };
+		7023462A09CB87A08E78518C7C46B57B /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA4BB42585F8BE17595EDD3AA944F05 /* Foundation.swift */; };
+		7024A06C6E1EBB0088884D4414B293E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89948DB95D24FEEAFC4B3145759F1CBE /* Foundation.framework */; };
+		7182B948153756FD1C9ADDCD599C65D9 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6491CBF2D8C25FD02C6EB50833C38D /* Validation.swift */; };
+		718CBCC3DC428DC3666F15DB902EAE1C /* Pods-SwiftChatty-tvOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 80FB109F03EE27C1D2080906B59D0D20 /* Pods-SwiftChatty-tvOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7311813B2C54F7F286C2620A95731661 /* Pods-SwiftChatty-tvOS-PureJsonSerializer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 20632DF48047CD4BCCB1F42EDD8D13D0 /* Pods-SwiftChatty-tvOS-PureJsonSerializer-dummy.m */; };
+		75B296C2D367E438FDD90A1EF43221EE /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = E940D5164E39F3C66D130F56A1C03367 /* Request.swift */; };
+		77CE4362A82E63B5A2BAFD1B960D8C24 /* JsonSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE126B203A7E56BB34AA51D5EFBB43E /* JsonSerializer.swift */; };
+		7D98FE15E3886387E05017C151EF2B6E /* Pods-SwiftChatty-WatchOS-Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D9836F377D22ABF29D56CCF610F4FD21 /* Pods-SwiftChatty-WatchOS-Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7ED79FFECCEF204E0679555F07AA1592 /* JsonConvertibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA44EFF3AFBC0D4EF2E314DE5C3E94D /* JsonConvertibleType.swift */; };
+		7F3DA073F994743E3E757D169DE46426 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37AAD26B101D1947C7282BEFC1C01B40 /* Cocoa.framework */; };
+		7F70104325EB12FD15785F71CE2321AA /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28F20D31F6668BE53F5E6944C44A1A6 /* StringUtils.swift */; };
+		7FCD89B383E07FE77704F7A8FFED96AC /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C3118F93B7B54FC637B0B677467500 /* ServerTrustPolicy.swift */; };
+		8010F49819B4877DF52563FC6838D9C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89948DB95D24FEEAFC4B3145759F1CBE /* Foundation.framework */; };
+		8036EAEB110823D52AE759DC1941AB16 /* Pods-SwiftChatty-WatchOS-PureJsonSerializer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D2ACF29D968A1A07990348BDEA7A8F9 /* Pods-SwiftChatty-WatchOS-PureJsonSerializer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		807F8CD34BF752904F2EF9BC4289F99F /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5D5957896AC3E211D60B0190EFF731 /* Alamofire.swift */; };
+		84543CA3A3D527103F47F6AABA246A55 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9C6D7F10F5C1C335DBF3CE1B26FC96 /* ResponseSerialization.swift */; };
+		862025F8B6FB301DE68ED6F2B5469870 /* Pods-SwiftChatty-WatchOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 04DB2DF5D57F6D4A25D798C76A4897AC /* Pods-SwiftChatty-WatchOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8711FADF577D82C8214BAC667B9F3CF1 /* Pods-SwiftChatty-OSX-Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DBA0BDAA5992C17FD2ABB6924E9D5CD /* Pods-SwiftChatty-OSX-Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87B577C03A8FF0E3C96B9E59F222DE09 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = E940D5164E39F3C66D130F56A1C03367 /* Request.swift */; };
+		89E38C467494C68A9862BB29615D3D3D /* Pods-SwiftChatty-WatchOS-Genome-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA13B5EC11FCB69832A6DEC91091637 /* Pods-SwiftChatty-WatchOS-Genome-dummy.m */; };
+		89F70ABE52A26F7C70A2653C2C79ACB8 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5F00689DEA7BBE21C7FED01B0B265A /* Manager.swift */; };
+		8A51B49C145D19B4C2C15FDEFA28FABD /* JsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57C3DF002567D75624D8AC332E5F2E0 /* JsonParser.swift */; };
+		8BFF7E7A49AF192AE41349C9FB79CC5C /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CABB9003C3B6AE650D8BED1357E2F1 /* Response.swift */; };
+		8C5714696570F9A63464B6F41DE09A7C /* StandardOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9499BB09151F16A7701C42AA9CCB0D4D /* StandardOperators.swift */; };
+		8DEDFCE93D6597D82E5CC02964E76947 /* Pods-SwiftChatty-WatchOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B6438F3993BE302187D1053E220A2841 /* Pods-SwiftChatty-WatchOS-dummy.m */; };
+		97DA9FF8C13357BBC32321B32B4BBFFF /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AC3676402F05426E1A19D316DFAE0A /* Download.swift */; };
+		9810AD1DF67808EEE46D194842B28395 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8C933D14152ACAB80407058EC3D7BA /* Error.swift */; };
+		9830C7885222B725E31A247FA90173F2 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CABB9003C3B6AE650D8BED1357E2F1 /* Response.swift */; };
+		989230661A58852F70873316B67BF56E /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6491CBF2D8C25FD02C6EB50833C38D /* Validation.swift */; };
+		9961E00F8E090311B5A64B6DAE5281E1 /* Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD86FC5559430FF618204B668C5AD6A /* Json.swift */; };
+		A052AE07993ECB63D2AB3B579429BFB5 /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA4BB42585F8BE17595EDD3AA944F05 /* Foundation.swift */; };
+		A24BAC611857FE4775FF345021676B17 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = E940D5164E39F3C66D130F56A1C03367 /* Request.swift */; };
+		A68AD517C0D3F307A95B882E443BF4DE /* PureJsonSerializer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A954A06AD05259B307716DD76872E275 /* PureJsonSerializer.framework */; };
+		A6A1D1EC15C4FEEE369D5DD8F77DA0B9 /* Pods-SwiftChatty-iOS-Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 25410B098CD9E155C8EAB108600BC447 /* Pods-SwiftChatty-iOS-Alamofire-dummy.m */; };
+		A6BC787C54750756C54E1E159ACE4F63 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6850DAF289ED226FC6D3A7C0CAD12939 /* Errors.swift */; };
+		A6E8D08BDC8806F35AF5C3FBEF11180D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84500323CCFA65BC30D21A05AAA8A160 /* Result.swift */; };
+		A70E9E5087AD6C473B8EEDD0AEB42990 /* Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD86FC5559430FF618204B668C5AD6A /* Json.swift */; };
+		A78D203F34D394D65C7D3100BFFDB41A /* SettableOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8FDE8B95EFE1DD214E2B262535DE64 /* SettableOperator.swift */; };
+		A9251E5237287E376F5D0BE0B824A88E /* MappableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952A376DA33EE317ECFA9C1F1DA71A43 /* MappableObject.swift */; };
+		AD3F2B0B486AA00FCE89852057F7A4DE /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EFBF514AE5645B87E1BDE2E6F19460 /* MultipartFormData.swift */; };
+		AE53D264F9BE970DC90E9FB4694DBCC7 /* Pods-SwiftChatty-OSX-Genome-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E4B62CF5F44CB52EBB5824A96520D6F /* Pods-SwiftChatty-OSX-Genome-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF833211FDA03A01D9F8A690F6F4037F /* Json+KeyPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E1D392CCEFC3BD87EC53587B38646C /* Json+KeyPaths.swift */; };
+		AFFA433FED14EE9CCC5DA9E0ED9104D6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37AAD26B101D1947C7282BEFC1C01B40 /* Cocoa.framework */; };
+		B1BDD64055AD47789921E15C260B623C /* Pods-SwiftChatty-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9233ECED671A0D018ED81BB5B65ECACB /* Pods-SwiftChatty-iOS-dummy.m */; };
+		B31AA23D8A01924B7E5311E4FCD2D262 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5F00689DEA7BBE21C7FED01B0B265A /* Manager.swift */; };
+		B37FEC5DEDB5C08AFF9888779E5D5E41 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37AAD26B101D1947C7282BEFC1C01B40 /* Cocoa.framework */; };
+		B5BA45D553F0E7E2AB69245BA093699C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 882668D77F300403357AABF91DBEEFD8 /* Foundation.framework */; };
+		B64BEDF51030F87FE49B14D76693A89D /* JsonParser+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0280BB30D523EF9403807241C5E787 /* JsonParser+Foundation.swift */; };
+		B756D951F3DEBAFBBC1A5B86C0EB3D07 /* KeyType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225305D211BC9F16CF2FA7A7D4CAF06B /* KeyType.swift */; };
+		B7B976F6E29233CAC0A62414DC3AEBD7 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5D5957896AC3E211D60B0190EFF731 /* Alamofire.swift */; };
+		B7E3C954568B0ADC0ACFEB46A79D618F /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84500323CCFA65BC30D21A05AAA8A160 /* Result.swift */; };
+		BAA7F009733047A180C6748301CAC107 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AC3676402F05426E1A19D316DFAE0A /* Download.swift */; };
+		BAAC2425565065CB9E15BBB92E46CC15 /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1F980502934239B21DF1F2ED0D837E /* Upload.swift */; };
+		BC0D20BDD5A9B4A6C09E44C20960ED25 /* CollectionInitializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB691BD446D1A0A533DA40E2E0E522F /* CollectionInitializers.swift */; };
+		BF775AFFFB097CA7A9C9A0BD915DA095 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28F20D31F6668BE53F5E6944C44A1A6 /* StringUtils.swift */; };
+		C006ED60E9516DBE36C2F421A5C7934D /* JsonParser+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0280BB30D523EF9403807241C5E787 /* JsonParser+Foundation.swift */; };
+		C14B4AC6F8FAA15D03D3C3A05D8E0B42 /* Pods-SwiftChatty-iOS-PureJsonSerializer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C039E830C4AF806771120DC760601A74 /* Pods-SwiftChatty-iOS-PureJsonSerializer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2F53C3844F995D94807FD35E608C393 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883056E3ABBA0AF4C048DCA8492E40CE /* ParameterEncoding.swift */; };
+		C4DF62317B9A320FAFF13D8F7DC11916 /* Pods-SwiftChatty-iOS-PureJsonSerializer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C3594CE7B1D11448329A25832C0599 /* Pods-SwiftChatty-iOS-PureJsonSerializer-dummy.m */; };
+		C662BAA8894BBCA28A40456BEEA44B7A /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = E940D5164E39F3C66D130F56A1C03367 /* Request.swift */; };
+		C6A8A4AC2453CD8B0F8884D2BABCFAAC /* Pods-SwiftChatty-WatchOS-Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FDB7CA89FC2119EB376E96C7DDE508E /* Pods-SwiftChatty-WatchOS-Alamofire-dummy.m */; };
+		C7C5FDFE3F9242B18F77FE75443766D6 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84500323CCFA65BC30D21A05AAA8A160 /* Result.swift */; };
+		C863C551692E1B8FDAF9F86263CD5D89 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5CE724E31998600271B23BF1D73432 /* Map.swift */; };
+		C9958024BCD1DDB0649EF886C0440502 /* Pods-SwiftChatty-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9710E4192D6144B784C4BD4E75829AAA /* Pods-SwiftChatty-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D049BEAA7BAACA9E6BD12DCD4EE09DEA /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6850DAF289ED226FC6D3A7C0CAD12939 /* Errors.swift */; };
+		D0FEA3CB318F9CF239214197816DA89A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37AAD26B101D1947C7282BEFC1C01B40 /* Cocoa.framework */; };
+		D13892DED439EA03DC113A7CFD6433EE /* SettableOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8FDE8B95EFE1DD214E2B262535DE64 /* SettableOperator.swift */; };
+		D1BC2DB90F442A86E43591A82FB6B060 /* Pods-SwiftChatty-iOS-Genome-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D715D518C45EA5CCE403B1D4A5CC066 /* Pods-SwiftChatty-iOS-Genome-dummy.m */; };
+		D1CFCC0C303D0723CB9073EFF2E5923B /* JsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57C3DF002567D75624D8AC332E5F2E0 /* JsonParser.swift */; };
+		D58AC21B155829016E342DD99117C943 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883056E3ABBA0AF4C048DCA8492E40CE /* ParameterEncoding.swift */; };
+		D59033D62FCCD30D6802E5F58E58C8D9 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = E243C40DC79AEEAC0142B1C9504EAECE /* Logging.swift */; };
+		D5B44971EDAE6BF9B8433815973677D3 /* Json+KeyPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E1D392CCEFC3BD87EC53587B38646C /* Json+KeyPaths.swift */; };
+		D8C563279CAD7B931BEE7C200CF9773C /* JsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57C3DF002567D75624D8AC332E5F2E0 /* JsonParser.swift */; };
+		DABBAA8C0D80D8DF474AE073A41B6075 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8C933D14152ACAB80407058EC3D7BA /* Error.swift */; };
+		DC7A713E1C7396317D90F3418D888036 /* Transformers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324217DF623C26EA3045294C7AE0FABE /* Transformers.swift */; };
+		DE3AF3D09F74F2004E1069555C237C13 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883056E3ABBA0AF4C048DCA8492E40CE /* ParameterEncoding.swift */; };
+		E1CDF1557F94DC219606AB56E2DFAD0C /* StandardOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9499BB09151F16A7701C42AA9CCB0D4D /* StandardOperators.swift */; };
+		E270A6671ADFD1854E3DDF7EEBF51FAB /* StandardOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9499BB09151F16A7701C42AA9CCB0D4D /* StandardOperators.swift */; };
+		E27FA3FCEC36B5F808AE28C57BF35C60 /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D322D4A842CB223FCF955300F06F49 /* Stream.swift */; };
+		E2CDBF7F8D0CAF79D17AA33C9BD0F027 /* CollectionInitializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB691BD446D1A0A533DA40E2E0E522F /* CollectionInitializers.swift */; };
+		E3ECBFF8A813BA506017B05682D4A953 /* Pods-SwiftChatty-tvOS-Genome-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 01334B41B42C82D4D619C19CEFCBC087 /* Pods-SwiftChatty-tvOS-Genome-dummy.m */; };
+		E76BDE3C767FF00199234BF8CB3886D3 /* JsonRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E790D9EF369379FAA43AE2988ABF910 /* JsonRepresentation.swift */; };
+		E7968C00DC8DA7D79BCF2004E5BCDD4C /* Json+KeyPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E1D392CCEFC3BD87EC53587B38646C /* Json+KeyPaths.swift */; };
+		E81BD1642C0CE975DE9405164D672C76 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AC3676402F05426E1A19D316DFAE0A /* Download.swift */; };
+		E887525AA3870BD3B9032F1DBAC500C9 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9C6D7F10F5C1C335DBF3CE1B26FC96 /* ResponseSerialization.swift */; };
+		E9709DFCAB4B53639C33CB1D780B349E /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6491CBF2D8C25FD02C6EB50833C38D /* Validation.swift */; };
+		EA84C5FB4920C33DE125640671F5E151 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5CE724E31998600271B23BF1D73432 /* Map.swift */; };
+		EAB02588B2ACDAFF9A481D680BE24E18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 882668D77F300403357AABF91DBEEFD8 /* Foundation.framework */; };
+		EE08BF7BA8AE71356A75AD53037D0E75 /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA4BB42585F8BE17595EDD3AA944F05 /* Foundation.swift */; };
+		EE75446CE1237FCA62F248925B48E70D /* Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD86FC5559430FF618204B668C5AD6A /* Json.swift */; };
+		EEEDD961A590FBB0947B4F4758CA1F96 /* JsonParser+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0280BB30D523EF9403807241C5E787 /* JsonParser+Foundation.swift */; };
+		EFB4C38C52D7A9CB76FF8FD3EF9F03B0 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5CE724E31998600271B23BF1D73432 /* Map.swift */; };
+		F064CE0795F65067E66D78CD10352D11 /* Json+KeyPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E1D392CCEFC3BD87EC53587B38646C /* Json+KeyPaths.swift */; };
+		F16A59F593900B944A3F82D0CD3B8668 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9C6D7F10F5C1C335DBF3CE1B26FC96 /* ResponseSerialization.swift */; };
+		F271F9055EE1538B7B1C4AA9CE41FDC6 /* Pods-SwiftChatty-iOS-Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E946E81AA36D0D485320DAD952C4A646 /* Pods-SwiftChatty-iOS-Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2F3B5DB28AB091719E6BC5C9C57E02C /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28F20D31F6668BE53F5E6944C44A1A6 /* StringUtils.swift */; };
+		F52A96A13BCC9E1F576782242D8C9671 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8C933D14152ACAB80407058EC3D7BA /* Error.swift */; };
+		F6D70355611D6AD7EA0AAE3C9639F368 /* MappableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952A376DA33EE317ECFA9C1F1DA71A43 /* MappableObject.swift */; };
+		F83F4DEE1D20D596C838010C1B863705 /* PureJsonSerializer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A954A06AD05259B307716DD76872E275 /* PureJsonSerializer.framework */; };
+		F8EAE8218C0FD05208B22A6C735B7C99 /* Pods-SwiftChatty-iOS-Genome-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B93D840107E1EE09591E5DBE1A745D4 /* Pods-SwiftChatty-iOS-Genome-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F95AEEB52ED5A6B64A4C7AEF3DF8319A /* MappableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952A376DA33EE317ECFA9C1F1DA71A43 /* MappableObject.swift */; };
+		FA9E7F9506667C442646A212F1D80EDD /* Pods-SwiftChatty-tvOS-Genome-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A546D9EC414B1E5ECA0D0B74A0AC481A /* Pods-SwiftChatty-tvOS-Genome-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAE817441CEB284ACDA714F2E76391EF /* Transformers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324217DF623C26EA3045294C7AE0FABE /* Transformers.swift */; };
+		FC65D5F9865A452A791C15218680449C /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F28F20D31F6668BE53F5E6944C44A1A6 /* StringUtils.swift */; };
+		FC9E870EBCA81926C7E8AA54DECD2EC1 /* Pods-SwiftChatty-OSX-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 15BC2313EEEE8730EEF032CC5AAFD52D /* Pods-SwiftChatty-OSX-dummy.m */; };
+		FD44AAE6922962E7170CCC7B6EFF9B12 /* ParseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A170974D71A9D85B70677C43C73C11D5 /* ParseError.swift */; };
+		FF5F4F7D6A7E472821C34FB15E6781D1 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9C6D7F10F5C1C335DBF3CE1B26FC96 /* ResponseSerialization.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		01B071BE1C06350D949A2BE26762DACA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA84D6C5439E33BE153FC7A263F3D5B0;
+			remoteInfo = "Pods-SwiftChatty-iOS-Genome";
+		};
+		07A901F77548C669EE5C77E793F049BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8C22A2F3C4D4155019808CC606774C6;
+			remoteInfo = "Pods-SwiftChatty-OSX-Alamofire";
+		};
+		12C5BE5920CB01BE344751B085B6E763 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33D597BC2E407D20D9EB799E155CABA0;
+			remoteInfo = "Pods-SwiftChatty-iOS-PureJsonSerializer";
+		};
+		243C350465FADD50180FB4F6C82517B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64F90B880F7EB572CD161B46A52D620A;
+			remoteInfo = "Pods-SwiftChatty-WatchOS-PureJsonSerializer";
+		};
+		2A86A1091292DEA588F5499E0DB12044 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BE0F7609A60408D7F4DF01610A16C21;
+			remoteInfo = "Pods-SwiftChatty-WatchOS-Alamofire";
+		};
+		3942FB9A30D079261D308453920E00DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 058E59C21DFEC47F478BBD7AFA36550A;
+			remoteInfo = "Pods-SwiftChatty-tvOS-PureJsonSerializer";
+		};
+		40216697754BEE375F0241336FE15C5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23FF7B7268596D8F1FB2BAC98B8D9C43;
+			remoteInfo = "Pods-SwiftChatty-OSX-Genome";
+		};
+		5076E72B9917484762C3D4EC552E45D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30B1C5FC00475EA619381EB199A3DBBF;
+			remoteInfo = "Pods-SwiftChatty-OSX-PureJsonSerializer";
+		};
+		6F923D9FD4E60B2CB9E391637F70A6B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30B1C5FC00475EA619381EB199A3DBBF;
+			remoteInfo = "Pods-SwiftChatty-OSX-PureJsonSerializer";
+		};
+		77CF73E48A684BA37F624A9DF21BDCB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D125BAE2FBC3FAF8A6EA70333FA3BBE;
+			remoteInfo = "Pods-SwiftChatty-iOS-Alamofire";
+		};
+		8F717784ECADAB58E7F7008A3D411AC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D61E5B0CCD613FFF8FCE5108275B2F9;
+			remoteInfo = "Pods-SwiftChatty-tvOS-Alamofire";
+		};
+		C3B6901EBE59B4FD42E23C84117ADAB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8EAFAB967D9E13AB3F5A13104DA0E9B6;
+			remoteInfo = "Pods-SwiftChatty-tvOS-Genome";
+		};
+		C439AEBDC3B9476FADEB7881B017E2D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33D597BC2E407D20D9EB799E155CABA0;
+			remoteInfo = "Pods-SwiftChatty-iOS-PureJsonSerializer";
+		};
+		CC281B0721E3901633B9924B6F76E993 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64F90B880F7EB572CD161B46A52D620A;
+			remoteInfo = "Pods-SwiftChatty-WatchOS-PureJsonSerializer";
+		};
+		E3A13B42D0D6D849DD8F0A8CE4D6B211 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFE4BD3E7C65963EDA2E5C3EF4589E12;
+			remoteInfo = "Pods-SwiftChatty-WatchOS-Genome";
+		};
+		ED4E50BECCE44150B6F87A9B6454A90A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 058E59C21DFEC47F478BBD7AFA36550A;
+			remoteInfo = "Pods-SwiftChatty-tvOS-PureJsonSerializer";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01334B41B42C82D4D619C19CEFCBC087 /* Pods-SwiftChatty-tvOS-Genome-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-SwiftChatty-tvOS-Genome-dummy.m"; path = "../Pods-SwiftChatty-tvOS-Genome/Pods-SwiftChatty-tvOS-Genome-dummy.m"; sourceTree = "<group>"; };
+		02E4E38D465FDF0954A94D9FB9850459 /* Pods-SwiftChatty-WatchOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SwiftChatty-WatchOS.modulemap"; sourceTree = "<group>"; };
+		04DB2DF5D57F6D4A25D798C76A4897AC /* Pods-SwiftChatty-WatchOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftChatty-WatchOS-umbrella.h"; sourceTree = "<group>"; };
+		055DA15EF6078C6D511DEB7F3BDB1AE8 /* Pods-SwiftChatty-iOS-PureJsonSerializer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-SwiftChatty-iOS-PureJsonSerializer.modulemap"; path = "../Pods-SwiftChatty-iOS-PureJsonSerializer/Pods-SwiftChatty-iOS-PureJsonSerializer.modulemap"; sourceTree = "<group>"; };
+		087A087C2853FF5FED8C0165B627BBA1 /* Pods-SwiftChatty-WatchOS-Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftChatty-WatchOS-Alamofire.xcconfig"; path = "../Pods-SwiftChatty-WatchOS-Alamofire/Pods-SwiftChatty-WatchOS-Alamofire.xcconfig"; sourceTree = "<group>"; };
+		091F7E6255123B278FC0C9AB81FF7CC1 /* Pods-SwiftChatty-WatchOS-Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-SwiftChatty-WatchOS-Alamofire-prefix.pch"; path = "../Pods-SwiftChatty-WatchOS-Alamofire/Pods-SwiftChatty-WatchOS-Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		0951193588A3C15B7DEA75BAA684AF5D /* Pods-SwiftChatty-OSX-Genome-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftChatty-OSX-Genome-prefix.pch"; sourceTree = "<group>"; };
+		0A07E36F0C2532201A88CB84F5B22868 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B8C4B754F9821D1A709BFCA61F5BD6E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-SwiftChatty-WatchOS-PureJsonSerializer/Info.plist"; sourceTree = "<group>"; };
+		0B8C933D14152ACAB80407058EC3D7BA /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Source/Error.swift; sourceTree = "<group>"; };
+		0C49B5AAB68205E3582ADC00A3D07139 /* Pods_SwiftChatty_OSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftChatty_OSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D2ACF29D968A1A07990348BDEA7A8F9 /* Pods-SwiftChatty-WatchOS-PureJsonSerializer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-SwiftChatty-WatchOS-PureJsonSerializer-umbrella.h"; path = "../Pods-SwiftChatty-WatchOS-PureJsonSerializer/Pods-SwiftChatty-WatchOS-PureJsonSerializer-umbrella.h"; sourceTree = "<group>"; };
+		0DB1634AEEE5E4D6F3D02138BEDA9E65 /* Pods-SwiftChatty-iOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftChatty-iOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0DC5F60F31EDD766228289023E4A7EEF /* Pods-SwiftChatty-WatchOS-Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-SwiftChatty-WatchOS-Alamofire.modulemap"; path = "../Pods-SwiftChatty-WatchOS-Alamofire/Pods-SwiftChatty-WatchOS-Alamofire.modulemap"; sourceTree = "<group>"; };
+		0E87ED1BA2894D6FE46ADDDA783AF476 /* Pods-SwiftChatty-WatchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftChatty-WatchOS.release.xcconfig"; sourceTree = "<group>"; };
+		0FDB7CA89FC2119EB376E96C7DDE508E /* Pods-SwiftChatty-WatchOS-Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-SwiftChatty-WatchOS-Alamofire-dummy.m"; path = "../Pods-SwiftChatty-WatchOS-Alamofire/Pods-SwiftChatty-WatchOS-Alamofire-dummy.m"; sourceTree = "<group>"; };
+		13E0000F6DA15A746F9D0DF2412AA2A7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14BB5B2C30AEB8C8EBE4519F90AD8DF3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-SwiftChatty-tvOS-PureJsonSerializer/Info.plist"; sourceTree = "<group>"; };
+		15BC2313EEEE8730EEF032CC5AAFD52D /* Pods-SwiftChatty-OSX-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftChatty-OSX-dummy.m"; sourceTree = "<group>"; };
+		1749CCE0FAF2B82645747F7B6BACA009 /* Pods-SwiftChatty-WatchOS-PureJsonSerializer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-SwiftChatty-WatchOS-PureJsonSerializer-dummy.m"; path = "../Pods-SwiftChatty-WatchOS-PureJsonSerializer/Pods-SwiftChatty-WatchOS-PureJsonSerializer-dummy.m"; sourceTree = "<group>"; };
+		175D314E9C1F0136CF2052941348805F /* Pods-SwiftChatty-tvOS-Genome.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftChatty-tvOS-Genome.xcconfig"; path = "../Pods-SwiftChatty-tvOS-Genome/Pods-SwiftChatty-tvOS-Genome.xcconfig"; sourceTree = "<group>"; };
+		19E1D392CCEFC3BD87EC53587B38646C /* Json+KeyPaths.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Json+KeyPaths.swift"; path = "Genome/Source/Json+KeyPaths.swift"; sourceTree = "<group>"; };
+		1DE9F553594528430FCE4DE865A5F16C /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20632DF48047CD4BCCB1F42EDD8D13D0 /* Pods-SwiftChatty-tvOS-PureJsonSerializer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-SwiftChatty-tvOS-PureJsonSerializer-dummy.m"; path = "../Pods-SwiftChatty-tvOS-PureJsonSerializer/Pods-SwiftChatty-tvOS-PureJsonSerializer-dummy.m"; sourceTree = "<group>"; };
+		225305D211BC9F16CF2FA7A7D4CAF06B /* KeyType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyType.swift; path = Genome/Source/KeyType.swift; sourceTree = "<group>"; };
+		22C3594CE7B1D11448329A25832C0599 /* Pods-SwiftChatty-iOS-PureJsonSerializer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-SwiftChatty-iOS-PureJsonSerializer-dummy.m"; path = "../Pods-SwiftChatty-iOS-PureJsonSerializer/Pods-SwiftChatty-iOS-PureJsonSerializer-dummy.m"; sourceTree = "<group>"; };
+		22E0CB3B705DA31C60F9F18A5FE7AF2E /* Pods-SwiftChatty-tvOS-PureJsonSerializer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-SwiftChatty-tvOS-PureJsonSerializer.modulemap"; path = "../Pods-SwiftChatty-tvOS-PureJsonSerializer/Pods-SwiftChatty-tvOS-PureJsonSerializer.modulemap"; sourceTree = "<group>"; };
+		24C6B355233ADEF4832E2EA8A8812443 /* Pods-SwiftChatty-WatchOS-PureJsonSerializer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftChatty-WatchOS-PureJsonSerializer.xcconfig"; path = "../Pods-SwiftChatty-WatchOS-PureJsonSerializer/Pods-SwiftChatty-WatchOS-PureJsonSerializer.xcconfig"; sourceTree = "<group>"; };
+		25410B098CD9E155C8EAB108600BC447 /* Pods-SwiftChatty-iOS-Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-SwiftChatty-iOS-Alamofire-dummy.m"; path = "../Pods-SwiftChatty-iOS-Alamofire/Pods-SwiftChatty-iOS-Alamofire-dummy.m"; sourceTree = "<group>"; };
+		2664696E516D20394A0A744E72841B14 /* Genome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Genome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		273B68CFBC2035B94F1DCBFE95DF6309 /* Pods_SwiftChatty_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftChatty_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2904C9690E484145CD62D7B871B76463 /* Pods-SwiftChatty-tvOS-PureJsonSerializer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftChatty-tvOS-PureJsonSerializer.xcconfig"; path = "../Pods-SwiftChatty-tvOS-PureJsonSerializer/Pods-SwiftChatty-tvOS-PureJsonSerializer.xcconfig"; sourceTree = "<group>"; };
+		2E428F8DBAD5A14879B22DEA237CD17C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-SwiftChatty-tvOS-Alamofire/Info.plist"; sourceTree = "<group>"; };
+		2E4B62CF5F44CB52EBB5824A96520D6F /* Pods-SwiftChatty-OSX-Genome-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftChatty-OSX-Genome-umbrella.h"; sourceTree = "<group>"; };
+		2F8FDE8B95EFE1DD214E2B262535DE64 /* SettableOperator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SettableOperator.swift; path = Genome/Source/SettableOperator.swift; sourceTree = "<group>"; };
+		30A47774721DECF51A7D0AFDB634EE96 /* Pods-SwiftChatty-iOS-Genome-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-SwiftChatty-iOS-Genome-prefix.pch"; path = "../Pods-SwiftChatty-iOS-Genome/Pods-SwiftChatty-iOS-Genome-prefix.pch"; sourceTree = "<group>"; };
+		324217DF623C26EA3045294C7AE0FABE /* Transformers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Transformers.swift; path = Genome/Source/Transformers.swift; sourceTree = "<group>"; };
+		328D29BD0629D46CC95EBA92F0C429C0 /* Pods-SwiftChatty-iOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftChatty-iOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		33215ED73CB9ABFFCFC886DB5B6496BF /* Pods-SwiftChatty-OSX-Genome-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftChatty-OSX-Genome-dummy.m"; sourceTree = "<group>"; };
+		3412748011A4261DA2FD36151634804D /* Pods-SwiftChatty-WatchOS-PureJsonSerializer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-SwiftChatty-WatchOS-PureJsonSerializer-prefix.pch"; path = "../Pods-SwiftChatty-WatchOS-PureJsonSerializer/Pods-SwiftChatty-WatchOS-PureJsonSerializer-prefix.pch"; sourceTree = "<group>"; };
+		34814D9F80C6C244F8C2E53A5AED2F16 /* Pods-SwiftChatty-OSX-PureJsonSerializer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftChatty-OSX-PureJsonSerializer-dummy.m"; sourceTree = "<group>"; };
+		37AAD26B101D1947C7282BEFC1C01B40 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		3AA342BDC226BE1F18C8A0875D444FBD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-SwiftChatty-iOS-Alamofire/Info.plist"; sourceTree = "<group>"; };
+		3D239920DBAFC384B96ED96E267CA797 /* Pods-SwiftChatty-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SwiftChatty-iOS.modulemap"; sourceTree = "<group>"; };
+		40906A700E78BD2453798D673D594DF6 /* Pods-SwiftChatty-iOS-PureJsonSerializer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftChatty-iOS-PureJsonSerializer.xcconfig"; path = "../Pods-SwiftChatty-iOS-PureJsonSerializer/Pods-SwiftChatty-iOS-PureJsonSerializer.xcconfig"; sourceTree = "<group>"; };
+		4114EA1E4D8B09300C85419050827E9C /* Pods-SwiftChatty-OSX-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftChatty-OSX-frameworks.sh"; sourceTree = "<group>"; };
+		416717FF56620CA6AADA8688C3FD6F9C /* Pods-SwiftChatty-iOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftChatty-iOS-frameworks.sh"; sourceTree = "<group>"; };
+		43A2EC6B7F3D6B9A741B48DED90AACFD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-SwiftChatty-iOS-PureJsonSerializer/Info.plist"; sourceTree = "<group>"; };
+		49E0C3C7F9BC392713380C520FDEB1FA /* Pods-SwiftChatty-iOS-Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-SwiftChatty-iOS-Alamofire.modulemap"; path = "../Pods-SwiftChatty-iOS-Alamofire/Pods-SwiftChatty-iOS-Alamofire.modulemap"; sourceTree = "<group>"; };
+		4AA12C339E97212270F9FAA65FC6D16C /* Pods-SwiftChatty-OSX-Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftChatty-OSX-Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		4CE6D0B08258CF1B609ABBA4D04C831B /* Pods-SwiftChatty-WatchOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftChatty-WatchOS-frameworks.sh"; sourceTree = "<group>"; };
+		4DC015E246B1F706021AF41A297D9B09 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5339C2BA06C6EC9FE08158BC8F5FD21C /* Pods-SwiftChatty-tvOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftChatty-tvOS-frameworks.sh"; sourceTree = "<group>"; };
+		59379B4BE3DD8C7A598D6B66ED98383D /* Pods_SwiftChatty_WatchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftChatty_WatchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A8729931AF8E509AEBEF51A64AF0E4C /* Pods-SwiftChatty-WatchOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftChatty-WatchOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		5C9C6D7F10F5C1C335DBF3CE1B26FC96 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		5DBA0BDAA5992C17FD2ABB6924E9D5CD /* Pods-SwiftChatty-OSX-Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftChatty-OSX-Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		5E1F980502934239B21DF1F2ED0D837E /* Upload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Upload.swift; path = Source/Upload.swift; sourceTree = "<group>"; };
+		5E790D9EF369379FAA43AE2988ABF910 /* JsonRepresentation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JsonRepresentation.swift; path = Genome/Source/JsonRepresentation.swift; sourceTree = "<group>"; };
+		5EE9A70182ADD6EF09BB3D41F8D19DD0 /* Pods-SwiftChatty-OSX-Genome.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftChatty-OSX-Genome.xcconfig"; sourceTree = "<group>"; };
+		5F9F9DCAD69FCD5EB29CDC9ABB0705AF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6029A29276AEBEA31A0F6C273C36327D /* Pods-SwiftChatty-OSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftChatty-OSX.release.xcconfig"; sourceTree = "<group>"; };
+		60E22FA0724EE2F97F005EFB70C00A81 /* Pods-SwiftChatty-tvOS-Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-SwiftChatty-tvOS-Alamofire.modulemap"; path = "../Pods-SwiftChatty-tvOS-Alamofire/Pods-SwiftChatty-tvOS-Alamofire.modulemap"; sourceTree = "<group>"; };
+		616433DB2C8A3737A3CC693367579592 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62B971105B8F1D3AA9FD1902E155BDC2 /* Pods-SwiftChatty-iOS-Genome.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-SwiftChatty-iOS-Genome.modulemap"; path = "../Pods-SwiftChatty-iOS-Genome/Pods-SwiftChatty-iOS-Genome.modulemap"; sourceTree = "<group>"; };
+		638B6602A320DFB241F02D64519A67BF /* Pods-SwiftChatty-tvOS-Genome.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-SwiftChatty-tvOS-Genome.modulemap"; path = "../Pods-SwiftChatty-tvOS-Genome/Pods-SwiftChatty-tvOS-Genome.modulemap"; sourceTree = "<group>"; };
+		63CA03305162715B729E747406BCCF6C /* Pods-SwiftChatty-OSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftChatty-OSX.debug.xcconfig"; sourceTree = "<group>"; };
+		6452D23B42B6FE775CE0E25F0238C7F3 /* Pods-SwiftChatty-WatchOS-Genome-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-SwiftChatty-WatchOS-Genome-umbrella.h"; path = "../Pods-SwiftChatty-WatchOS-Genome/Pods-SwiftChatty-WatchOS-Genome-umbrella.h"; sourceTree = "<group>"; };
+		662B78604DE6CE37F3EE37EE3E9567CD /* Pods-SwiftChatty-OSX-Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftChatty-OSX-Alamofire.xcconfig"; sourceTree = "<group>"; };
+		666955CEB6FA8CF399CA24AF131DAAC0 /* Pods-SwiftChatty-WatchOS-Genome-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-SwiftChatty-WatchOS-Genome-prefix.pch"; path = "../Pods-SwiftChatty-WatchOS-Genome/Pods-SwiftChatty-WatchOS-Genome-prefix.pch"; sourceTree = "<group>"; };
+		6817CE301ECDC35B8F2E0ED428E5D022 /* Pods-SwiftChatty-OSX-Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SwiftChatty-OSX-Alamofire.modulemap"; sourceTree = "<group>"; };
+		6850DAF289ED226FC6D3A7C0CAD12939 /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = Genome/Source/Errors.swift; sourceTree = "<group>"; };
+		6912A2E6E818DC5A457EAB484A64524B /* Pods-SwiftChatty-tvOS-Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftChatty-tvOS-Alamofire.xcconfig"; path = "../Pods-SwiftChatty-tvOS-Alamofire/Pods-SwiftChatty-tvOS-Alamofire.xcconfig"; sourceTree = "<group>"; };
+		695F3ED8E3E29DCB52CEA7563E309A24 /* Pods-SwiftChatty-tvOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftChatty-tvOS-resources.sh"; sourceTree = "<group>"; };
+		69F55DC43AC41702AE972F87F6CFCBCC /* Pods-SwiftChatty-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftChatty-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		6A5D5957896AC3E211D60B0190EFF731 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		6C9135845220AA570949E30964F831A1 /* Pods_SwiftChatty_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftChatty_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74CABB9003C3B6AE650D8BED1357E2F1 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		77240DC16AF774902BF7BBE6543BE818 /* Pods-SwiftChatty-WatchOS-Genome.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftChatty-WatchOS-Genome.xcconfig"; path = "../Pods-SwiftChatty-WatchOS-Genome/Pods-SwiftChatty-WatchOS-Genome.xcconfig"; sourceTree = "<group>"; };
+		78C3118F93B7B54FC637B0B677467500 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		7A9F630225742D2A075A55F935B2F797 /* Pods-SwiftChatty-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftChatty-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		7CD86FC5559430FF618204B668C5AD6A /* Json.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Json.swift; path = JsonSerializer/Json.swift; sourceTree = "<group>"; };
+		7D0280BB30D523EF9403807241C5E787 /* JsonParser+Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "JsonParser+Foundation.swift"; path = "JsonSerializer/JsonParser+Foundation.swift"; sourceTree = "<group>"; };
+		7DA13B5EC11FCB69832A6DEC91091637 /* Pods-SwiftChatty-WatchOS-Genome-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-SwiftChatty-WatchOS-Genome-dummy.m"; path = "../Pods-SwiftChatty-WatchOS-Genome/Pods-SwiftChatty-WatchOS-Genome-dummy.m"; sourceTree = "<group>"; };
+		7EA4BB42585F8BE17595EDD3AA944F05 /* Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Foundation.swift; path = Genome/Source/Foundation/Foundation.swift; sourceTree = "<group>"; };
+		80D7F54B8CD1B01961A9B669D9EA9285 /* Pods-SwiftChatty-tvOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SwiftChatty-tvOS.modulemap"; sourceTree = "<group>"; };
+		80FB109F03EE27C1D2080906B59D0D20 /* Pods-SwiftChatty-tvOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftChatty-tvOS-umbrella.h"; sourceTree = "<group>"; };
+		83CB8B5D50E359E80E8D71E0C1269314 /* Pods-SwiftChatty-iOS-Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftChatty-iOS-Alamofire.xcconfig"; path = "../Pods-SwiftChatty-iOS-Alamofire/Pods-SwiftChatty-iOS-Alamofire.xcconfig"; sourceTree = "<group>"; };
+		84500323CCFA65BC30D21A05AAA8A160 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		84FC9D436089DEE6FD428A730ABFBBCD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-SwiftChatty-WatchOS-Alamofire/Info.plist"; sourceTree = "<group>"; };
+		87B275A51BAEA06165451BCEF0E304CC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-SwiftChatty-tvOS-Genome/Info.plist"; sourceTree = "<group>"; };
+		87B389BE7586200DE9BC5B5EB57793FD /* Pods-SwiftChatty-tvOS-PureJsonSerializer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-SwiftChatty-tvOS-PureJsonSerializer-umbrella.h"; path = "../Pods-SwiftChatty-tvOS-PureJsonSerializer/Pods-SwiftChatty-tvOS-PureJsonSerializer-umbrella.h"; sourceTree = "<group>"; };
+		87E95DE759894C4126C7D509D3FBD97E /* Pods-SwiftChatty-tvOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftChatty-tvOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		882668D77F300403357AABF91DBEEFD8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		883056E3ABBA0AF4C048DCA8492E40CE /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		89948DB95D24FEEAFC4B3145759F1CBE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		8B93D840107E1EE09591E5DBE1A745D4 /* Pods-SwiftChatty-iOS-Genome-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-SwiftChatty-iOS-Genome-umbrella.h"; path = "../Pods-SwiftChatty-iOS-Genome/Pods-SwiftChatty-iOS-Genome-umbrella.h"; sourceTree = "<group>"; };
+		8CE20B7B27C75C60795394EA2D9A9864 /* Pods-SwiftChatty-OSX-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftChatty-OSX-umbrella.h"; sourceTree = "<group>"; };
+		8F3A2F67D57246B45F708288A209D49B /* Pods-SwiftChatty-iOS-PureJsonSerializer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-SwiftChatty-iOS-PureJsonSerializer-prefix.pch"; path = "../Pods-SwiftChatty-iOS-PureJsonSerializer/Pods-SwiftChatty-iOS-PureJsonSerializer-prefix.pch"; sourceTree = "<group>"; };
+		8F6491CBF2D8C25FD02C6EB50833C38D /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		91FBA3B429D406DA7C6F2CC4EDDB3663 /* Pods-SwiftChatty-OSX-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftChatty-OSX-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9233ECED671A0D018ED81BB5B65ECACB /* Pods-SwiftChatty-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftChatty-iOS-dummy.m"; sourceTree = "<group>"; };
+		9334F5C8FFBE80CCAE5EE1234AA27DEC /* Pods-SwiftChatty-OSX-Genome.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SwiftChatty-OSX-Genome.modulemap"; sourceTree = "<group>"; };
+		9499BB09151F16A7701C42AA9CCB0D4D /* StandardOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StandardOperators.swift; path = Genome/Source/StandardOperators.swift; sourceTree = "<group>"; };
+		952A376DA33EE317ECFA9C1F1DA71A43 /* MappableObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MappableObject.swift; path = Genome/Source/MappableObject.swift; sourceTree = "<group>"; };
+		968A049C80CA8EF24E4984D130BC8952 /* Pods-SwiftChatty-tvOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftChatty-tvOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9710E4192D6144B784C4BD4E75829AAA /* Pods-SwiftChatty-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftChatty-iOS-umbrella.h"; sourceTree = "<group>"; };
+		97E08CA5889AB3319B4A1D17D5C39A81 /* Pods-SwiftChatty-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftChatty-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		98DAFB82816A33BBF783923EC332FEEB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		9D5F00689DEA7BBE21C7FED01B0B265A /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Source/Manager.swift; sourceTree = "<group>"; };
+		9D715D518C45EA5CCE403B1D4A5CC066 /* Pods-SwiftChatty-iOS-Genome-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-SwiftChatty-iOS-Genome-dummy.m"; path = "../Pods-SwiftChatty-iOS-Genome/Pods-SwiftChatty-iOS-Genome-dummy.m"; sourceTree = "<group>"; };
+		A0A2C1EA08678CFDE93FDCB3892E7F8C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-SwiftChatty-WatchOS-Genome/Info.plist"; sourceTree = "<group>"; };
+		A170974D71A9D85B70677C43C73C11D5 /* ParseError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParseError.swift; path = JsonSerializer/ParseError.swift; sourceTree = "<group>"; };
+		A4A6C67670FABFDFA1A8D678DDC22B5B /* Pods-SwiftChatty-tvOS-Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-SwiftChatty-tvOS-Alamofire-dummy.m"; path = "../Pods-SwiftChatty-tvOS-Alamofire/Pods-SwiftChatty-tvOS-Alamofire-dummy.m"; sourceTree = "<group>"; };
+		A546D9EC414B1E5ECA0D0B74A0AC481A /* Pods-SwiftChatty-tvOS-Genome-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-SwiftChatty-tvOS-Genome-umbrella.h"; path = "../Pods-SwiftChatty-tvOS-Genome/Pods-SwiftChatty-tvOS-Genome-umbrella.h"; sourceTree = "<group>"; };
+		A82FA8513F7C333780CFD09B497A08DB /* PureJsonSerializer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PureJsonSerializer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A954A06AD05259B307716DD76872E275 /* PureJsonSerializer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PureJsonSerializer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA9F26EBF4989B2DDE5D00C2D7C7146B /* Pods-SwiftChatty-iOS-Genome.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftChatty-iOS-Genome.xcconfig"; path = "../Pods-SwiftChatty-iOS-Genome/Pods-SwiftChatty-iOS-Genome.xcconfig"; sourceTree = "<group>"; };
+		AB5CE724E31998600271B23BF1D73432 /* Map.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Map.swift; path = Genome/Source/Map.swift; sourceTree = "<group>"; };
+		AB6601CB1554B5054A8249B6864A47FF /* Pods-SwiftChatty-tvOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftChatty-tvOS-dummy.m"; sourceTree = "<group>"; };
+		B05C8B24DD7F95B800AC9DEAC020CB5F /* Pods-SwiftChatty-WatchOS-PureJsonSerializer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-SwiftChatty-WatchOS-PureJsonSerializer.modulemap"; path = "../Pods-SwiftChatty-WatchOS-PureJsonSerializer/Pods-SwiftChatty-WatchOS-PureJsonSerializer.modulemap"; sourceTree = "<group>"; };
+		B3247B1BB8AD46557193B23CF30783D7 /* Pods-SwiftChatty-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftChatty-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		B57C3DF002567D75624D8AC332E5F2E0 /* JsonParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JsonParser.swift; path = JsonSerializer/JsonParser.swift; sourceTree = "<group>"; };
+		B6438F3993BE302187D1053E220A2841 /* Pods-SwiftChatty-WatchOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftChatty-WatchOS-dummy.m"; sourceTree = "<group>"; };
+		B8DAB7311BB579F24E324B5B9BE25A92 /* Pods-SwiftChatty-WatchOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftChatty-WatchOS-resources.sh"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BCFD6724D09F7DBB7284E0D0A223439E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE33E874525246809BD45EBBE02D7C4C /* Pods-SwiftChatty-tvOS-Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-SwiftChatty-tvOS-Alamofire-umbrella.h"; path = "../Pods-SwiftChatty-tvOS-Alamofire/Pods-SwiftChatty-tvOS-Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		BEA44EFF3AFBC0D4EF2E314DE5C3E94D /* JsonConvertibleType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JsonConvertibleType.swift; path = Genome/Source/JsonConvertibleType.swift; sourceTree = "<group>"; };
+		C039E830C4AF806771120DC760601A74 /* Pods-SwiftChatty-iOS-PureJsonSerializer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-SwiftChatty-iOS-PureJsonSerializer-umbrella.h"; path = "../Pods-SwiftChatty-iOS-PureJsonSerializer/Pods-SwiftChatty-iOS-PureJsonSerializer-umbrella.h"; sourceTree = "<group>"; };
+		C0D322D4A842CB223FCF955300F06F49 /* Stream.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stream.swift; path = Source/Stream.swift; sourceTree = "<group>"; };
+		C1848CDDB084E0E044F701B8A916662A /* Pods-SwiftChatty-iOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftChatty-iOS-resources.sh"; sourceTree = "<group>"; };
+		C40F38A1F1077BA980A9AE364094BBB5 /* Pods-SwiftChatty-WatchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftChatty-WatchOS.debug.xcconfig"; sourceTree = "<group>"; };
+		C4CC00665C7AF551A135E093A13A504B /* Pods-SwiftChatty-WatchOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftChatty-WatchOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C5AE5151F296F9E38FFB22C0252DF812 /* Pods-SwiftChatty-OSX.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SwiftChatty-OSX.modulemap"; sourceTree = "<group>"; };
+		CB2B545C01FCE6421A5CDAAF35070086 /* Pods-SwiftChatty-OSX-Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftChatty-OSX-Alamofire-dummy.m"; sourceTree = "<group>"; };
+		CD62808C73254E6716497356B8C469FB /* Pods-SwiftChatty-OSX-PureJsonSerializer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftChatty-OSX-PureJsonSerializer-umbrella.h"; sourceTree = "<group>"; };
+		CEBFDCA511439070EE75C04C601EC189 /* Pods-SwiftChatty-OSX-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftChatty-OSX-acknowledgements.plist"; sourceTree = "<group>"; };
+		D1A943096673203B3C74326882721905 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4134905B668A7410F5BEEEB7B4883CE /* Pods-SwiftChatty-tvOS-Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-SwiftChatty-tvOS-Alamofire-prefix.pch"; path = "../Pods-SwiftChatty-tvOS-Alamofire/Pods-SwiftChatty-tvOS-Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		D9836F377D22ABF29D56CCF610F4FD21 /* Pods-SwiftChatty-WatchOS-Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-SwiftChatty-WatchOS-Alamofire-umbrella.h"; path = "../Pods-SwiftChatty-WatchOS-Alamofire/Pods-SwiftChatty-WatchOS-Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		DB792939A5B911A34754A150F2553207 /* Pods-SwiftChatty-OSX-PureJsonSerializer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftChatty-OSX-PureJsonSerializer-prefix.pch"; sourceTree = "<group>"; };
+		DD3B5848FC3A26B06550B7FBE9A9DD13 /* Pods-SwiftChatty-OSX-PureJsonSerializer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftChatty-OSX-PureJsonSerializer.xcconfig"; sourceTree = "<group>"; };
+		E243C40DC79AEEAC0142B1C9504EAECE /* Logging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logging.swift; path = Genome/Source/Logging.swift; sourceTree = "<group>"; };
+		E26120ACE26893C4DCA1759C51718470 /* Pods-SwiftChatty-OSX-PureJsonSerializer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SwiftChatty-OSX-PureJsonSerializer.modulemap"; sourceTree = "<group>"; };
+		E940D5164E39F3C66D130F56A1C03367 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		E946E81AA36D0D485320DAD952C4A646 /* Pods-SwiftChatty-iOS-Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-SwiftChatty-iOS-Alamofire-umbrella.h"; path = "../Pods-SwiftChatty-iOS-Alamofire/Pods-SwiftChatty-iOS-Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		EBD1AD03EB6670BC612D0994B54BCAB6 /* Pods-SwiftChatty-WatchOS-Genome.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-SwiftChatty-WatchOS-Genome.modulemap"; path = "../Pods-SwiftChatty-WatchOS-Genome/Pods-SwiftChatty-WatchOS-Genome.modulemap"; sourceTree = "<group>"; };
+		ED68EEB3A1BA69659A4B71C965EF357B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-SwiftChatty-iOS-Genome/Info.plist"; sourceTree = "<group>"; };
+		EEAC83FC73182DF24F427EB9CE79AA8A /* Pods-SwiftChatty-tvOS-Genome-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-SwiftChatty-tvOS-Genome-prefix.pch"; path = "../Pods-SwiftChatty-tvOS-Genome/Pods-SwiftChatty-tvOS-Genome-prefix.pch"; sourceTree = "<group>"; };
+		F1FFD00392342D8CD9A9F0CFBC810EF1 /* Pods-SwiftChatty-tvOS-PureJsonSerializer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-SwiftChatty-tvOS-PureJsonSerializer-prefix.pch"; path = "../Pods-SwiftChatty-tvOS-PureJsonSerializer/Pods-SwiftChatty-tvOS-PureJsonSerializer-prefix.pch"; sourceTree = "<group>"; };
+		F28F20D31F6668BE53F5E6944C44A1A6 /* StringUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringUtils.swift; path = JsonSerializer/StringUtils.swift; sourceTree = "<group>"; };
+		F63BFA308B963EEAF5D4951E39D7D073 /* Pods-SwiftChatty-OSX-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftChatty-OSX-resources.sh"; sourceTree = "<group>"; };
+		F6AC3676402F05426E1A19D316DFAE0A /* Download.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Download.swift; path = Source/Download.swift; sourceTree = "<group>"; };
+		F7EFBF514AE5645B87E1BDE2E6F19460 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		FBE126B203A7E56BB34AA51D5EFBB43E /* JsonSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JsonSerializer.swift; path = JsonSerializer/JsonSerializer.swift; sourceTree = "<group>"; };
+		FC44AEC9AF83395A04BBC67C81BB86B5 /* Pods-SwiftChatty-iOS-Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-SwiftChatty-iOS-Alamofire-prefix.pch"; path = "../Pods-SwiftChatty-iOS-Alamofire/Pods-SwiftChatty-iOS-Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		FEB691BD446D1A0A533DA40E2E0E522F /* CollectionInitializers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionInitializers.swift; path = Genome/Source/CollectionInitializers.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09D0C6FD9560726B4599C49475CA2F17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFFA433FED14EE9CCC5DA9E0ED9104D6 /* Cocoa.framework in Frameworks */,
+				A68AD517C0D3F307A95B882E443BF4DE /* PureJsonSerializer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10ACC361802C41B63F0841C56F75CA4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B37FEC5DEDB5C08AFF9888779E5D5E41 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A711C92EEC0F669378B2FD91F2907F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAB02588B2ACDAFF9A481D680BE24E18 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20C73A64BADCE177108A1434D4DD7E27 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B71D2F642D7558B8EAE980A7F631E42 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		210AAB45B485546ACC4593A65CE667AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04028AACFDD55A2FEC298A10F6D45427 /* Foundation.framework in Frameworks */,
+				F83F4DEE1D20D596C838010C1B863705 /* PureJsonSerializer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27B5872DD5613503BB94C0169B828AE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F3DA073F994743E3E757D169DE46426 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		432216C186EE81C2E6F36BDCD6FDC9DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62770BF8CB7562DDCC7A821E88C68586 /* Foundation.framework in Frameworks */,
+				4DD12D9C78256924B0DC9957EE90E0B6 /* PureJsonSerializer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4653B3D2C94492E93827E78FAD4A5EAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8010F49819B4877DF52563FC6838D9C1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54B50499298286ED2746C6DD082085C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BA85A04D78D763BB34BCE4A7862FA84 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56E27B57AB09F15F2CB3964EF5CB5C9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3964210EB0CB88488874292CB63F58E2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70C115476D705A05B8F70D742354088A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				538A7167B1C40F6410C9D6F2363211DA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		883EEFDC1C91290DC73EA50535035D8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5BA45D553F0E7E2AB69245BA093699C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96F9B3BEBFA915C50E45735DB40CC912 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D716F0C4DF61B9A4995CCEE371A8055 /* Foundation.framework in Frameworks */,
+				418CBC0380B4FCF68156AA3CCDBCE536 /* PureJsonSerializer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B5944B2EB7ED848A62306353F8B0102 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B8E1776ED020A22EA7CD8526A31784B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2B94DFA191DA6324DA90436134B886B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7024A06C6E1EBB0088884D4414B293E1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8BFBF6BA4B8A245B2D62D4B38423B9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0FEA3CB318F9CF239214197816DA89A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A2D24BD25AD600C027B997CFB455234 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ED68EEB3A1BA69659A4B71C965EF357B /* Info.plist */,
+				BCFD6724D09F7DBB7284E0D0A223439E /* Info.plist */,
+				87B275A51BAEA06165451BCEF0E304CC /* Info.plist */,
+				A0A2C1EA08678CFDE93FDCB3892E7F8C /* Info.plist */,
+				62B971105B8F1D3AA9FD1902E155BDC2 /* Pods-SwiftChatty-iOS-Genome.modulemap */,
+				AA9F26EBF4989B2DDE5D00C2D7C7146B /* Pods-SwiftChatty-iOS-Genome.xcconfig */,
+				9D715D518C45EA5CCE403B1D4A5CC066 /* Pods-SwiftChatty-iOS-Genome-dummy.m */,
+				30A47774721DECF51A7D0AFDB634EE96 /* Pods-SwiftChatty-iOS-Genome-prefix.pch */,
+				8B93D840107E1EE09591E5DBE1A745D4 /* Pods-SwiftChatty-iOS-Genome-umbrella.h */,
+				9334F5C8FFBE80CCAE5EE1234AA27DEC /* Pods-SwiftChatty-OSX-Genome.modulemap */,
+				5EE9A70182ADD6EF09BB3D41F8D19DD0 /* Pods-SwiftChatty-OSX-Genome.xcconfig */,
+				33215ED73CB9ABFFCFC886DB5B6496BF /* Pods-SwiftChatty-OSX-Genome-dummy.m */,
+				0951193588A3C15B7DEA75BAA684AF5D /* Pods-SwiftChatty-OSX-Genome-prefix.pch */,
+				2E4B62CF5F44CB52EBB5824A96520D6F /* Pods-SwiftChatty-OSX-Genome-umbrella.h */,
+				638B6602A320DFB241F02D64519A67BF /* Pods-SwiftChatty-tvOS-Genome.modulemap */,
+				175D314E9C1F0136CF2052941348805F /* Pods-SwiftChatty-tvOS-Genome.xcconfig */,
+				01334B41B42C82D4D619C19CEFCBC087 /* Pods-SwiftChatty-tvOS-Genome-dummy.m */,
+				EEAC83FC73182DF24F427EB9CE79AA8A /* Pods-SwiftChatty-tvOS-Genome-prefix.pch */,
+				A546D9EC414B1E5ECA0D0B74A0AC481A /* Pods-SwiftChatty-tvOS-Genome-umbrella.h */,
+				EBD1AD03EB6670BC612D0994B54BCAB6 /* Pods-SwiftChatty-WatchOS-Genome.modulemap */,
+				77240DC16AF774902BF7BBE6543BE818 /* Pods-SwiftChatty-WatchOS-Genome.xcconfig */,
+				7DA13B5EC11FCB69832A6DEC91091637 /* Pods-SwiftChatty-WatchOS-Genome-dummy.m */,
+				666955CEB6FA8CF399CA24AF131DAAC0 /* Pods-SwiftChatty-WatchOS-Genome-prefix.pch */,
+				6452D23B42B6FE775CE0E25F0238C7F3 /* Pods-SwiftChatty-WatchOS-Genome-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-SwiftChatty-OSX-Genome";
+			sourceTree = "<group>";
+		};
+		3DCEF2973A875AA56BAA1807FF02E971 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1DE9F553594528430FCE4DE865A5F16C /* Alamofire.framework */,
+				2664696E516D20394A0A744E72841B14 /* Genome.framework */,
+				6C9135845220AA570949E30964F831A1 /* Pods_SwiftChatty_iOS.framework */,
+				0C49B5AAB68205E3582ADC00A3D07139 /* Pods_SwiftChatty_OSX.framework */,
+				273B68CFBC2035B94F1DCBFE95DF6309 /* Pods_SwiftChatty_tvOS.framework */,
+				59379B4BE3DD8C7A598D6B66ED98383D /* Pods_SwiftChatty_WatchOS.framework */,
+				A82FA8513F7C333780CFD09B497A08DB /* PureJsonSerializer.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F325CF9F31E22CC324D0AF9E11A8C84 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3AA342BDC226BE1F18C8A0875D444FBD /* Info.plist */,
+				0A07E36F0C2532201A88CB84F5B22868 /* Info.plist */,
+				2E428F8DBAD5A14879B22DEA237CD17C /* Info.plist */,
+				84FC9D436089DEE6FD428A730ABFBBCD /* Info.plist */,
+				49E0C3C7F9BC392713380C520FDEB1FA /* Pods-SwiftChatty-iOS-Alamofire.modulemap */,
+				83CB8B5D50E359E80E8D71E0C1269314 /* Pods-SwiftChatty-iOS-Alamofire.xcconfig */,
+				25410B098CD9E155C8EAB108600BC447 /* Pods-SwiftChatty-iOS-Alamofire-dummy.m */,
+				FC44AEC9AF83395A04BBC67C81BB86B5 /* Pods-SwiftChatty-iOS-Alamofire-prefix.pch */,
+				E946E81AA36D0D485320DAD952C4A646 /* Pods-SwiftChatty-iOS-Alamofire-umbrella.h */,
+				6817CE301ECDC35B8F2E0ED428E5D022 /* Pods-SwiftChatty-OSX-Alamofire.modulemap */,
+				662B78604DE6CE37F3EE37EE3E9567CD /* Pods-SwiftChatty-OSX-Alamofire.xcconfig */,
+				CB2B545C01FCE6421A5CDAAF35070086 /* Pods-SwiftChatty-OSX-Alamofire-dummy.m */,
+				4AA12C339E97212270F9FAA65FC6D16C /* Pods-SwiftChatty-OSX-Alamofire-prefix.pch */,
+				5DBA0BDAA5992C17FD2ABB6924E9D5CD /* Pods-SwiftChatty-OSX-Alamofire-umbrella.h */,
+				60E22FA0724EE2F97F005EFB70C00A81 /* Pods-SwiftChatty-tvOS-Alamofire.modulemap */,
+				6912A2E6E818DC5A457EAB484A64524B /* Pods-SwiftChatty-tvOS-Alamofire.xcconfig */,
+				A4A6C67670FABFDFA1A8D678DDC22B5B /* Pods-SwiftChatty-tvOS-Alamofire-dummy.m */,
+				D4134905B668A7410F5BEEEB7B4883CE /* Pods-SwiftChatty-tvOS-Alamofire-prefix.pch */,
+				BE33E874525246809BD45EBBE02D7C4C /* Pods-SwiftChatty-tvOS-Alamofire-umbrella.h */,
+				0DC5F60F31EDD766228289023E4A7EEF /* Pods-SwiftChatty-WatchOS-Alamofire.modulemap */,
+				087A087C2853FF5FED8C0165B627BBA1 /* Pods-SwiftChatty-WatchOS-Alamofire.xcconfig */,
+				0FDB7CA89FC2119EB376E96C7DDE508E /* Pods-SwiftChatty-WatchOS-Alamofire-dummy.m */,
+				091F7E6255123B278FC0C9AB81FF7CC1 /* Pods-SwiftChatty-WatchOS-Alamofire-prefix.pch */,
+				D9836F377D22ABF29D56CCF610F4FD21 /* Pods-SwiftChatty-WatchOS-Alamofire-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-SwiftChatty-OSX-Alamofire";
+			sourceTree = "<group>";
+		};
+		3FCC7ED898B0FC769ECAA534349FE597 /* Genome */ = {
+			isa = PBXGroup;
+			children = (
+				FEB691BD446D1A0A533DA40E2E0E522F /* CollectionInitializers.swift */,
+				6850DAF289ED226FC6D3A7C0CAD12939 /* Errors.swift */,
+				7EA4BB42585F8BE17595EDD3AA944F05 /* Foundation.swift */,
+				19E1D392CCEFC3BD87EC53587B38646C /* Json+KeyPaths.swift */,
+				BEA44EFF3AFBC0D4EF2E314DE5C3E94D /* JsonConvertibleType.swift */,
+				5E790D9EF369379FAA43AE2988ABF910 /* JsonRepresentation.swift */,
+				225305D211BC9F16CF2FA7A7D4CAF06B /* KeyType.swift */,
+				E243C40DC79AEEAC0142B1C9504EAECE /* Logging.swift */,
+				AB5CE724E31998600271B23BF1D73432 /* Map.swift */,
+				952A376DA33EE317ECFA9C1F1DA71A43 /* MappableObject.swift */,
+				2F8FDE8B95EFE1DD214E2B262535DE64 /* SettableOperator.swift */,
+				9499BB09151F16A7701C42AA9CCB0D4D /* StandardOperators.swift */,
+				324217DF623C26EA3045294C7AE0FABE /* Transformers.swift */,
+				0A2D24BD25AD600C027B997CFB455234 /* Support Files */,
+			);
+			path = Genome;
+			sourceTree = "<group>";
+		};
+		44D42F65F4FAA6462CDD50CCA65F0A12 /* Pods-SwiftChatty-tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				5F9F9DCAD69FCD5EB29CDC9ABB0705AF /* Info.plist */,
+				80D7F54B8CD1B01961A9B669D9EA9285 /* Pods-SwiftChatty-tvOS.modulemap */,
+				968A049C80CA8EF24E4984D130BC8952 /* Pods-SwiftChatty-tvOS-acknowledgements.markdown */,
+				87E95DE759894C4126C7D509D3FBD97E /* Pods-SwiftChatty-tvOS-acknowledgements.plist */,
+				AB6601CB1554B5054A8249B6864A47FF /* Pods-SwiftChatty-tvOS-dummy.m */,
+				5339C2BA06C6EC9FE08158BC8F5FD21C /* Pods-SwiftChatty-tvOS-frameworks.sh */,
+				695F3ED8E3E29DCB52CEA7563E309A24 /* Pods-SwiftChatty-tvOS-resources.sh */,
+				80FB109F03EE27C1D2080906B59D0D20 /* Pods-SwiftChatty-tvOS-umbrella.h */,
+				69F55DC43AC41702AE972F87F6CFCBCC /* Pods-SwiftChatty-tvOS.debug.xcconfig */,
+				97E08CA5889AB3319B4A1D17D5C39A81 /* Pods-SwiftChatty-tvOS.release.xcconfig */,
+			);
+			name = "Pods-SwiftChatty-tvOS";
+			path = "Target Support Files/Pods-SwiftChatty-tvOS";
+			sourceTree = "<group>";
+		};
+		4A244EF559ED1968DE8F97D6FC88DE27 /* Pods-SwiftChatty-WatchOS */ = {
+			isa = PBXGroup;
+			children = (
+				616433DB2C8A3737A3CC693367579592 /* Info.plist */,
+				02E4E38D465FDF0954A94D9FB9850459 /* Pods-SwiftChatty-WatchOS.modulemap */,
+				C4CC00665C7AF551A135E093A13A504B /* Pods-SwiftChatty-WatchOS-acknowledgements.markdown */,
+				5A8729931AF8E509AEBEF51A64AF0E4C /* Pods-SwiftChatty-WatchOS-acknowledgements.plist */,
+				B6438F3993BE302187D1053E220A2841 /* Pods-SwiftChatty-WatchOS-dummy.m */,
+				4CE6D0B08258CF1B609ABBA4D04C831B /* Pods-SwiftChatty-WatchOS-frameworks.sh */,
+				B8DAB7311BB579F24E324B5B9BE25A92 /* Pods-SwiftChatty-WatchOS-resources.sh */,
+				04DB2DF5D57F6D4A25D798C76A4897AC /* Pods-SwiftChatty-WatchOS-umbrella.h */,
+				C40F38A1F1077BA980A9AE364094BBB5 /* Pods-SwiftChatty-WatchOS.debug.xcconfig */,
+				0E87ED1BA2894D6FE46ADDDA783AF476 /* Pods-SwiftChatty-WatchOS.release.xcconfig */,
+			);
+			name = "Pods-SwiftChatty-WatchOS";
+			path = "Target Support Files/Pods-SwiftChatty-WatchOS";
+			sourceTree = "<group>";
+		};
+		4C01E053D315E1BE50C9DE1B1F64D497 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				89948DB95D24FEEAFC4B3145759F1CBE /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4CDAEE1D17AA756200E0B394D289865F /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				6A5D5957896AC3E211D60B0190EFF731 /* Alamofire.swift */,
+				F6AC3676402F05426E1A19D316DFAE0A /* Download.swift */,
+				0B8C933D14152ACAB80407058EC3D7BA /* Error.swift */,
+				9D5F00689DEA7BBE21C7FED01B0B265A /* Manager.swift */,
+				F7EFBF514AE5645B87E1BDE2E6F19460 /* MultipartFormData.swift */,
+				883056E3ABBA0AF4C048DCA8492E40CE /* ParameterEncoding.swift */,
+				E940D5164E39F3C66D130F56A1C03367 /* Request.swift */,
+				74CABB9003C3B6AE650D8BED1357E2F1 /* Response.swift */,
+				5C9C6D7F10F5C1C335DBF3CE1B26FC96 /* ResponseSerialization.swift */,
+				84500323CCFA65BC30D21A05AAA8A160 /* Result.swift */,
+				78C3118F93B7B54FC637B0B677467500 /* ServerTrustPolicy.swift */,
+				C0D322D4A842CB223FCF955300F06F49 /* Stream.swift */,
+				5E1F980502934239B21DF1F2ED0D837E /* Upload.swift */,
+				8F6491CBF2D8C25FD02C6EB50833C38D /* Validation.swift */,
+				3F325CF9F31E22CC324D0AF9E11A8C84 /* Support Files */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		5456817128B798BFAC85C76087AA0EAD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				43A2EC6B7F3D6B9A741B48DED90AACFD /* Info.plist */,
+				4DC015E246B1F706021AF41A297D9B09 /* Info.plist */,
+				14BB5B2C30AEB8C8EBE4519F90AD8DF3 /* Info.plist */,
+				0B8C4B754F9821D1A709BFCA61F5BD6E /* Info.plist */,
+				055DA15EF6078C6D511DEB7F3BDB1AE8 /* Pods-SwiftChatty-iOS-PureJsonSerializer.modulemap */,
+				40906A700E78BD2453798D673D594DF6 /* Pods-SwiftChatty-iOS-PureJsonSerializer.xcconfig */,
+				22C3594CE7B1D11448329A25832C0599 /* Pods-SwiftChatty-iOS-PureJsonSerializer-dummy.m */,
+				8F3A2F67D57246B45F708288A209D49B /* Pods-SwiftChatty-iOS-PureJsonSerializer-prefix.pch */,
+				C039E830C4AF806771120DC760601A74 /* Pods-SwiftChatty-iOS-PureJsonSerializer-umbrella.h */,
+				E26120ACE26893C4DCA1759C51718470 /* Pods-SwiftChatty-OSX-PureJsonSerializer.modulemap */,
+				DD3B5848FC3A26B06550B7FBE9A9DD13 /* Pods-SwiftChatty-OSX-PureJsonSerializer.xcconfig */,
+				34814D9F80C6C244F8C2E53A5AED2F16 /* Pods-SwiftChatty-OSX-PureJsonSerializer-dummy.m */,
+				DB792939A5B911A34754A150F2553207 /* Pods-SwiftChatty-OSX-PureJsonSerializer-prefix.pch */,
+				CD62808C73254E6716497356B8C469FB /* Pods-SwiftChatty-OSX-PureJsonSerializer-umbrella.h */,
+				22E0CB3B705DA31C60F9F18A5FE7AF2E /* Pods-SwiftChatty-tvOS-PureJsonSerializer.modulemap */,
+				2904C9690E484145CD62D7B871B76463 /* Pods-SwiftChatty-tvOS-PureJsonSerializer.xcconfig */,
+				20632DF48047CD4BCCB1F42EDD8D13D0 /* Pods-SwiftChatty-tvOS-PureJsonSerializer-dummy.m */,
+				F1FFD00392342D8CD9A9F0CFBC810EF1 /* Pods-SwiftChatty-tvOS-PureJsonSerializer-prefix.pch */,
+				87B389BE7586200DE9BC5B5EB57793FD /* Pods-SwiftChatty-tvOS-PureJsonSerializer-umbrella.h */,
+				B05C8B24DD7F95B800AC9DEAC020CB5F /* Pods-SwiftChatty-WatchOS-PureJsonSerializer.modulemap */,
+				24C6B355233ADEF4832E2EA8A8812443 /* Pods-SwiftChatty-WatchOS-PureJsonSerializer.xcconfig */,
+				1749CCE0FAF2B82645747F7B6BACA009 /* Pods-SwiftChatty-WatchOS-PureJsonSerializer-dummy.m */,
+				3412748011A4261DA2FD36151634804D /* Pods-SwiftChatty-WatchOS-PureJsonSerializer-prefix.pch */,
+				0D2ACF29D968A1A07990348BDEA7A8F9 /* Pods-SwiftChatty-WatchOS-PureJsonSerializer-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-SwiftChatty-OSX-PureJsonSerializer";
+			sourceTree = "<group>";
+		};
+		6A6368241C153B2AAC24AB2E27B46F1C /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				37AAD26B101D1947C7282BEFC1C01B40 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				BB3CA832439B8AF026D8ED6EB1BE1045 /* Frameworks */,
+				BDA7B96EA03CBB64CD4A4BE439194949 /* Pods */,
+				3DCEF2973A875AA56BAA1807FF02E971 /* Products */,
+				990F43270CE846F612D72731E6B2CE7A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7DB7D6DC78AEEB3956DCC0F379D8CA96 /* PureJsonSerializer */ = {
+			isa = PBXGroup;
+			children = (
+				7CD86FC5559430FF618204B668C5AD6A /* Json.swift */,
+				B57C3DF002567D75624D8AC332E5F2E0 /* JsonParser.swift */,
+				7D0280BB30D523EF9403807241C5E787 /* JsonParser+Foundation.swift */,
+				FBE126B203A7E56BB34AA51D5EFBB43E /* JsonSerializer.swift */,
+				A170974D71A9D85B70677C43C73C11D5 /* ParseError.swift */,
+				F28F20D31F6668BE53F5E6944C44A1A6 /* StringUtils.swift */,
+				5456817128B798BFAC85C76087AA0EAD /* Support Files */,
+			);
+			path = PureJsonSerializer;
+			sourceTree = "<group>";
+		};
+		9738820F78D92E6D3E2ECE362DCA6582 /* Pods-SwiftChatty-OSX */ = {
+			isa = PBXGroup;
+			children = (
+				13E0000F6DA15A746F9D0DF2412AA2A7 /* Info.plist */,
+				C5AE5151F296F9E38FFB22C0252DF812 /* Pods-SwiftChatty-OSX.modulemap */,
+				91FBA3B429D406DA7C6F2CC4EDDB3663 /* Pods-SwiftChatty-OSX-acknowledgements.markdown */,
+				CEBFDCA511439070EE75C04C601EC189 /* Pods-SwiftChatty-OSX-acknowledgements.plist */,
+				15BC2313EEEE8730EEF032CC5AAFD52D /* Pods-SwiftChatty-OSX-dummy.m */,
+				4114EA1E4D8B09300C85419050827E9C /* Pods-SwiftChatty-OSX-frameworks.sh */,
+				F63BFA308B963EEAF5D4951E39D7D073 /* Pods-SwiftChatty-OSX-resources.sh */,
+				8CE20B7B27C75C60795394EA2D9A9864 /* Pods-SwiftChatty-OSX-umbrella.h */,
+				63CA03305162715B729E747406BCCF6C /* Pods-SwiftChatty-OSX.debug.xcconfig */,
+				6029A29276AEBEA31A0F6C273C36327D /* Pods-SwiftChatty-OSX.release.xcconfig */,
+			);
+			name = "Pods-SwiftChatty-OSX";
+			path = "Target Support Files/Pods-SwiftChatty-OSX";
+			sourceTree = "<group>";
+		};
+		990F43270CE846F612D72731E6B2CE7A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC31E18A5AF99F44C33978FBD35620DF /* Pods-SwiftChatty-iOS */,
+				9738820F78D92E6D3E2ECE362DCA6582 /* Pods-SwiftChatty-OSX */,
+				44D42F65F4FAA6462CDD50CCA65F0A12 /* Pods-SwiftChatty-tvOS */,
+				4A244EF559ED1968DE8F97D6FC88DE27 /* Pods-SwiftChatty-WatchOS */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B635297336712036E1EFB3D1FC7C2E25 /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				98DAFB82816A33BBF783923EC332FEEB /* Foundation.framework */,
+			);
+			name = watchOS;
+			sourceTree = "<group>";
+		};
+		BB3CA832439B8AF026D8ED6EB1BE1045 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A954A06AD05259B307716DD76872E275 /* PureJsonSerializer.framework */,
+				4C01E053D315E1BE50C9DE1B1F64D497 /* iOS */,
+				6A6368241C153B2AAC24AB2E27B46F1C /* OS X */,
+				EDC3716E987A6FBB5F2A2C12C7AAC81E /* tvOS */,
+				B635297336712036E1EFB3D1FC7C2E25 /* watchOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BDA7B96EA03CBB64CD4A4BE439194949 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4CDAEE1D17AA756200E0B394D289865F /* Alamofire */,
+				3FCC7ED898B0FC769ECAA534349FE597 /* Genome */,
+				7DB7D6DC78AEEB3956DCC0F379D8CA96 /* PureJsonSerializer */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CC31E18A5AF99F44C33978FBD35620DF /* Pods-SwiftChatty-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D1A943096673203B3C74326882721905 /* Info.plist */,
+				3D239920DBAFC384B96ED96E267CA797 /* Pods-SwiftChatty-iOS.modulemap */,
+				0DB1634AEEE5E4D6F3D02138BEDA9E65 /* Pods-SwiftChatty-iOS-acknowledgements.markdown */,
+				328D29BD0629D46CC95EBA92F0C429C0 /* Pods-SwiftChatty-iOS-acknowledgements.plist */,
+				9233ECED671A0D018ED81BB5B65ECACB /* Pods-SwiftChatty-iOS-dummy.m */,
+				416717FF56620CA6AADA8688C3FD6F9C /* Pods-SwiftChatty-iOS-frameworks.sh */,
+				C1848CDDB084E0E044F701B8A916662A /* Pods-SwiftChatty-iOS-resources.sh */,
+				9710E4192D6144B784C4BD4E75829AAA /* Pods-SwiftChatty-iOS-umbrella.h */,
+				B3247B1BB8AD46557193B23CF30783D7 /* Pods-SwiftChatty-iOS.debug.xcconfig */,
+				7A9F630225742D2A075A55F935B2F797 /* Pods-SwiftChatty-iOS.release.xcconfig */,
+			);
+			name = "Pods-SwiftChatty-iOS";
+			path = "Target Support Files/Pods-SwiftChatty-iOS";
+			sourceTree = "<group>";
+		};
+		EDC3716E987A6FBB5F2A2C12C7AAC81E /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				882668D77F300403357AABF91DBEEFD8 /* Foundation.framework */,
+			);
+			name = tvOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0585B0627AC3F9B9320C6F6055F06D98 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E38E2082A71C4605C5166DFEAB1B5D8 /* Pods-SwiftChatty-tvOS-PureJsonSerializer-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0DC91F22FE459DF8D3464EF7C90C1932 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D98FE15E3886387E05017C151EF2B6E /* Pods-SwiftChatty-WatchOS-Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		250A9DCB192AAF9B3A27B328F3CA2064 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8711FADF577D82C8214BAC667B9F3CF1 /* Pods-SwiftChatty-OSX-Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A64BB5523381C806001380AF9A4893E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8EAE8218C0FD05208B22A6C735B7C99 /* Pods-SwiftChatty-iOS-Genome-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D0AF535BDB8AA069D54385A7573B1FE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F271F9055EE1538B7B1C4AA9CE41FDC6 /* Pods-SwiftChatty-iOS-Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C5C7747BE92C37872A29FDC169DAD42 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0693E88B8226A9B54672C40E464065FC /* Pods-SwiftChatty-OSX-PureJsonSerializer-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C26448386FDD5DDEA8A4A633BDEB2F6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				718CBCC3DC428DC3666F15DB902EAE1C /* Pods-SwiftChatty-tvOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3FEDDF8DCAC244F464FE6F0ACF8F24E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8036EAEB110823D52AE759DC1941AB16 /* Pods-SwiftChatty-WatchOS-PureJsonSerializer-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4D3DC2DBBB0985C9F6CEB82EC331DA3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C14B4AC6F8FAA15D03D3C3A05D8E0B42 /* Pods-SwiftChatty-iOS-PureJsonSerializer-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A79C3024F04E14076978C3E6477993C4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9958024BCD1DDB0649EF886C0440502 /* Pods-SwiftChatty-iOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B66D93CF6A1CAD790EA0289CCF68C03C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				124A2D9A7946DE813B1CE362FFF2E9FB /* Pods-SwiftChatty-OSX-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0CDDEF9880142CB911EBF83B5D169C7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				862025F8B6FB301DE68ED6F2B5469870 /* Pods-SwiftChatty-WatchOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1FA6BCD80A18A3501F9EC37FAFDC073 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA9E7F9506667C442646A212F1D80EDD /* Pods-SwiftChatty-tvOS-Genome-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB025AD52975869F5E108BB7E56060D8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE53D264F9BE970DC90E9FB4694DBCC7 /* Pods-SwiftChatty-OSX-Genome-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7A4CA992DF4B16DBA24B0656396F509 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A89A989D88A6D19412DB39F64C76C5A /* Pods-SwiftChatty-WatchOS-Genome-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3C9B3707645A48F3676D1B2F33B4AE0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A0DC1D8DF2FBD2B45C6914AFD0DA040 /* Pods-SwiftChatty-tvOS-Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		058E59C21DFEC47F478BBD7AFA36550A /* Pods-SwiftChatty-tvOS-PureJsonSerializer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B808C3F0B5269867E36C19D39AEF5B52 /* Build configuration list for PBXNativeTarget "Pods-SwiftChatty-tvOS-PureJsonSerializer" */;
+			buildPhases = (
+				076EA0CDB1F2AA6BC8966DEDEF4466C9 /* Sources */,
+				1A711C92EEC0F669378B2FD91F2907F2 /* Frameworks */,
+				0585B0627AC3F9B9320C6F6055F06D98 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SwiftChatty-tvOS-PureJsonSerializer";
+			productName = "Pods-SwiftChatty-tvOS-PureJsonSerializer";
+			productReference = A82FA8513F7C333780CFD09B497A08DB /* PureJsonSerializer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1BE0F7609A60408D7F4DF01610A16C21 /* Pods-SwiftChatty-WatchOS-Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D04F1BE86420ACA5F5B9C4AADE5CC28 /* Build configuration list for PBXNativeTarget "Pods-SwiftChatty-WatchOS-Alamofire" */;
+			buildPhases = (
+				805A5EDEBE602884BFFAD61FA5617C64 /* Sources */,
+				56E27B57AB09F15F2CB3964EF5CB5C9A /* Frameworks */,
+				0DC91F22FE459DF8D3464EF7C90C1932 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SwiftChatty-WatchOS-Alamofire";
+			productName = "Pods-SwiftChatty-WatchOS-Alamofire";
+			productReference = 1DE9F553594528430FCE4DE865A5F16C /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		23FF7B7268596D8F1FB2BAC98B8D9C43 /* Pods-SwiftChatty-OSX-Genome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 695860F88349F5E79B07C428FBFC5CE4 /* Build configuration list for PBXNativeTarget "Pods-SwiftChatty-OSX-Genome" */;
+			buildPhases = (
+				79CD96740A7D8EC1C6F15CD71E5F2414 /* Sources */,
+				09D0C6FD9560726B4599C49475CA2F17 /* Frameworks */,
+				CB025AD52975869F5E108BB7E56060D8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13B13BA5A097C462A504CE720CCE1BA7 /* PBXTargetDependency */,
+			);
+			name = "Pods-SwiftChatty-OSX-Genome";
+			productName = "Pods-SwiftChatty-OSX-Genome";
+			productReference = 2664696E516D20394A0A744E72841B14 /* Genome.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		30B1C5FC00475EA619381EB199A3DBBF /* Pods-SwiftChatty-OSX-PureJsonSerializer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A92D739AFBFB81C783CA3FFCDFE0B42E /* Build configuration list for PBXNativeTarget "Pods-SwiftChatty-OSX-PureJsonSerializer" */;
+			buildPhases = (
+				8CC45CE3C07B9CCF3892A628B55FA723 /* Sources */,
+				F8BFBF6BA4B8A245B2D62D4B38423B9B /* Frameworks */,
+				6C5C7747BE92C37872A29FDC169DAD42 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SwiftChatty-OSX-PureJsonSerializer";
+			productName = "Pods-SwiftChatty-OSX-PureJsonSerializer";
+			productReference = A82FA8513F7C333780CFD09B497A08DB /* PureJsonSerializer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		33D597BC2E407D20D9EB799E155CABA0 /* Pods-SwiftChatty-iOS-PureJsonSerializer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A8CE8DE09045F5348A705E56C275F47 /* Build configuration list for PBXNativeTarget "Pods-SwiftChatty-iOS-PureJsonSerializer" */;
+			buildPhases = (
+				373CAB714184F379DFACB950F8068F39 /* Sources */,
+				4653B3D2C94492E93827E78FAD4A5EAA /* Frameworks */,
+				A4D3DC2DBBB0985C9F6CEB82EC331DA3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SwiftChatty-iOS-PureJsonSerializer";
+			productName = "Pods-SwiftChatty-iOS-PureJsonSerializer";
+			productReference = A82FA8513F7C333780CFD09B497A08DB /* PureJsonSerializer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		392059FC96BB31E348E14E83BE25A053 /* Pods-SwiftChatty-WatchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0635DF934AB0BD4F4A025839BA06903 /* Build configuration list for PBXNativeTarget "Pods-SwiftChatty-WatchOS" */;
+			buildPhases = (
+				D16B7714B1A3EF1BE6ADE5270305CFAE /* Sources */,
+				70C115476D705A05B8F70D742354088A /* Frameworks */,
+				C0CDDEF9880142CB911EBF83B5D169C7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE826944AF2C7C9436006FC47599B9CA /* PBXTargetDependency */,
+				265C32A789E2FED3D99A2F7D23A08209 /* PBXTargetDependency */,
+				35E775587FC0C9DDAFD41B0593E4F6D5 /* PBXTargetDependency */,
+			);
+			name = "Pods-SwiftChatty-WatchOS";
+			productName = "Pods-SwiftChatty-WatchOS";
+			productReference = 59379B4BE3DD8C7A598D6B66ED98383D /* Pods_SwiftChatty_WatchOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		46947BD983273D6726225CA49228FBF5 /* Pods-SwiftChatty-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F6A8C1F5E2F314D7988E5CB2EEB18DE /* Build configuration list for PBXNativeTarget "Pods-SwiftChatty-iOS" */;
+			buildPhases = (
+				0F05570622D24A5C4BA0DA01C80BA49D /* Sources */,
+				F2B94DFA191DA6324DA90436134B886B /* Frameworks */,
+				A79C3024F04E14076978C3E6477993C4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D15A091040B87C3C65C440C5D3388477 /* PBXTargetDependency */,
+				4104C1591A5FC1FAF0DD677BC093C483 /* PBXTargetDependency */,
+				C95BDD0B0DF05391C54CD5C5C8E11E27 /* PBXTargetDependency */,
+			);
+			name = "Pods-SwiftChatty-iOS";
+			productName = "Pods-SwiftChatty-iOS";
+			productReference = 6C9135845220AA570949E30964F831A1 /* Pods_SwiftChatty_iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5D61E5B0CCD613FFF8FCE5108275B2F9 /* Pods-SwiftChatty-tvOS-Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22AEA0DBE506D2A09A21D0A62311A06F /* Build configuration list for PBXNativeTarget "Pods-SwiftChatty-tvOS-Alamofire" */;
+			buildPhases = (
+				A99816A482917BAF0576D25AC35E9519 /* Sources */,
+				883EEFDC1C91290DC73EA50535035D8C /* Frameworks */,
+				F3C9B3707645A48F3676D1B2F33B4AE0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SwiftChatty-tvOS-Alamofire";
+			productName = "Pods-SwiftChatty-tvOS-Alamofire";
+			productReference = 1DE9F553594528430FCE4DE865A5F16C /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		64F90B880F7EB572CD161B46A52D620A /* Pods-SwiftChatty-WatchOS-PureJsonSerializer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE4A9C58AD88A08214385F8F769A2BC2 /* Build configuration list for PBXNativeTarget "Pods-SwiftChatty-WatchOS-PureJsonSerializer" */;
+			buildPhases = (
+				9AEC035F43890C17147B7DF730152D38 /* Sources */,
+				54B50499298286ED2746C6DD082085C0 /* Frameworks */,
+				A3FEDDF8DCAC244F464FE6F0ACF8F24E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SwiftChatty-WatchOS-PureJsonSerializer";
+			productName = "Pods-SwiftChatty-WatchOS-PureJsonSerializer";
+			productReference = A82FA8513F7C333780CFD09B497A08DB /* PureJsonSerializer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7D125BAE2FBC3FAF8A6EA70333FA3BBE /* Pods-SwiftChatty-iOS-Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6D15B7C8045CE68591CCD8A46CB14E8 /* Build configuration list for PBXNativeTarget "Pods-SwiftChatty-iOS-Alamofire" */;
+			buildPhases = (
+				8E61C149EAFE08DBC85D6C4831CC3FB8 /* Sources */,
+				9B5944B2EB7ED848A62306353F8B0102 /* Frameworks */,
+				4D0AF535BDB8AA069D54385A7573B1FE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SwiftChatty-iOS-Alamofire";
+			productName = "Pods-SwiftChatty-iOS-Alamofire";
+			productReference = 1DE9F553594528430FCE4DE865A5F16C /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8EAFAB967D9E13AB3F5A13104DA0E9B6 /* Pods-SwiftChatty-tvOS-Genome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94455751FE700D2B1FCC1C4068EE021D /* Build configuration list for PBXNativeTarget "Pods-SwiftChatty-tvOS-Genome" */;
+			buildPhases = (
+				B86C5FEE8FD95A785CB02EC74A6E7732 /* Sources */,
+				210AAB45B485546ACC4593A65CE667AD /* Frameworks */,
+				C1FA6BCD80A18A3501F9EC37FAFDC073 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6208B3A675B49BB2537D271262C78F6B /* PBXTargetDependency */,
+			);
+			name = "Pods-SwiftChatty-tvOS-Genome";
+			productName = "Pods-SwiftChatty-tvOS-Genome";
+			productReference = 2664696E516D20394A0A744E72841B14 /* Genome.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C47EE7FCCA71429CF0494F77B873018A /* Pods-SwiftChatty-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 918740CB6271EF787CB91FA770978BC7 /* Build configuration list for PBXNativeTarget "Pods-SwiftChatty-tvOS" */;
+			buildPhases = (
+				C4AB283D4BB961DC8AEC454C5D8153CA /* Sources */,
+				20C73A64BADCE177108A1434D4DD7E27 /* Frameworks */,
+				9C26448386FDD5DDEA8A4A633BDEB2F6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3BEF8623825CCAF26D428AD29E81B00 /* PBXTargetDependency */,
+				4401B9B7A98DDD54B60E481E1D31F243 /* PBXTargetDependency */,
+				703CA00AA0F12B2B6773DA0010EC3708 /* PBXTargetDependency */,
+			);
+			name = "Pods-SwiftChatty-tvOS";
+			productName = "Pods-SwiftChatty-tvOS";
+			productReference = 273B68CFBC2035B94F1DCBFE95DF6309 /* Pods_SwiftChatty_tvOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CFE4BD3E7C65963EDA2E5C3EF4589E12 /* Pods-SwiftChatty-WatchOS-Genome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35F443B390AC95B6C425E21540BA1E0D /* Build configuration list for PBXNativeTarget "Pods-SwiftChatty-WatchOS-Genome" */;
+			buildPhases = (
+				65E5A7D6E0BC599DD554091A7008D827 /* Sources */,
+				96F9B3BEBFA915C50E45735DB40CC912 /* Frameworks */,
+				E7A4CA992DF4B16DBA24B0656396F509 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20E1D945E7B0B2CEAA0A0A4973CAA511 /* PBXTargetDependency */,
+			);
+			name = "Pods-SwiftChatty-WatchOS-Genome";
+			productName = "Pods-SwiftChatty-WatchOS-Genome";
+			productReference = 2664696E516D20394A0A744E72841B14 /* Genome.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DA84D6C5439E33BE153FC7A263F3D5B0 /* Pods-SwiftChatty-iOS-Genome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF55B4148FA194AA88A2BC7A89C1331A /* Build configuration list for PBXNativeTarget "Pods-SwiftChatty-iOS-Genome" */;
+			buildPhases = (
+				5FC6713A3CD4BBD3C57DBEF0CBD75816 /* Sources */,
+				432216C186EE81C2E6F36BDCD6FDC9DE /* Frameworks */,
+				3A64BB5523381C806001380AF9A4893E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5727E9B9B5F20676F0EB93593FCEDE7 /* PBXTargetDependency */,
+			);
+			name = "Pods-SwiftChatty-iOS-Genome";
+			productName = "Pods-SwiftChatty-iOS-Genome";
+			productReference = 2664696E516D20394A0A744E72841B14 /* Genome.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E8C22A2F3C4D4155019808CC606774C6 /* Pods-SwiftChatty-OSX-Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68A0F47064B549B2745750E7D534DF2A /* Build configuration list for PBXNativeTarget "Pods-SwiftChatty-OSX-Alamofire" */;
+			buildPhases = (
+				E578ADC067A793565103D26EABB05D49 /* Sources */,
+				10ACC361802C41B63F0841C56F75CA4E /* Frameworks */,
+				250A9DCB192AAF9B3A27B328F3CA2064 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SwiftChatty-OSX-Alamofire";
+			productName = "Pods-SwiftChatty-OSX-Alamofire";
+			productReference = 1DE9F553594528430FCE4DE865A5F16C /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FE4272BB0401ADBC2351DF4027A87747 /* Pods-SwiftChatty-OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F3FEFEE1A32C79A119152CEB09F386C /* Build configuration list for PBXNativeTarget "Pods-SwiftChatty-OSX" */;
+			buildPhases = (
+				039B6CDF02EEFD35052F6EB9A5820F0F /* Sources */,
+				27B5872DD5613503BB94C0169B828AE5 /* Frameworks */,
+				B66D93CF6A1CAD790EA0289CCF68C03C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D0F98A6B06D686261436DFA382617C6 /* PBXTargetDependency */,
+				81858C6461DAD90384F78A4A8C227E08 /* PBXTargetDependency */,
+				75DC93A2B1BDE04360515A1C2010A14F /* PBXTargetDependency */,
+			);
+			name = "Pods-SwiftChatty-OSX";
+			productName = "Pods-SwiftChatty-OSX";
+			productReference = 0C49B5AAB68205E3582ADC00A3D07139 /* Pods_SwiftChatty_OSX.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 3DCEF2973A875AA56BAA1807FF02E971 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46947BD983273D6726225CA49228FBF5 /* Pods-SwiftChatty-iOS */,
+				7D125BAE2FBC3FAF8A6EA70333FA3BBE /* Pods-SwiftChatty-iOS-Alamofire */,
+				DA84D6C5439E33BE153FC7A263F3D5B0 /* Pods-SwiftChatty-iOS-Genome */,
+				33D597BC2E407D20D9EB799E155CABA0 /* Pods-SwiftChatty-iOS-PureJsonSerializer */,
+				FE4272BB0401ADBC2351DF4027A87747 /* Pods-SwiftChatty-OSX */,
+				E8C22A2F3C4D4155019808CC606774C6 /* Pods-SwiftChatty-OSX-Alamofire */,
+				23FF7B7268596D8F1FB2BAC98B8D9C43 /* Pods-SwiftChatty-OSX-Genome */,
+				30B1C5FC00475EA619381EB199A3DBBF /* Pods-SwiftChatty-OSX-PureJsonSerializer */,
+				C47EE7FCCA71429CF0494F77B873018A /* Pods-SwiftChatty-tvOS */,
+				5D61E5B0CCD613FFF8FCE5108275B2F9 /* Pods-SwiftChatty-tvOS-Alamofire */,
+				8EAFAB967D9E13AB3F5A13104DA0E9B6 /* Pods-SwiftChatty-tvOS-Genome */,
+				058E59C21DFEC47F478BBD7AFA36550A /* Pods-SwiftChatty-tvOS-PureJsonSerializer */,
+				392059FC96BB31E348E14E83BE25A053 /* Pods-SwiftChatty-WatchOS */,
+				1BE0F7609A60408D7F4DF01610A16C21 /* Pods-SwiftChatty-WatchOS-Alamofire */,
+				CFE4BD3E7C65963EDA2E5C3EF4589E12 /* Pods-SwiftChatty-WatchOS-Genome */,
+				64F90B880F7EB572CD161B46A52D620A /* Pods-SwiftChatty-WatchOS-PureJsonSerializer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		039B6CDF02EEFD35052F6EB9A5820F0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC9E870EBCA81926C7E8AA54DECD2EC1 /* Pods-SwiftChatty-OSX-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		076EA0CDB1F2AA6BC8966DEDEF4466C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9961E00F8E090311B5A64B6DAE5281E1 /* Json.swift in Sources */,
+				5C65E71BE62480ABA9674B9FC8773CBB /* JsonParser+Foundation.swift in Sources */,
+				D8C563279CAD7B931BEE7C200CF9773C /* JsonParser.swift in Sources */,
+				18BD1FDB3C83A04E4BF527B9BF847799 /* JsonSerializer.swift in Sources */,
+				FD44AAE6922962E7170CCC7B6EFF9B12 /* ParseError.swift in Sources */,
+				7311813B2C54F7F286C2620A95731661 /* Pods-SwiftChatty-tvOS-PureJsonSerializer-dummy.m in Sources */,
+				FC65D5F9865A452A791C15218680449C /* StringUtils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F05570622D24A5C4BA0DA01C80BA49D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1BDD64055AD47789921E15C260B623C /* Pods-SwiftChatty-iOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		373CAB714184F379DFACB950F8068F39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DB9BF5D5B73E0C6C7B8EC9D9EACC83A /* Json.swift in Sources */,
+				EEEDD961A590FBB0947B4F4758CA1F96 /* JsonParser+Foundation.swift in Sources */,
+				D1CFCC0C303D0723CB9073EFF2E5923B /* JsonParser.swift in Sources */,
+				676BB31F76B81A0A7E06D89712681C75 /* JsonSerializer.swift in Sources */,
+				49A9C7A7E83F791D059141BF8203FF40 /* ParseError.swift in Sources */,
+				C4DF62317B9A320FAFF13D8F7DC11916 /* Pods-SwiftChatty-iOS-PureJsonSerializer-dummy.m in Sources */,
+				BF775AFFFB097CA7A9C9A0BD915DA095 /* StringUtils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FC6713A3CD4BBD3C57DBEF0CBD75816 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				399E971E47161F37D0FB29F3778CF2A7 /* CollectionInitializers.swift in Sources */,
+				A6BC787C54750756C54E1E159ACE4F63 /* Errors.swift in Sources */,
+				117D8E6CB139CA8BC7DB148541624C70 /* Foundation.swift in Sources */,
+				AF833211FDA03A01D9F8A690F6F4037F /* Json+KeyPaths.swift in Sources */,
+				6ED547B51463D8ADD191EF765E5568BC /* JsonConvertibleType.swift in Sources */,
+				09B268700882C466A5BA491C54B5D426 /* JsonRepresentation.swift in Sources */,
+				3288389E92BEA245871A8DBCB5EA56F8 /* KeyType.swift in Sources */,
+				D59033D62FCCD30D6802E5F58E58C8D9 /* Logging.swift in Sources */,
+				48B1401AD07D549B81B09CA7BADFCB6E /* Map.swift in Sources */,
+				F95AEEB52ED5A6B64A4C7AEF3DF8319A /* MappableObject.swift in Sources */,
+				D1BC2DB90F442A86E43591A82FB6B060 /* Pods-SwiftChatty-iOS-Genome-dummy.m in Sources */,
+				5DFA701A7D4FB2614B6D1B04C4C21988 /* SettableOperator.swift in Sources */,
+				8C5714696570F9A63464B6F41DE09A7C /* StandardOperators.swift in Sources */,
+				FAE817441CEB284ACDA714F2E76391EF /* Transformers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65E5A7D6E0BC599DD554091A7008D827 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2CDBF7F8D0CAF79D17AA33C9BD0F027 /* CollectionInitializers.swift in Sources */,
+				D049BEAA7BAACA9E6BD12DCD4EE09DEA /* Errors.swift in Sources */,
+				7023462A09CB87A08E78518C7C46B57B /* Foundation.swift in Sources */,
+				F064CE0795F65067E66D78CD10352D11 /* Json+KeyPaths.swift in Sources */,
+				2D15C2D8A0A0D53BD60E90A46382B435 /* JsonConvertibleType.swift in Sources */,
+				253FEA8985204DA043218D6F893F569C /* JsonRepresentation.swift in Sources */,
+				6E5DA897673AE2B61976902DBC14A097 /* KeyType.swift in Sources */,
+				24BC0DDECF7620118BA3AD9ECF631371 /* Logging.swift in Sources */,
+				C863C551692E1B8FDAF9F86263CD5D89 /* Map.swift in Sources */,
+				F6D70355611D6AD7EA0AAE3C9639F368 /* MappableObject.swift in Sources */,
+				89E38C467494C68A9862BB29615D3D3D /* Pods-SwiftChatty-WatchOS-Genome-dummy.m in Sources */,
+				684574FEF635BCDF6C0C4E51CD92FB8B /* SettableOperator.swift in Sources */,
+				E1CDF1557F94DC219606AB56E2DFAD0C /* StandardOperators.swift in Sources */,
+				1FA12687A74F8A4BE9F909400FEF2D5C /* Transformers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79CD96740A7D8EC1C6F15CD71E5F2414 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC0D20BDD5A9B4A6C09E44C20960ED25 /* CollectionInitializers.swift in Sources */,
+				1598174A6DC622D9864C4112C8E2FAF2 /* Errors.swift in Sources */,
+				EE08BF7BA8AE71356A75AD53037D0E75 /* Foundation.swift in Sources */,
+				D5B44971EDAE6BF9B8433815973677D3 /* Json+KeyPaths.swift in Sources */,
+				2B0C1DFBB4E518D54978F1F9F1DD7972 /* JsonConvertibleType.swift in Sources */,
+				217D4652F8BF9C9B3F2CE88AAF8F68D3 /* JsonRepresentation.swift in Sources */,
+				B756D951F3DEBAFBBC1A5B86C0EB3D07 /* KeyType.swift in Sources */,
+				1456391274EE3FD7FE8377A71526CD30 /* Logging.swift in Sources */,
+				EFB4C38C52D7A9CB76FF8FD3EF9F03B0 /* Map.swift in Sources */,
+				A9251E5237287E376F5D0BE0B824A88E /* MappableObject.swift in Sources */,
+				535F65E3A7454254764977DFE35CA66E /* Pods-SwiftChatty-OSX-Genome-dummy.m in Sources */,
+				D13892DED439EA03DC113A7CFD6433EE /* SettableOperator.swift in Sources */,
+				017B47F4EC53CA3CE136521E85C419E6 /* StandardOperators.swift in Sources */,
+				DC7A713E1C7396317D90F3418D888036 /* Transformers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		805A5EDEBE602884BFFAD61FA5617C64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52B36DEA94FCF7A7ABD811442B72CE1D /* Alamofire.swift in Sources */,
+				BAA7F009733047A180C6748301CAC107 /* Download.swift in Sources */,
+				F52A96A13BCC9E1F576782242D8C9671 /* Error.swift in Sources */,
+				2A5F00DB020F6BF9890ECB4681DDE280 /* Manager.swift in Sources */,
+				444F4995E9876D0B7C8CF395FB8B5733 /* MultipartFormData.swift in Sources */,
+				C2F53C3844F995D94807FD35E608C393 /* ParameterEncoding.swift in Sources */,
+				C6A8A4AC2453CD8B0F8884D2BABCFAAC /* Pods-SwiftChatty-WatchOS-Alamofire-dummy.m in Sources */,
+				A24BAC611857FE4775FF345021676B17 /* Request.swift in Sources */,
+				5BB427083BDD54F7A71BA73274B4F88C /* Response.swift in Sources */,
+				84543CA3A3D527103F47F6AABA246A55 /* ResponseSerialization.swift in Sources */,
+				A6E8D08BDC8806F35AF5C3FBEF11180D /* Result.swift in Sources */,
+				5B025295BE3A48CD23F945489BD1A6B3 /* ServerTrustPolicy.swift in Sources */,
+				16AB3A99D6C5E1D6970217819A850879 /* Stream.swift in Sources */,
+				15F9821EFC827A110CA3069C321B2AE2 /* Upload.swift in Sources */,
+				E9709DFCAB4B53639C33CB1D780B349E /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CC45CE3C07B9CCF3892A628B55FA723 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A70E9E5087AD6C473B8EEDD0AEB42990 /* Json.swift in Sources */,
+				B64BEDF51030F87FE49B14D76693A89D /* JsonParser+Foundation.swift in Sources */,
+				60F6358008128607DA6C8948E60DA901 /* JsonParser.swift in Sources */,
+				1F70D94503885DBBF01FEFFAE18272DF /* JsonSerializer.swift in Sources */,
+				246F14747D642DCD2B5E745A7BFEE0E3 /* ParseError.swift in Sources */,
+				3820A45CB9AA0F64AF2697B3F3CA01FA /* Pods-SwiftChatty-OSX-PureJsonSerializer-dummy.m in Sources */,
+				7F70104325EB12FD15785F71CE2321AA /* StringUtils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E61C149EAFE08DBC85D6C4831CC3FB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14753584C7C0961B386A5F0BE81EE046 /* Alamofire.swift in Sources */,
+				3BAC077F0A1D05BEE062CD0AFA959F35 /* Download.swift in Sources */,
+				DABBAA8C0D80D8DF474AE073A41B6075 /* Error.swift in Sources */,
+				5EBCF4D4FDE0367FC56708FD039A9681 /* Manager.swift in Sources */,
+				AD3F2B0B486AA00FCE89852057F7A4DE /* MultipartFormData.swift in Sources */,
+				D58AC21B155829016E342DD99117C943 /* ParameterEncoding.swift in Sources */,
+				A6A1D1EC15C4FEEE369D5DD8F77DA0B9 /* Pods-SwiftChatty-iOS-Alamofire-dummy.m in Sources */,
+				C662BAA8894BBCA28A40456BEEA44B7A /* Request.swift in Sources */,
+				9830C7885222B725E31A247FA90173F2 /* Response.swift in Sources */,
+				E887525AA3870BD3B9032F1DBAC500C9 /* ResponseSerialization.swift in Sources */,
+				130ECF963AC8A35DBB32665A2F0F9D9A /* Result.swift in Sources */,
+				7FCD89B383E07FE77704F7A8FFED96AC /* ServerTrustPolicy.swift in Sources */,
+				296EFDCF59F728C54C68D353352A03B7 /* Stream.swift in Sources */,
+				BAAC2425565065CB9E15BBB92E46CC15 /* Upload.swift in Sources */,
+				257C91690CA0ABEA9E1C8AA9EBC2B6DF /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AEC035F43890C17147B7DF730152D38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE75446CE1237FCA62F248925B48E70D /* Json.swift in Sources */,
+				C006ED60E9516DBE36C2F421A5C7934D /* JsonParser+Foundation.swift in Sources */,
+				8A51B49C145D19B4C2C15FDEFA28FABD /* JsonParser.swift in Sources */,
+				77CE4362A82E63B5A2BAFD1B960D8C24 /* JsonSerializer.swift in Sources */,
+				6B70F361530F326E2F71E2726DEEA21B /* ParseError.swift in Sources */,
+				5721CE4A593058E88B73028C93167E02 /* Pods-SwiftChatty-WatchOS-PureJsonSerializer-dummy.m in Sources */,
+				F2F3B5DB28AB091719E6BC5C9C57E02C /* StringUtils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A99816A482917BAF0576D25AC35E9519 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				807F8CD34BF752904F2EF9BC4289F99F /* Alamofire.swift in Sources */,
+				97DA9FF8C13357BBC32321B32B4BBFFF /* Download.swift in Sources */,
+				9810AD1DF67808EEE46D194842B28395 /* Error.swift in Sources */,
+				89F70ABE52A26F7C70A2653C2C79ACB8 /* Manager.swift in Sources */,
+				5202EB11CB0184B3FBC1A7E5D6CB9AA8 /* MultipartFormData.swift in Sources */,
+				DE3AF3D09F74F2004E1069555C237C13 /* ParameterEncoding.swift in Sources */,
+				357DE6946AB46AE106220E8F6B7BE653 /* Pods-SwiftChatty-tvOS-Alamofire-dummy.m in Sources */,
+				87B577C03A8FF0E3C96B9E59F222DE09 /* Request.swift in Sources */,
+				8BFF7E7A49AF192AE41349C9FB79CC5C /* Response.swift in Sources */,
+				FF5F4F7D6A7E472821C34FB15E6781D1 /* ResponseSerialization.swift in Sources */,
+				C7C5FDFE3F9242B18F77FE75443766D6 /* Result.swift in Sources */,
+				53990D5F17256D80F4C2F04522FC1A93 /* ServerTrustPolicy.swift in Sources */,
+				2C15B0D7703CE9F78B973687B2575C63 /* Stream.swift in Sources */,
+				2B63C119E3A06CB8E0F689A5D7C26FD4 /* Upload.swift in Sources */,
+				989230661A58852F70873316B67BF56E /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B86C5FEE8FD95A785CB02EC74A6E7732 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				418D26B9E858E3DC18EA278C611CE544 /* CollectionInitializers.swift in Sources */,
+				39AC599CC149C377C394163892EDB739 /* Errors.swift in Sources */,
+				A052AE07993ECB63D2AB3B579429BFB5 /* Foundation.swift in Sources */,
+				E7968C00DC8DA7D79BCF2004E5BCDD4C /* Json+KeyPaths.swift in Sources */,
+				7ED79FFECCEF204E0679555F07AA1592 /* JsonConvertibleType.swift in Sources */,
+				E76BDE3C767FF00199234BF8CB3886D3 /* JsonRepresentation.swift in Sources */,
+				2FE23A2ACE4F649871A241F9EA292738 /* KeyType.swift in Sources */,
+				2641E44F65581B26E48EBA01A59B1D8C /* Logging.swift in Sources */,
+				EA84C5FB4920C33DE125640671F5E151 /* Map.swift in Sources */,
+				3492FF9AC90E02B81AE8A992D9750017 /* MappableObject.swift in Sources */,
+				E3ECBFF8A813BA506017B05682D4A953 /* Pods-SwiftChatty-tvOS-Genome-dummy.m in Sources */,
+				A78D203F34D394D65C7D3100BFFDB41A /* SettableOperator.swift in Sources */,
+				E270A6671ADFD1854E3DDF7EEBF51FAB /* StandardOperators.swift in Sources */,
+				0456B9EC78033C2251550C200C91884B /* Transformers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4AB283D4BB961DC8AEC454C5D8153CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A34C6D8502F4382F99C0A1966DD80ED /* Pods-SwiftChatty-tvOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D16B7714B1A3EF1BE6ADE5270305CFAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DEDFCE93D6597D82E5CC02964E76947 /* Pods-SwiftChatty-WatchOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E578ADC067A793565103D26EABB05D49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7B976F6E29233CAC0A62414DC3AEBD7 /* Alamofire.swift in Sources */,
+				E81BD1642C0CE975DE9405164D672C76 /* Download.swift in Sources */,
+				451B4EFA3C3B20379099EC8C51C064C3 /* Error.swift in Sources */,
+				B31AA23D8A01924B7E5311E4FCD2D262 /* Manager.swift in Sources */,
+				5B21F7D5F1B158B8E06C6FDD7BBB47DA /* MultipartFormData.swift in Sources */,
+				2AC74D69ADB304C67D6A4D6CB1B4243D /* ParameterEncoding.swift in Sources */,
+				0F7841950168C844CA9270D3EB1B3029 /* Pods-SwiftChatty-OSX-Alamofire-dummy.m in Sources */,
+				75B296C2D367E438FDD90A1EF43221EE /* Request.swift in Sources */,
+				13F419637B51B08B91232C595F27A315 /* Response.swift in Sources */,
+				F16A59F593900B944A3F82D0CD3B8668 /* ResponseSerialization.swift in Sources */,
+				B7E3C954568B0ADC0ACFEB46A79D618F /* Result.swift in Sources */,
+				25114CDD0D30B6E79462F3825D7E0812 /* ServerTrustPolicy.swift in Sources */,
+				E27FA3FCEC36B5F808AE28C57BF35C60 /* Stream.swift in Sources */,
+				5A5B45301493145A553EC74094FEB75A /* Upload.swift in Sources */,
+				7182B948153756FD1C9ADDCD599C65D9 /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		13B13BA5A097C462A504CE720CCE1BA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SwiftChatty-OSX-PureJsonSerializer";
+			target = 30B1C5FC00475EA619381EB199A3DBBF /* Pods-SwiftChatty-OSX-PureJsonSerializer */;
+			targetProxy = 6F923D9FD4E60B2CB9E391637F70A6B9 /* PBXContainerItemProxy */;
+		};
+		1D0F98A6B06D686261436DFA382617C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SwiftChatty-OSX-Alamofire";
+			target = E8C22A2F3C4D4155019808CC606774C6 /* Pods-SwiftChatty-OSX-Alamofire */;
+			targetProxy = 07A901F77548C669EE5C77E793F049BA /* PBXContainerItemProxy */;
+		};
+		20E1D945E7B0B2CEAA0A0A4973CAA511 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SwiftChatty-WatchOS-PureJsonSerializer";
+			target = 64F90B880F7EB572CD161B46A52D620A /* Pods-SwiftChatty-WatchOS-PureJsonSerializer */;
+			targetProxy = 243C350465FADD50180FB4F6C82517B8 /* PBXContainerItemProxy */;
+		};
+		265C32A789E2FED3D99A2F7D23A08209 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SwiftChatty-WatchOS-Genome";
+			target = CFE4BD3E7C65963EDA2E5C3EF4589E12 /* Pods-SwiftChatty-WatchOS-Genome */;
+			targetProxy = E3A13B42D0D6D849DD8F0A8CE4D6B211 /* PBXContainerItemProxy */;
+		};
+		35E775587FC0C9DDAFD41B0593E4F6D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SwiftChatty-WatchOS-PureJsonSerializer";
+			target = 64F90B880F7EB572CD161B46A52D620A /* Pods-SwiftChatty-WatchOS-PureJsonSerializer */;
+			targetProxy = CC281B0721E3901633B9924B6F76E993 /* PBXContainerItemProxy */;
+		};
+		4104C1591A5FC1FAF0DD677BC093C483 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SwiftChatty-iOS-Genome";
+			target = DA84D6C5439E33BE153FC7A263F3D5B0 /* Pods-SwiftChatty-iOS-Genome */;
+			targetProxy = 01B071BE1C06350D949A2BE26762DACA /* PBXContainerItemProxy */;
+		};
+		4401B9B7A98DDD54B60E481E1D31F243 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SwiftChatty-tvOS-Genome";
+			target = 8EAFAB967D9E13AB3F5A13104DA0E9B6 /* Pods-SwiftChatty-tvOS-Genome */;
+			targetProxy = C3B6901EBE59B4FD42E23C84117ADAB3 /* PBXContainerItemProxy */;
+		};
+		6208B3A675B49BB2537D271262C78F6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SwiftChatty-tvOS-PureJsonSerializer";
+			target = 058E59C21DFEC47F478BBD7AFA36550A /* Pods-SwiftChatty-tvOS-PureJsonSerializer */;
+			targetProxy = 3942FB9A30D079261D308453920E00DB /* PBXContainerItemProxy */;
+		};
+		703CA00AA0F12B2B6773DA0010EC3708 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SwiftChatty-tvOS-PureJsonSerializer";
+			target = 058E59C21DFEC47F478BBD7AFA36550A /* Pods-SwiftChatty-tvOS-PureJsonSerializer */;
+			targetProxy = ED4E50BECCE44150B6F87A9B6454A90A /* PBXContainerItemProxy */;
+		};
+		75DC93A2B1BDE04360515A1C2010A14F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SwiftChatty-OSX-PureJsonSerializer";
+			target = 30B1C5FC00475EA619381EB199A3DBBF /* Pods-SwiftChatty-OSX-PureJsonSerializer */;
+			targetProxy = 5076E72B9917484762C3D4EC552E45D2 /* PBXContainerItemProxy */;
+		};
+		81858C6461DAD90384F78A4A8C227E08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SwiftChatty-OSX-Genome";
+			target = 23FF7B7268596D8F1FB2BAC98B8D9C43 /* Pods-SwiftChatty-OSX-Genome */;
+			targetProxy = 40216697754BEE375F0241336FE15C5F /* PBXContainerItemProxy */;
+		};
+		AE826944AF2C7C9436006FC47599B9CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SwiftChatty-WatchOS-Alamofire";
+			target = 1BE0F7609A60408D7F4DF01610A16C21 /* Pods-SwiftChatty-WatchOS-Alamofire */;
+			targetProxy = 2A86A1091292DEA588F5499E0DB12044 /* PBXContainerItemProxy */;
+		};
+		B5727E9B9B5F20676F0EB93593FCEDE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SwiftChatty-iOS-PureJsonSerializer";
+			target = 33D597BC2E407D20D9EB799E155CABA0 /* Pods-SwiftChatty-iOS-PureJsonSerializer */;
+			targetProxy = 12C5BE5920CB01BE344751B085B6E763 /* PBXContainerItemProxy */;
+		};
+		C95BDD0B0DF05391C54CD5C5C8E11E27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SwiftChatty-iOS-PureJsonSerializer";
+			target = 33D597BC2E407D20D9EB799E155CABA0 /* Pods-SwiftChatty-iOS-PureJsonSerializer */;
+			targetProxy = C439AEBDC3B9476FADEB7881B017E2D2 /* PBXContainerItemProxy */;
+		};
+		D15A091040B87C3C65C440C5D3388477 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SwiftChatty-iOS-Alamofire";
+			target = 7D125BAE2FBC3FAF8A6EA70333FA3BBE /* Pods-SwiftChatty-iOS-Alamofire */;
+			targetProxy = 77CF73E48A684BA37F624A9DF21BDCB0 /* PBXContainerItemProxy */;
+		};
+		F3BEF8623825CCAF26D428AD29E81B00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SwiftChatty-tvOS-Alamofire";
+			target = 5D61E5B0CCD613FFF8FCE5108275B2F9 /* Pods-SwiftChatty-tvOS-Alamofire */;
+			targetProxy = 8F717784ECADAB58E7F7008A3D411AC6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03FDA36AF1D764F71815E864714B8E48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24C6B355233ADEF4832E2EA8A8812443 /* Pods-SwiftChatty-WatchOS-PureJsonSerializer.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SwiftChatty-WatchOS-PureJsonSerializer/Pods-SwiftChatty-WatchOS-PureJsonSerializer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftChatty-WatchOS-PureJsonSerializer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftChatty-WatchOS-PureJsonSerializer/Pods-SwiftChatty-WatchOS-PureJsonSerializer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PureJsonSerializer;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		0A49E2D70F805CF5A8740B1CD52DA297 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3247B1BB8AD46557193B23CF30783D7 /* Pods-SwiftChatty-iOS.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftChatty-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftChatty-iOS/Pods-SwiftChatty-iOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_SwiftChatty_iOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0D83FCC780E416EC9B1524154FD261C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2904C9690E484145CD62D7B871B76463 /* Pods-SwiftChatty-tvOS-PureJsonSerializer.xcconfig */;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SwiftChatty-tvOS-PureJsonSerializer/Pods-SwiftChatty-tvOS-PureJsonSerializer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftChatty-tvOS-PureJsonSerializer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftChatty-tvOS-PureJsonSerializer/Pods-SwiftChatty-tvOS-PureJsonSerializer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PureJsonSerializer;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2CEF501F4F14EA0043C002D3F037E989 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD3B5848FC3A26B06550B7FBE9A9DD13 /* Pods-SwiftChatty-OSX-PureJsonSerializer.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SwiftChatty-OSX-PureJsonSerializer/Pods-SwiftChatty-OSX-PureJsonSerializer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftChatty-OSX-PureJsonSerializer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftChatty-OSX-PureJsonSerializer/Pods-SwiftChatty-OSX-PureJsonSerializer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PureJsonSerializer;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		331ED91D3F0D6603AF2EFB54A331D02E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD3B5848FC3A26B06550B7FBE9A9DD13 /* Pods-SwiftChatty-OSX-PureJsonSerializer.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SwiftChatty-OSX-PureJsonSerializer/Pods-SwiftChatty-OSX-PureJsonSerializer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftChatty-OSX-PureJsonSerializer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftChatty-OSX-PureJsonSerializer/Pods-SwiftChatty-OSX-PureJsonSerializer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PureJsonSerializer;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		382C8C43B2C6FAEE328614A108934747 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83CB8B5D50E359E80E8D71E0C1269314 /* Pods-SwiftChatty-iOS-Alamofire.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SwiftChatty-iOS-Alamofire/Pods-SwiftChatty-iOS-Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftChatty-iOS-Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftChatty-iOS-Alamofire/Pods-SwiftChatty-iOS-Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3851C7392F37C54B8BC2C66AD6F408DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63CA03305162715B729E747406BCCF6C /* Pods-SwiftChatty-OSX.debug.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftChatty-OSX/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftChatty-OSX/Pods-SwiftChatty-OSX.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_SwiftChatty_OSX;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3A675DC3A70D9F88929B299A6877E5FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 662B78604DE6CE37F3EE37EE3E9567CD /* Pods-SwiftChatty-OSX-Alamofire.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SwiftChatty-OSX-Alamofire/Pods-SwiftChatty-OSX-Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftChatty-OSX-Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftChatty-OSX-Alamofire/Pods-SwiftChatty-OSX-Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		45560493F419B099D1639F22827619F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 087A087C2853FF5FED8C0165B627BBA1 /* Pods-SwiftChatty-WatchOS-Alamofire.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SwiftChatty-WatchOS-Alamofire/Pods-SwiftChatty-WatchOS-Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftChatty-WatchOS-Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftChatty-WatchOS-Alamofire/Pods-SwiftChatty-WatchOS-Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		49E24E3529E8D56D97F9E9FA9B09A29C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 175D314E9C1F0136CF2052941348805F /* Pods-SwiftChatty-tvOS-Genome.xcconfig */;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SwiftChatty-tvOS-Genome/Pods-SwiftChatty-tvOS-Genome-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftChatty-tvOS-Genome/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftChatty-tvOS-Genome/Pods-SwiftChatty-tvOS-Genome.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Genome;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		52BC4C76912CCA09C297C339CC1890A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EE9A70182ADD6EF09BB3D41F8D19DD0 /* Pods-SwiftChatty-OSX-Genome.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SwiftChatty-OSX-Genome/Pods-SwiftChatty-OSX-Genome-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftChatty-OSX-Genome/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftChatty-OSX-Genome/Pods-SwiftChatty-OSX-Genome.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Genome;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		56205DD05C12B0349823D6BC15FFA56F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24C6B355233ADEF4832E2EA8A8812443 /* Pods-SwiftChatty-WatchOS-PureJsonSerializer.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SwiftChatty-WatchOS-PureJsonSerializer/Pods-SwiftChatty-WatchOS-PureJsonSerializer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftChatty-WatchOS-PureJsonSerializer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftChatty-WatchOS-PureJsonSerializer/Pods-SwiftChatty-WatchOS-PureJsonSerializer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PureJsonSerializer;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		5CAB543E9E655299A8645203202C781A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A9F630225742D2A075A55F935B2F797 /* Pods-SwiftChatty-iOS.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftChatty-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftChatty-iOS/Pods-SwiftChatty-iOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_SwiftChatty_iOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		696E6CC61E79F76581F4F94BF6C41F80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA9F26EBF4989B2DDE5D00C2D7C7146B /* Pods-SwiftChatty-iOS-Genome.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SwiftChatty-iOS-Genome/Pods-SwiftChatty-iOS-Genome-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftChatty-iOS-Genome/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftChatty-iOS-Genome/Pods-SwiftChatty-iOS-Genome.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Genome;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6A334154897E5965E5D3CA13F72F7952 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77240DC16AF774902BF7BBE6543BE818 /* Pods-SwiftChatty-WatchOS-Genome.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SwiftChatty-WatchOS-Genome/Pods-SwiftChatty-WatchOS-Genome-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftChatty-WatchOS-Genome/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftChatty-WatchOS-Genome/Pods-SwiftChatty-WatchOS-Genome.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Genome;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		6E3137BC56CB3187328A760F89CBB7E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77240DC16AF774902BF7BBE6543BE818 /* Pods-SwiftChatty-WatchOS-Genome.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SwiftChatty-WatchOS-Genome/Pods-SwiftChatty-WatchOS-Genome-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftChatty-WatchOS-Genome/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftChatty-WatchOS-Genome/Pods-SwiftChatty-WatchOS-Genome.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Genome;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		72F6F79678E62F0DBF6490D694E4A019 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		733C780E92A07D2F155FE1B942A2CE29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA9F26EBF4989B2DDE5D00C2D7C7146B /* Pods-SwiftChatty-iOS-Genome.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SwiftChatty-iOS-Genome/Pods-SwiftChatty-iOS-Genome-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftChatty-iOS-Genome/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftChatty-iOS-Genome/Pods-SwiftChatty-iOS-Genome.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Genome;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		76D260C16AB1A48A0B297D5A7081FC41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2904C9690E484145CD62D7B871B76463 /* Pods-SwiftChatty-tvOS-PureJsonSerializer.xcconfig */;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SwiftChatty-tvOS-PureJsonSerializer/Pods-SwiftChatty-tvOS-PureJsonSerializer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftChatty-tvOS-PureJsonSerializer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftChatty-tvOS-PureJsonSerializer/Pods-SwiftChatty-tvOS-PureJsonSerializer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PureJsonSerializer;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9830760F9C0A7C007C83316A0E1F0CDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EE9A70182ADD6EF09BB3D41F8D19DD0 /* Pods-SwiftChatty-OSX-Genome.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SwiftChatty-OSX-Genome/Pods-SwiftChatty-OSX-Genome-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftChatty-OSX-Genome/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftChatty-OSX-Genome/Pods-SwiftChatty-OSX-Genome.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Genome;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		98DBAD61BBCCBBA082B752102BAE87E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69F55DC43AC41702AE972F87F6CFCBCC /* Pods-SwiftChatty-tvOS.debug.xcconfig */;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftChatty-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftChatty-tvOS/Pods-SwiftChatty-tvOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_SwiftChatty_tvOS;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A11A17CD7202200C7CE42A42D2213100 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6912A2E6E818DC5A457EAB484A64524B /* Pods-SwiftChatty-tvOS-Alamofire.xcconfig */;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SwiftChatty-tvOS-Alamofire/Pods-SwiftChatty-tvOS-Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftChatty-tvOS-Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftChatty-tvOS-Alamofire/Pods-SwiftChatty-tvOS-Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B79C2420613146DC069648E4E5EF5B52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97E08CA5889AB3319B4A1D17D5C39A81 /* Pods-SwiftChatty-tvOS.release.xcconfig */;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftChatty-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftChatty-tvOS/Pods-SwiftChatty-tvOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_SwiftChatty_tvOS;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BF56A3F0F9FD9E524CC721F9D91D2559 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 662B78604DE6CE37F3EE37EE3E9567CD /* Pods-SwiftChatty-OSX-Alamofire.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SwiftChatty-OSX-Alamofire/Pods-SwiftChatty-OSX-Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftChatty-OSX-Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftChatty-OSX-Alamofire/Pods-SwiftChatty-OSX-Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BFC696A34E0C1ACF7485BBAF0BA0E848 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6029A29276AEBEA31A0F6C273C36327D /* Pods-SwiftChatty-OSX.release.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftChatty-OSX/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftChatty-OSX/Pods-SwiftChatty-OSX.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_SwiftChatty_OSX;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C4B58B3D3D09284E2D73982B65AC6E1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C40F38A1F1077BA980A9AE364094BBB5 /* Pods-SwiftChatty-WatchOS.debug.xcconfig */;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftChatty-WatchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftChatty-WatchOS/Pods-SwiftChatty-WatchOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_SwiftChatty_WatchOS;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		CE3DF6DCA82065AF9DF87EB4896D88F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E87ED1BA2894D6FE46ADDDA783AF476 /* Pods-SwiftChatty-WatchOS.release.xcconfig */;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftChatty-WatchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftChatty-WatchOS/Pods-SwiftChatty-WatchOS.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_SwiftChatty_WatchOS;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		DDD09F8B0F5843F880279B031DA21A23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 087A087C2853FF5FED8C0165B627BBA1 /* Pods-SwiftChatty-WatchOS-Alamofire.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SwiftChatty-WatchOS-Alamofire/Pods-SwiftChatty-WatchOS-Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftChatty-WatchOS-Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftChatty-WatchOS-Alamofire/Pods-SwiftChatty-WatchOS-Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		E972C7C033CCADF16F10F4656384C940 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 175D314E9C1F0136CF2052941348805F /* Pods-SwiftChatty-tvOS-Genome.xcconfig */;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SwiftChatty-tvOS-Genome/Pods-SwiftChatty-tvOS-Genome-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftChatty-tvOS-Genome/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftChatty-tvOS-Genome/Pods-SwiftChatty-tvOS-Genome.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Genome;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EA65A534F3E606B551CFC85932F7C108 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83CB8B5D50E359E80E8D71E0C1269314 /* Pods-SwiftChatty-iOS-Alamofire.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SwiftChatty-iOS-Alamofire/Pods-SwiftChatty-iOS-Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftChatty-iOS-Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftChatty-iOS-Alamofire/Pods-SwiftChatty-iOS-Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F1EE41D3C738C2FA3417AD11617BBFEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40906A700E78BD2453798D673D594DF6 /* Pods-SwiftChatty-iOS-PureJsonSerializer.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SwiftChatty-iOS-PureJsonSerializer/Pods-SwiftChatty-iOS-PureJsonSerializer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftChatty-iOS-PureJsonSerializer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftChatty-iOS-PureJsonSerializer/Pods-SwiftChatty-iOS-PureJsonSerializer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PureJsonSerializer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F1F74D447A04FD960E33CA0E777AD557 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6912A2E6E818DC5A457EAB484A64524B /* Pods-SwiftChatty-tvOS-Alamofire.xcconfig */;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SwiftChatty-tvOS-Alamofire/Pods-SwiftChatty-tvOS-Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftChatty-tvOS-Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftChatty-tvOS-Alamofire/Pods-SwiftChatty-tvOS-Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F938C23E0974CC59A0160343CD13A6AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		FEFDEF77A9D950E55D2B74E6ACCDCBEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40906A700E78BD2453798D673D594DF6 /* Pods-SwiftChatty-iOS-PureJsonSerializer.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-SwiftChatty-iOS-PureJsonSerializer/Pods-SwiftChatty-iOS-PureJsonSerializer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftChatty-iOS-PureJsonSerializer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftChatty-iOS-PureJsonSerializer/Pods-SwiftChatty-iOS-PureJsonSerializer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PureJsonSerializer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22AEA0DBE506D2A09A21D0A62311A06F /* Build configuration list for PBXNativeTarget "Pods-SwiftChatty-tvOS-Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1F74D447A04FD960E33CA0E777AD557 /* Debug */,
+				A11A17CD7202200C7CE42A42D2213100 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F938C23E0974CC59A0160343CD13A6AB /* Debug */,
+				72F6F79678E62F0DBF6490D694E4A019 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35F443B390AC95B6C425E21540BA1E0D /* Build configuration list for PBXNativeTarget "Pods-SwiftChatty-WatchOS-Genome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E3137BC56CB3187328A760F89CBB7E5 /* Debug */,
+				6A334154897E5965E5D3CA13F72F7952 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A8CE8DE09045F5348A705E56C275F47 /* Build configuration list for PBXNativeTarget "Pods-SwiftChatty-iOS-PureJsonSerializer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEFDEF77A9D950E55D2B74E6ACCDCBEB /* Debug */,
+				F1EE41D3C738C2FA3417AD11617BBFEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F3FEFEE1A32C79A119152CEB09F386C /* Build configuration list for PBXNativeTarget "Pods-SwiftChatty-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3851C7392F37C54B8BC2C66AD6F408DA /* Debug */,
+				BFC696A34E0C1ACF7485BBAF0BA0E848 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F6A8C1F5E2F314D7988E5CB2EEB18DE /* Build configuration list for PBXNativeTarget "Pods-SwiftChatty-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A49E2D70F805CF5A8740B1CD52DA297 /* Debug */,
+				5CAB543E9E655299A8645203202C781A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		68A0F47064B549B2745750E7D534DF2A /* Build configuration list for PBXNativeTarget "Pods-SwiftChatty-OSX-Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A675DC3A70D9F88929B299A6877E5FF /* Debug */,
+				BF56A3F0F9FD9E524CC721F9D91D2559 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		695860F88349F5E79B07C428FBFC5CE4 /* Build configuration list for PBXNativeTarget "Pods-SwiftChatty-OSX-Genome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52BC4C76912CCA09C297C339CC1890A7 /* Debug */,
+				9830760F9C0A7C007C83316A0E1F0CDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		918740CB6271EF787CB91FA770978BC7 /* Build configuration list for PBXNativeTarget "Pods-SwiftChatty-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98DBAD61BBCCBBA082B752102BAE87E1 /* Debug */,
+				B79C2420613146DC069648E4E5EF5B52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94455751FE700D2B1FCC1C4068EE021D /* Build configuration list for PBXNativeTarget "Pods-SwiftChatty-tvOS-Genome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E972C7C033CCADF16F10F4656384C940 /* Debug */,
+				49E24E3529E8D56D97F9E9FA9B09A29C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D04F1BE86420ACA5F5B9C4AADE5CC28 /* Build configuration list for PBXNativeTarget "Pods-SwiftChatty-WatchOS-Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDD09F8B0F5843F880279B031DA21A23 /* Debug */,
+				45560493F419B099D1639F22827619F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A92D739AFBFB81C783CA3FFCDFE0B42E /* Build configuration list for PBXNativeTarget "Pods-SwiftChatty-OSX-PureJsonSerializer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				331ED91D3F0D6603AF2EFB54A331D02E /* Debug */,
+				2CEF501F4F14EA0043C002D3F037E989 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF55B4148FA194AA88A2BC7A89C1331A /* Build configuration list for PBXNativeTarget "Pods-SwiftChatty-iOS-Genome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				733C780E92A07D2F155FE1B942A2CE29 /* Debug */,
+				696E6CC61E79F76581F4F94BF6C41F80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B808C3F0B5269867E36C19D39AEF5B52 /* Build configuration list for PBXNativeTarget "Pods-SwiftChatty-tvOS-PureJsonSerializer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D83FCC780E416EC9B1524154FD261C1 /* Debug */,
+				76D260C16AB1A48A0B297D5A7081FC41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE4A9C58AD88A08214385F8F769A2BC2 /* Build configuration list for PBXNativeTarget "Pods-SwiftChatty-WatchOS-PureJsonSerializer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56205DD05C12B0349823D6BC15FFA56F /* Debug */,
+				03FDA36AF1D764F71815E864714B8E48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0635DF934AB0BD4F4A025839BA06903 /* Build configuration list for PBXNativeTarget "Pods-SwiftChatty-WatchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4B58B3D3D09284E2D73982B65AC6E1A /* Debug */,
+				CE3DF6DCA82065AF9DF87EB4896D88F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6D15B7C8045CE68591CCD8A46CB14E8 /* Build configuration list for PBXNativeTarget "Pods-SwiftChatty-iOS-Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				382C8C43B2C6FAEE328614A108934747 /* Debug */,
+				EA65A534F3E606B551CFC85932F7C108 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

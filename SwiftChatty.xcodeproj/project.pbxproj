@@ -1,0 +1,2457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0745460C0A0F93B148A402C2 /* Pods_SwiftChatty_WatchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F2F451D170890538ED9C98E /* Pods_SwiftChatty_WatchOS.framework */; };
+		1FAC116845676654879F047F /* Pods_SwiftChatty_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C276D8B00BFEF1A3908149 /* Pods_SwiftChatty_iOS.framework */; };
+		25F0829AB36985E88ADB2FBE /* Pods_SwiftChatty_OSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1737E3BC39F48A8914266419 /* Pods_SwiftChatty_OSX.framework */; };
+		300CA6041C5D546100EB2B6D /* SwiftChatty.h in Headers */ = {isa = PBXBuildFile; fileRef = 300CA6031C5D546100EB2B6D /* SwiftChatty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		300CA60B1C5D546100EB2B6D /* SwiftChatty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 300CA6001C5D546100EB2B6D /* SwiftChatty.framework */; };
+		300CA6101C5D546100EB2B6D /* SwiftChattyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA60F1C5D546100EB2B6D /* SwiftChattyTests.swift */; };
+		300CA6A81C5D548500EB2B6D /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA61B1C5D548400EB2B6D /* Client.swift */; };
+		300CA6A91C5D548500EB2B6D /* ClientRequestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA61C1C5D548400EB2B6D /* ClientRequestResult.swift */; };
+		300CA6AA1C5D548500EB2B6D /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA61E1C5D548400EB2B6D /* Errors.swift */; };
+		300CA6AB1C5D548500EB2B6D /* EventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA61F1C5D548400EB2B6D /* EventType.swift */; };
+		300CA6AC1C5D548500EB2B6D /* Mailbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6201C5D548400EB2B6D /* Mailbox.swift */; };
+		300CA6AD1C5D548500EB2B6D /* CommonMappableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6221C5D548400EB2B6D /* CommonMappableModel.swift */; };
+		300CA6AE1C5D548500EB2B6D /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6231C5D548400EB2B6D /* Event.swift */; };
+		300CA6AF1C5D548500EB2B6D /* EventCategoryChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6241C5D548400EB2B6D /* EventCategoryChange.swift */; };
+		300CA6B01C5D548500EB2B6D /* EventLolCountUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6251C5D548400EB2B6D /* EventLolCountUpdate.swift */; };
+		300CA6B11C5D548500EB2B6D /* EventNewPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6261C5D548400EB2B6D /* EventNewPost.swift */; };
+		300CA6B21C5D548500EB2B6D /* EventServerMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6271C5D548400EB2B6D /* EventServerMessage.swift */; };
+		300CA6B31C5D548500EB2B6D /* LOL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6281C5D548400EB2B6D /* LOL.swift */; };
+		300CA6B41C5D548500EB2B6D /* MarkedPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6291C5D548400EB2B6D /* MarkedPost.swift */; };
+		300CA6B51C5D548500EB2B6D /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA62A1C5D548400EB2B6D /* Message.swift */; };
+		300CA6B61C5D548500EB2B6D /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA62B1C5D548400EB2B6D /* Notification.swift */; };
+		300CA6B71C5D548500EB2B6D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA62C1C5D548400EB2B6D /* Post.swift */; };
+		300CA6B81C5D548500EB2B6D /* PostLineage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA62D1C5D548400EB2B6D /* PostLineage.swift */; };
+		300CA6B91C5D548500EB2B6D /* PostRelationship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA62E1C5D548400EB2B6D /* PostRelationship.swift */; };
+		300CA6BA1C5D548500EB2B6D /* PostType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA62F1C5D548400EB2B6D /* PostType.swift */; };
+		300CA6BB1C5D548500EB2B6D /* RootPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6301C5D548400EB2B6D /* RootPost.swift */; };
+		300CA6BC1C5D548500EB2B6D /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6311C5D548400EB2B6D /* SearchResult.swift */; };
+		300CA6BD1C5D548500EB2B6D /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6321C5D548400EB2B6D /* Thread.swift */; };
+		300CA6BE1C5D548500EB2B6D /* ThreadPostCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6331C5D548400EB2B6D /* ThreadPostCount.swift */; };
+		300CA6BF1C5D548500EB2B6D /* ThreadPostId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6341C5D548400EB2B6D /* ThreadPostId.swift */; };
+		300CA6C01C5D548500EB2B6D /* ThreadType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6351C5D548400EB2B6D /* ThreadType.swift */; };
+		300CA6C11C5D548500EB2B6D /* UserRegistrationDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6361C5D548400EB2B6D /* UserRegistrationDate.swift */; };
+		300CA6C21C5D548500EB2B6D /* UserSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6371C5D548400EB2B6D /* UserSetup.swift */; };
+		300CA6C31C5D548500EB2B6D /* MarkedPostType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6381C5D548400EB2B6D /* MarkedPostType.swift */; };
+		300CA6C41C5D548500EB2B6D /* ModerationFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6391C5D548400EB2B6D /* ModerationFlag.swift */; };
+		300CA6C51C5D548500EB2B6D /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA63B1C5D548400EB2B6D /* Account.swift */; };
+		300CA6C61C5D548500EB2B6D /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA63C1C5D548400EB2B6D /* API.swift */; };
+		300CA6C71C5D548500EB2B6D /* ClearMarkedPostsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA63E1C5D548400EB2B6D /* ClearMarkedPostsRequest.swift */; };
+		300CA6C81C5D548500EB2B6D /* GetCategoryFiltersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA63F1C5D548400EB2B6D /* GetCategoryFiltersRequest.swift */; };
+		300CA6C91C5D548500EB2B6D /* GetClientDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6401C5D548400EB2B6D /* GetClientDataRequest.swift */; };
+		300CA6CA1C5D548500EB2B6D /* GetMarkedPostsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6411C5D548400EB2B6D /* GetMarkedPostsRequest.swift */; };
+		300CA6CB1C5D548500EB2B6D /* MarkPostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6421C5D548400EB2B6D /* MarkPostRequest.swift */; };
+		300CA6CC1C5D548500EB2B6D /* SetCategoryFiltersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6431C5D548400EB2B6D /* SetCategoryFiltersRequest.swift */; };
+		300CA6CD1C5D548500EB2B6D /* SetClientDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6441C5D548400EB2B6D /* SetClientDataRequest.swift */; };
+		300CA6CE1C5D548500EB2B6D /* BroadcastServerMessageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6461C5D548400EB2B6D /* BroadcastServerMessageRequest.swift */; };
+		300CA6CF1C5D548500EB2B6D /* GetNewestEventIdRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6471C5D548400EB2B6D /* GetNewestEventIdRequest.swift */; };
+		300CA6D01C5D548500EB2B6D /* PollForEventRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6481C5D548400EB2B6D /* PollForEventRequest.swift */; };
+		300CA6D11C5D548500EB2B6D /* WaitForEventRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6491C5D548400EB2B6D /* WaitForEventRequest.swift */; };
+		300CA6D21C5D548500EB2B6D /* DeleteMessageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA64B1C5D548400EB2B6D /* DeleteMessageRequest.swift */; };
+		300CA6D31C5D548500EB2B6D /* GetMessageCountRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA64C1C5D548400EB2B6D /* GetMessageCountRequest.swift */; };
+		300CA6D41C5D548500EB2B6D /* GetMessagesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA64D1C5D548400EB2B6D /* GetMessagesRequest.swift */; };
+		300CA6D51C5D548500EB2B6D /* MarkMessageReadRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA64E1C5D548400EB2B6D /* MarkMessageReadRequest.swift */; };
+		300CA6D61C5D548500EB2B6D /* SendMessageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA64F1C5D548400EB2B6D /* SendMessageRequest.swift */; };
+		300CA6D71C5D548500EB2B6D /* DetachAccountRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6511C5D548400EB2B6D /* DetachAccountRequest.swift */; };
+		300CA6D81C5D548500EB2B6D /* GenerateIdRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6521C5D548400EB2B6D /* GenerateIdRequest.swift */; };
+		300CA6D91C5D548500EB2B6D /* GetUserSetupRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6531C5D548400EB2B6D /* GetUserSetupRequest.swift */; };
+		300CA6DA1C5D548500EB2B6D /* RegisterNotifierClientRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6541C5D548400EB2B6D /* RegisterNotifierClientRequest.swift */; };
+		300CA6DB1C5D548500EB2B6D /* RegisterRichClientRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6551C5D548400EB2B6D /* RegisterRichClientRequest.swift */; };
+		300CA6DC1C5D548500EB2B6D /* SetUserSetupRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6561C5D548400EB2B6D /* SetUserSetupRequest.swift */; };
+		300CA6DD1C5D548500EB2B6D /* WaitForNotificationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6571C5D548400EB2B6D /* WaitForNotificationRequest.swift */; };
+		300CA6DE1C5D548500EB2B6D /* GetNewestPostInfoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6591C5D548500EB2B6D /* GetNewestPostInfoRequest.swift */; };
+		300CA6DF1C5D548500EB2B6D /* GetParentIdRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA65A1C5D548500EB2B6D /* GetParentIdRequest.swift */; };
+		300CA6E01C5D548500EB2B6D /* GetPostLineageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA65B1C5D548500EB2B6D /* GetPostLineageRequest.swift */; };
+		300CA6E11C5D548500EB2B6D /* GetPostRangeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA65C1C5D548500EB2B6D /* GetPostRangeRequest.swift */; };
+		300CA6E21C5D548500EB2B6D /* GetPostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA65D1C5D548500EB2B6D /* GetPostRequest.swift */; };
+		300CA6E31C5D548500EB2B6D /* RequestReindexRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA65E1C5D548500EB2B6D /* RequestReindexRequest.swift */; };
+		300CA6E41C5D548500EB2B6D /* SearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA65F1C5D548500EB2B6D /* SearchRequest.swift */; };
+		300CA6E51C5D548500EB2B6D /* SetPostCategoryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6601C5D548500EB2B6D /* SetPostCategoryRequest.swift */; };
+		300CA6E61C5D548500EB2B6D /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6611C5D548500EB2B6D /* Request.swift */; };
+		300CA6E71C5D548500EB2B6D /* GetChattyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6631C5D548500EB2B6D /* GetChattyRequest.swift */; };
+		300CA6E81C5D548500EB2B6D /* GetChattyRootPostsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6641C5D548500EB2B6D /* GetChattyRootPostsRequest.swift */; };
+		300CA6E91C5D548500EB2B6D /* GetSubthreadRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6651C5D548500EB2B6D /* GetSubthreadRequest.swift */; };
+		300CA6EA1C5D548500EB2B6D /* GetThreadPostCountRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6661C5D548500EB2B6D /* GetThreadPostCountRequest.swift */; };
+		300CA6EB1C5D548500EB2B6D /* GetThreadPostIdsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6671C5D548500EB2B6D /* GetThreadPostIdsRequest.swift */; };
+		300CA6EC1C5D548500EB2B6D /* GetThreadRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6681C5D548500EB2B6D /* GetThreadRequest.swift */; };
+		300CA6ED1C5D548500EB2B6D /* CheckConnectionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA66A1C5D548500EB2B6D /* CheckConnectionRequest.swift */; };
+		300CA6EE1C5D548500EB2B6D /* GetAllTenYearUsersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA66B1C5D548500EB2B6D /* GetAllTenYearUsersRequest.swift */; };
+		300CA6EF1C5D548500EB2B6D /* GetAllUserRegistrationDatesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA66C1C5D548500EB2B6D /* GetAllUserRegistrationDatesRequest.swift */; };
+		300CA6F01C5D548500EB2B6D /* GetUserRegistrationDateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA66D1C5D548500EB2B6D /* GetUserRegistrationDateRequest.swift */; };
+		300CA6F11C5D548500EB2B6D /* VerifyCredentialsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA66E1C5D548500EB2B6D /* VerifyCredentialsRequest.swift */; };
+		300CA6F21C5D548500EB2B6D /* ClearMarkedPostsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6711C5D548500EB2B6D /* ClearMarkedPostsResponse.swift */; };
+		300CA6F31C5D548500EB2B6D /* GetCategoryFiltersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6721C5D548500EB2B6D /* GetCategoryFiltersResponse.swift */; };
+		300CA6F41C5D548500EB2B6D /* GetClientDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6731C5D548500EB2B6D /* GetClientDataResponse.swift */; };
+		300CA6F51C5D548500EB2B6D /* GetMarkedPostsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6741C5D548500EB2B6D /* GetMarkedPostsResponse.swift */; };
+		300CA6F61C5D548500EB2B6D /* MarkPostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6751C5D548500EB2B6D /* MarkPostResponse.swift */; };
+		300CA6F71C5D548500EB2B6D /* SetCategoryFiltersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6761C5D548500EB2B6D /* SetCategoryFiltersResponse.swift */; };
+		300CA6F81C5D548500EB2B6D /* SetClientDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6771C5D548500EB2B6D /* SetClientDataResponse.swift */; };
+		300CA6F91C5D548500EB2B6D /* CommonSuccessResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6791C5D548500EB2B6D /* CommonSuccessResponse.swift */; };
+		300CA6FA1C5D548500EB2B6D /* ApiErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA67B1C5D548500EB2B6D /* ApiErrorResponse.swift */; };
+		300CA6FB1C5D548500EB2B6D /* BroadcastServerMessageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA67D1C5D548500EB2B6D /* BroadcastServerMessageResponse.swift */; };
+		300CA6FC1C5D548500EB2B6D /* GetNewestEventIdResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA67E1C5D548500EB2B6D /* GetNewestEventIdResponse.swift */; };
+		300CA6FD1C5D548500EB2B6D /* PollForEventResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA67F1C5D548500EB2B6D /* PollForEventResponse.swift */; };
+		300CA6FE1C5D548500EB2B6D /* WaitForEventResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6801C5D548500EB2B6D /* WaitForEventResponse.swift */; };
+		300CA6FF1C5D548500EB2B6D /* DeleteMessageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6821C5D548500EB2B6D /* DeleteMessageResponse.swift */; };
+		300CA7001C5D548500EB2B6D /* GetMessageCountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6831C5D548500EB2B6D /* GetMessageCountResponse.swift */; };
+		300CA7011C5D548500EB2B6D /* GetMessagesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6841C5D548500EB2B6D /* GetMessagesResponse.swift */; };
+		300CA7021C5D548500EB2B6D /* MarkMessageReadResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6851C5D548500EB2B6D /* MarkMessageReadResponse.swift */; };
+		300CA7031C5D548500EB2B6D /* SendMessageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6861C5D548500EB2B6D /* SendMessageResponse.swift */; };
+		300CA7041C5D548500EB2B6D /* DetachAccountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6881C5D548500EB2B6D /* DetachAccountResponse.swift */; };
+		300CA7051C5D548500EB2B6D /* GenerateIdResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6891C5D548500EB2B6D /* GenerateIdResponse.swift */; };
+		300CA7061C5D548500EB2B6D /* GetUserSetupResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA68A1C5D548500EB2B6D /* GetUserSetupResponse.swift */; };
+		300CA7071C5D548500EB2B6D /* RegisterNotifierClientResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA68B1C5D548500EB2B6D /* RegisterNotifierClientResponse.swift */; };
+		300CA7081C5D548500EB2B6D /* RegisterRichClientResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA68C1C5D548500EB2B6D /* RegisterRichClientResponse.swift */; };
+		300CA7091C5D548500EB2B6D /* SetUserSetupResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA68D1C5D548500EB2B6D /* SetUserSetupResponse.swift */; };
+		300CA70A1C5D548500EB2B6D /* WaitForNotificationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA68E1C5D548500EB2B6D /* WaitForNotificationResponse.swift */; };
+		300CA70B1C5D548500EB2B6D /* GetNewestPostInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6901C5D548500EB2B6D /* GetNewestPostInfoResponse.swift */; };
+		300CA70C1C5D548500EB2B6D /* GetParentIdResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6911C5D548500EB2B6D /* GetParentIdResponse.swift */; };
+		300CA70D1C5D548500EB2B6D /* GetPostLineageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6921C5D548500EB2B6D /* GetPostLineageResponse.swift */; };
+		300CA70E1C5D548500EB2B6D /* GetPostRangeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6931C5D548500EB2B6D /* GetPostRangeResponse.swift */; };
+		300CA70F1C5D548500EB2B6D /* GetPostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6941C5D548500EB2B6D /* GetPostResponse.swift */; };
+		300CA7101C5D548500EB2B6D /* RequestReindexResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6951C5D548500EB2B6D /* RequestReindexResponse.swift */; };
+		300CA7111C5D548500EB2B6D /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6961C5D548500EB2B6D /* SearchResponse.swift */; };
+		300CA7121C5D548500EB2B6D /* SetPostCategoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6971C5D548500EB2B6D /* SetPostCategoryResponse.swift */; };
+		300CA7131C5D548500EB2B6D /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6981C5D548500EB2B6D /* Response.swift */; };
+		300CA7141C5D548500EB2B6D /* GetChattyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA69A1C5D548500EB2B6D /* GetChattyResponse.swift */; };
+		300CA7151C5D548500EB2B6D /* GetChattyRootPostsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA69B1C5D548500EB2B6D /* GetChattyRootPostsResponse.swift */; };
+		300CA7161C5D548500EB2B6D /* GetSubthreadResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA69C1C5D548500EB2B6D /* GetSubthreadResponse.swift */; };
+		300CA7171C5D548500EB2B6D /* GetThreadPostCountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA69D1C5D548500EB2B6D /* GetThreadPostCountResponse.swift */; };
+		300CA7181C5D548500EB2B6D /* GetThreadPostIdsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA69E1C5D548500EB2B6D /* GetThreadPostIdsResponse.swift */; };
+		300CA7191C5D548500EB2B6D /* GetThreadResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA69F1C5D548500EB2B6D /* GetThreadResponse.swift */; };
+		300CA71A1C5D548500EB2B6D /* CheckConnectionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6A11C5D548500EB2B6D /* CheckConnectionResponse.swift */; };
+		300CA71B1C5D548500EB2B6D /* GetAllTenYearUsersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6A21C5D548500EB2B6D /* GetAllTenYearUsersResponse.swift */; };
+		300CA71C1C5D548500EB2B6D /* GetAllUserRegistrationDatesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6A31C5D548500EB2B6D /* GetAllUserRegistrationDatesResponse.swift */; };
+		300CA71D1C5D548500EB2B6D /* GetUserRegistrationDateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6A41C5D548500EB2B6D /* GetUserRegistrationDateResponse.swift */; };
+		300CA71E1C5D548500EB2B6D /* VerifyCredentialsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6A51C5D548500EB2B6D /* VerifyCredentialsResponse.swift */; };
+		300CA71F1C5D548500EB2B6D /* Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6A71C5D548500EB2B6D /* Encoder.swift */; };
+		300CA72F1C5D54B700EB2B6D /* SwiftChatty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 300CA7251C5D54B700EB2B6D /* SwiftChatty.framework */; };
+		300CA74B1C5D54CA00EB2B6D /* SwiftChatty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 300CA7411C5D54CA00EB2B6D /* SwiftChatty.framework */; };
+		300CA7581C5D552800EB2B6D /* SwiftChatty.h in Headers */ = {isa = PBXBuildFile; fileRef = 300CA6031C5D546100EB2B6D /* SwiftChatty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		300CA7591C5D552C00EB2B6D /* SwiftChatty.h in Headers */ = {isa = PBXBuildFile; fileRef = 300CA6031C5D546100EB2B6D /* SwiftChatty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		300CA75A1C5D553900EB2B6D /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA61B1C5D548400EB2B6D /* Client.swift */; };
+		300CA75B1C5D553900EB2B6D /* ClientRequestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA61C1C5D548400EB2B6D /* ClientRequestResult.swift */; };
+		300CA75C1C5D553900EB2B6D /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA61E1C5D548400EB2B6D /* Errors.swift */; };
+		300CA75D1C5D553900EB2B6D /* EventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA61F1C5D548400EB2B6D /* EventType.swift */; };
+		300CA75E1C5D553900EB2B6D /* Mailbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6201C5D548400EB2B6D /* Mailbox.swift */; };
+		300CA75F1C5D553900EB2B6D /* CommonMappableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6221C5D548400EB2B6D /* CommonMappableModel.swift */; };
+		300CA7601C5D553900EB2B6D /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6231C5D548400EB2B6D /* Event.swift */; };
+		300CA7611C5D553900EB2B6D /* EventCategoryChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6241C5D548400EB2B6D /* EventCategoryChange.swift */; };
+		300CA7621C5D553900EB2B6D /* EventLolCountUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6251C5D548400EB2B6D /* EventLolCountUpdate.swift */; };
+		300CA7631C5D553900EB2B6D /* EventNewPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6261C5D548400EB2B6D /* EventNewPost.swift */; };
+		300CA7641C5D553900EB2B6D /* EventServerMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6271C5D548400EB2B6D /* EventServerMessage.swift */; };
+		300CA7651C5D553900EB2B6D /* LOL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6281C5D548400EB2B6D /* LOL.swift */; };
+		300CA7661C5D553900EB2B6D /* MarkedPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6291C5D548400EB2B6D /* MarkedPost.swift */; };
+		300CA7671C5D553900EB2B6D /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA62A1C5D548400EB2B6D /* Message.swift */; };
+		300CA7681C5D553900EB2B6D /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA62B1C5D548400EB2B6D /* Notification.swift */; };
+		300CA7691C5D553900EB2B6D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA62C1C5D548400EB2B6D /* Post.swift */; };
+		300CA76A1C5D553900EB2B6D /* PostLineage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA62D1C5D548400EB2B6D /* PostLineage.swift */; };
+		300CA76B1C5D553900EB2B6D /* PostRelationship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA62E1C5D548400EB2B6D /* PostRelationship.swift */; };
+		300CA76C1C5D553900EB2B6D /* PostType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA62F1C5D548400EB2B6D /* PostType.swift */; };
+		300CA76D1C5D553900EB2B6D /* RootPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6301C5D548400EB2B6D /* RootPost.swift */; };
+		300CA76E1C5D553900EB2B6D /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6311C5D548400EB2B6D /* SearchResult.swift */; };
+		300CA76F1C5D553900EB2B6D /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6321C5D548400EB2B6D /* Thread.swift */; };
+		300CA7701C5D553900EB2B6D /* ThreadPostCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6331C5D548400EB2B6D /* ThreadPostCount.swift */; };
+		300CA7711C5D553900EB2B6D /* ThreadPostId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6341C5D548400EB2B6D /* ThreadPostId.swift */; };
+		300CA7721C5D553900EB2B6D /* ThreadType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6351C5D548400EB2B6D /* ThreadType.swift */; };
+		300CA7731C5D553900EB2B6D /* UserRegistrationDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6361C5D548400EB2B6D /* UserRegistrationDate.swift */; };
+		300CA7741C5D553900EB2B6D /* UserSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6371C5D548400EB2B6D /* UserSetup.swift */; };
+		300CA7751C5D553900EB2B6D /* MarkedPostType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6381C5D548400EB2B6D /* MarkedPostType.swift */; };
+		300CA7761C5D553900EB2B6D /* ModerationFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6391C5D548400EB2B6D /* ModerationFlag.swift */; };
+		300CA7771C5D553900EB2B6D /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA63B1C5D548400EB2B6D /* Account.swift */; };
+		300CA7781C5D553900EB2B6D /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA63C1C5D548400EB2B6D /* API.swift */; };
+		300CA7791C5D553900EB2B6D /* ClearMarkedPostsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA63E1C5D548400EB2B6D /* ClearMarkedPostsRequest.swift */; };
+		300CA77A1C5D553900EB2B6D /* GetCategoryFiltersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA63F1C5D548400EB2B6D /* GetCategoryFiltersRequest.swift */; };
+		300CA77B1C5D553900EB2B6D /* GetClientDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6401C5D548400EB2B6D /* GetClientDataRequest.swift */; };
+		300CA77C1C5D553900EB2B6D /* GetMarkedPostsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6411C5D548400EB2B6D /* GetMarkedPostsRequest.swift */; };
+		300CA77D1C5D553900EB2B6D /* MarkPostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6421C5D548400EB2B6D /* MarkPostRequest.swift */; };
+		300CA77E1C5D553900EB2B6D /* SetCategoryFiltersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6431C5D548400EB2B6D /* SetCategoryFiltersRequest.swift */; };
+		300CA77F1C5D553900EB2B6D /* SetClientDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6441C5D548400EB2B6D /* SetClientDataRequest.swift */; };
+		300CA7801C5D553900EB2B6D /* BroadcastServerMessageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6461C5D548400EB2B6D /* BroadcastServerMessageRequest.swift */; };
+		300CA7811C5D553900EB2B6D /* GetNewestEventIdRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6471C5D548400EB2B6D /* GetNewestEventIdRequest.swift */; };
+		300CA7821C5D553900EB2B6D /* PollForEventRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6481C5D548400EB2B6D /* PollForEventRequest.swift */; };
+		300CA7831C5D553900EB2B6D /* WaitForEventRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6491C5D548400EB2B6D /* WaitForEventRequest.swift */; };
+		300CA7841C5D553900EB2B6D /* DeleteMessageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA64B1C5D548400EB2B6D /* DeleteMessageRequest.swift */; };
+		300CA7851C5D553900EB2B6D /* GetMessageCountRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA64C1C5D548400EB2B6D /* GetMessageCountRequest.swift */; };
+		300CA7861C5D553900EB2B6D /* GetMessagesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA64D1C5D548400EB2B6D /* GetMessagesRequest.swift */; };
+		300CA7871C5D553900EB2B6D /* MarkMessageReadRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA64E1C5D548400EB2B6D /* MarkMessageReadRequest.swift */; };
+		300CA7881C5D553900EB2B6D /* SendMessageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA64F1C5D548400EB2B6D /* SendMessageRequest.swift */; };
+		300CA7891C5D553900EB2B6D /* DetachAccountRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6511C5D548400EB2B6D /* DetachAccountRequest.swift */; };
+		300CA78A1C5D553900EB2B6D /* GenerateIdRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6521C5D548400EB2B6D /* GenerateIdRequest.swift */; };
+		300CA78B1C5D553900EB2B6D /* GetUserSetupRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6531C5D548400EB2B6D /* GetUserSetupRequest.swift */; };
+		300CA78C1C5D553900EB2B6D /* RegisterNotifierClientRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6541C5D548400EB2B6D /* RegisterNotifierClientRequest.swift */; };
+		300CA78D1C5D553900EB2B6D /* RegisterRichClientRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6551C5D548400EB2B6D /* RegisterRichClientRequest.swift */; };
+		300CA78E1C5D553900EB2B6D /* SetUserSetupRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6561C5D548400EB2B6D /* SetUserSetupRequest.swift */; };
+		300CA78F1C5D553900EB2B6D /* WaitForNotificationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6571C5D548400EB2B6D /* WaitForNotificationRequest.swift */; };
+		300CA7901C5D553900EB2B6D /* GetNewestPostInfoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6591C5D548500EB2B6D /* GetNewestPostInfoRequest.swift */; };
+		300CA7911C5D553900EB2B6D /* GetParentIdRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA65A1C5D548500EB2B6D /* GetParentIdRequest.swift */; };
+		300CA7921C5D553900EB2B6D /* GetPostLineageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA65B1C5D548500EB2B6D /* GetPostLineageRequest.swift */; };
+		300CA7931C5D553900EB2B6D /* GetPostRangeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA65C1C5D548500EB2B6D /* GetPostRangeRequest.swift */; };
+		300CA7941C5D553900EB2B6D /* GetPostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA65D1C5D548500EB2B6D /* GetPostRequest.swift */; };
+		300CA7951C5D553900EB2B6D /* RequestReindexRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA65E1C5D548500EB2B6D /* RequestReindexRequest.swift */; };
+		300CA7961C5D553900EB2B6D /* SearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA65F1C5D548500EB2B6D /* SearchRequest.swift */; };
+		300CA7971C5D553900EB2B6D /* SetPostCategoryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6601C5D548500EB2B6D /* SetPostCategoryRequest.swift */; };
+		300CA7981C5D553900EB2B6D /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6611C5D548500EB2B6D /* Request.swift */; };
+		300CA7991C5D553900EB2B6D /* GetChattyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6631C5D548500EB2B6D /* GetChattyRequest.swift */; };
+		300CA79A1C5D553900EB2B6D /* GetChattyRootPostsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6641C5D548500EB2B6D /* GetChattyRootPostsRequest.swift */; };
+		300CA79B1C5D553900EB2B6D /* GetSubthreadRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6651C5D548500EB2B6D /* GetSubthreadRequest.swift */; };
+		300CA79C1C5D553900EB2B6D /* GetThreadPostCountRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6661C5D548500EB2B6D /* GetThreadPostCountRequest.swift */; };
+		300CA79D1C5D553900EB2B6D /* GetThreadPostIdsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6671C5D548500EB2B6D /* GetThreadPostIdsRequest.swift */; };
+		300CA79E1C5D553900EB2B6D /* GetThreadRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6681C5D548500EB2B6D /* GetThreadRequest.swift */; };
+		300CA79F1C5D553900EB2B6D /* CheckConnectionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA66A1C5D548500EB2B6D /* CheckConnectionRequest.swift */; };
+		300CA7A01C5D553900EB2B6D /* GetAllTenYearUsersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA66B1C5D548500EB2B6D /* GetAllTenYearUsersRequest.swift */; };
+		300CA7A11C5D553900EB2B6D /* GetAllUserRegistrationDatesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA66C1C5D548500EB2B6D /* GetAllUserRegistrationDatesRequest.swift */; };
+		300CA7A21C5D553900EB2B6D /* GetUserRegistrationDateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA66D1C5D548500EB2B6D /* GetUserRegistrationDateRequest.swift */; };
+		300CA7A31C5D553900EB2B6D /* VerifyCredentialsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA66E1C5D548500EB2B6D /* VerifyCredentialsRequest.swift */; };
+		300CA7A41C5D553900EB2B6D /* ClearMarkedPostsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6711C5D548500EB2B6D /* ClearMarkedPostsResponse.swift */; };
+		300CA7A51C5D553900EB2B6D /* GetCategoryFiltersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6721C5D548500EB2B6D /* GetCategoryFiltersResponse.swift */; };
+		300CA7A61C5D553900EB2B6D /* GetClientDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6731C5D548500EB2B6D /* GetClientDataResponse.swift */; };
+		300CA7A71C5D553900EB2B6D /* GetMarkedPostsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6741C5D548500EB2B6D /* GetMarkedPostsResponse.swift */; };
+		300CA7A81C5D553900EB2B6D /* MarkPostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6751C5D548500EB2B6D /* MarkPostResponse.swift */; };
+		300CA7A91C5D553900EB2B6D /* SetCategoryFiltersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6761C5D548500EB2B6D /* SetCategoryFiltersResponse.swift */; };
+		300CA7AA1C5D553900EB2B6D /* SetClientDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6771C5D548500EB2B6D /* SetClientDataResponse.swift */; };
+		300CA7AB1C5D553900EB2B6D /* CommonSuccessResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6791C5D548500EB2B6D /* CommonSuccessResponse.swift */; };
+		300CA7AC1C5D553900EB2B6D /* ApiErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA67B1C5D548500EB2B6D /* ApiErrorResponse.swift */; };
+		300CA7AD1C5D553900EB2B6D /* BroadcastServerMessageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA67D1C5D548500EB2B6D /* BroadcastServerMessageResponse.swift */; };
+		300CA7AE1C5D553900EB2B6D /* GetNewestEventIdResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA67E1C5D548500EB2B6D /* GetNewestEventIdResponse.swift */; };
+		300CA7AF1C5D553900EB2B6D /* PollForEventResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA67F1C5D548500EB2B6D /* PollForEventResponse.swift */; };
+		300CA7B01C5D553900EB2B6D /* WaitForEventResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6801C5D548500EB2B6D /* WaitForEventResponse.swift */; };
+		300CA7B11C5D553900EB2B6D /* DeleteMessageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6821C5D548500EB2B6D /* DeleteMessageResponse.swift */; };
+		300CA7B21C5D553900EB2B6D /* GetMessageCountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6831C5D548500EB2B6D /* GetMessageCountResponse.swift */; };
+		300CA7B31C5D553900EB2B6D /* GetMessagesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6841C5D548500EB2B6D /* GetMessagesResponse.swift */; };
+		300CA7B41C5D553900EB2B6D /* MarkMessageReadResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6851C5D548500EB2B6D /* MarkMessageReadResponse.swift */; };
+		300CA7B51C5D553900EB2B6D /* SendMessageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6861C5D548500EB2B6D /* SendMessageResponse.swift */; };
+		300CA7B61C5D553900EB2B6D /* DetachAccountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6881C5D548500EB2B6D /* DetachAccountResponse.swift */; };
+		300CA7B71C5D553900EB2B6D /* GenerateIdResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6891C5D548500EB2B6D /* GenerateIdResponse.swift */; };
+		300CA7B81C5D553900EB2B6D /* GetUserSetupResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA68A1C5D548500EB2B6D /* GetUserSetupResponse.swift */; };
+		300CA7B91C5D553900EB2B6D /* RegisterNotifierClientResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA68B1C5D548500EB2B6D /* RegisterNotifierClientResponse.swift */; };
+		300CA7BA1C5D553900EB2B6D /* RegisterRichClientResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA68C1C5D548500EB2B6D /* RegisterRichClientResponse.swift */; };
+		300CA7BB1C5D553900EB2B6D /* SetUserSetupResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA68D1C5D548500EB2B6D /* SetUserSetupResponse.swift */; };
+		300CA7BC1C5D553900EB2B6D /* WaitForNotificationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA68E1C5D548500EB2B6D /* WaitForNotificationResponse.swift */; };
+		300CA7BD1C5D553900EB2B6D /* GetNewestPostInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6901C5D548500EB2B6D /* GetNewestPostInfoResponse.swift */; };
+		300CA7BE1C5D553900EB2B6D /* GetParentIdResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6911C5D548500EB2B6D /* GetParentIdResponse.swift */; };
+		300CA7BF1C5D553900EB2B6D /* GetPostLineageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6921C5D548500EB2B6D /* GetPostLineageResponse.swift */; };
+		300CA7C01C5D553900EB2B6D /* GetPostRangeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6931C5D548500EB2B6D /* GetPostRangeResponse.swift */; };
+		300CA7C11C5D553900EB2B6D /* GetPostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6941C5D548500EB2B6D /* GetPostResponse.swift */; };
+		300CA7C21C5D553900EB2B6D /* RequestReindexResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6951C5D548500EB2B6D /* RequestReindexResponse.swift */; };
+		300CA7C31C5D553900EB2B6D /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6961C5D548500EB2B6D /* SearchResponse.swift */; };
+		300CA7C41C5D553A00EB2B6D /* SetPostCategoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6971C5D548500EB2B6D /* SetPostCategoryResponse.swift */; };
+		300CA7C51C5D553A00EB2B6D /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6981C5D548500EB2B6D /* Response.swift */; };
+		300CA7C61C5D553A00EB2B6D /* GetChattyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA69A1C5D548500EB2B6D /* GetChattyResponse.swift */; };
+		300CA7C71C5D553A00EB2B6D /* GetChattyRootPostsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA69B1C5D548500EB2B6D /* GetChattyRootPostsResponse.swift */; };
+		300CA7C81C5D553A00EB2B6D /* GetSubthreadResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA69C1C5D548500EB2B6D /* GetSubthreadResponse.swift */; };
+		300CA7C91C5D553A00EB2B6D /* GetThreadPostCountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA69D1C5D548500EB2B6D /* GetThreadPostCountResponse.swift */; };
+		300CA7CA1C5D553A00EB2B6D /* GetThreadPostIdsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA69E1C5D548500EB2B6D /* GetThreadPostIdsResponse.swift */; };
+		300CA7CB1C5D553A00EB2B6D /* GetThreadResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA69F1C5D548500EB2B6D /* GetThreadResponse.swift */; };
+		300CA7CC1C5D553A00EB2B6D /* CheckConnectionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6A11C5D548500EB2B6D /* CheckConnectionResponse.swift */; };
+		300CA7CD1C5D553A00EB2B6D /* GetAllTenYearUsersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6A21C5D548500EB2B6D /* GetAllTenYearUsersResponse.swift */; };
+		300CA7CE1C5D553A00EB2B6D /* GetAllUserRegistrationDatesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6A31C5D548500EB2B6D /* GetAllUserRegistrationDatesResponse.swift */; };
+		300CA7CF1C5D553A00EB2B6D /* GetUserRegistrationDateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6A41C5D548500EB2B6D /* GetUserRegistrationDateResponse.swift */; };
+		300CA7D01C5D553A00EB2B6D /* VerifyCredentialsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6A51C5D548500EB2B6D /* VerifyCredentialsResponse.swift */; };
+		300CA7D11C5D553A00EB2B6D /* Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6A71C5D548500EB2B6D /* Encoder.swift */; };
+		300CA7D21C5D554000EB2B6D /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA61B1C5D548400EB2B6D /* Client.swift */; };
+		300CA7D31C5D554000EB2B6D /* ClientRequestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA61C1C5D548400EB2B6D /* ClientRequestResult.swift */; };
+		300CA7D41C5D554000EB2B6D /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA61E1C5D548400EB2B6D /* Errors.swift */; };
+		300CA7D51C5D554000EB2B6D /* EventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA61F1C5D548400EB2B6D /* EventType.swift */; };
+		300CA7D61C5D554000EB2B6D /* Mailbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6201C5D548400EB2B6D /* Mailbox.swift */; };
+		300CA7D71C5D554000EB2B6D /* CommonMappableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6221C5D548400EB2B6D /* CommonMappableModel.swift */; };
+		300CA7D81C5D554000EB2B6D /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6231C5D548400EB2B6D /* Event.swift */; };
+		300CA7D91C5D554000EB2B6D /* EventCategoryChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6241C5D548400EB2B6D /* EventCategoryChange.swift */; };
+		300CA7DA1C5D554000EB2B6D /* EventLolCountUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6251C5D548400EB2B6D /* EventLolCountUpdate.swift */; };
+		300CA7DB1C5D554000EB2B6D /* EventNewPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6261C5D548400EB2B6D /* EventNewPost.swift */; };
+		300CA7DC1C5D554000EB2B6D /* EventServerMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6271C5D548400EB2B6D /* EventServerMessage.swift */; };
+		300CA7DD1C5D554000EB2B6D /* LOL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6281C5D548400EB2B6D /* LOL.swift */; };
+		300CA7DE1C5D554000EB2B6D /* MarkedPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6291C5D548400EB2B6D /* MarkedPost.swift */; };
+		300CA7DF1C5D554000EB2B6D /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA62A1C5D548400EB2B6D /* Message.swift */; };
+		300CA7E01C5D554000EB2B6D /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA62B1C5D548400EB2B6D /* Notification.swift */; };
+		300CA7E11C5D554000EB2B6D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA62C1C5D548400EB2B6D /* Post.swift */; };
+		300CA7E21C5D554000EB2B6D /* PostLineage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA62D1C5D548400EB2B6D /* PostLineage.swift */; };
+		300CA7E31C5D554000EB2B6D /* PostRelationship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA62E1C5D548400EB2B6D /* PostRelationship.swift */; };
+		300CA7E41C5D554000EB2B6D /* PostType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA62F1C5D548400EB2B6D /* PostType.swift */; };
+		300CA7E51C5D554000EB2B6D /* RootPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6301C5D548400EB2B6D /* RootPost.swift */; };
+		300CA7E61C5D554000EB2B6D /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6311C5D548400EB2B6D /* SearchResult.swift */; };
+		300CA7E71C5D554000EB2B6D /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6321C5D548400EB2B6D /* Thread.swift */; };
+		300CA7E81C5D554100EB2B6D /* ThreadPostCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6331C5D548400EB2B6D /* ThreadPostCount.swift */; };
+		300CA7E91C5D554100EB2B6D /* ThreadPostId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6341C5D548400EB2B6D /* ThreadPostId.swift */; };
+		300CA7EA1C5D554100EB2B6D /* ThreadType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6351C5D548400EB2B6D /* ThreadType.swift */; };
+		300CA7EB1C5D554100EB2B6D /* UserRegistrationDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6361C5D548400EB2B6D /* UserRegistrationDate.swift */; };
+		300CA7EC1C5D554100EB2B6D /* UserSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6371C5D548400EB2B6D /* UserSetup.swift */; };
+		300CA7ED1C5D554100EB2B6D /* MarkedPostType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6381C5D548400EB2B6D /* MarkedPostType.swift */; };
+		300CA7EE1C5D554100EB2B6D /* ModerationFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6391C5D548400EB2B6D /* ModerationFlag.swift */; };
+		300CA7EF1C5D554100EB2B6D /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA63B1C5D548400EB2B6D /* Account.swift */; };
+		300CA7F01C5D554100EB2B6D /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA63C1C5D548400EB2B6D /* API.swift */; };
+		300CA7F11C5D554100EB2B6D /* ClearMarkedPostsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA63E1C5D548400EB2B6D /* ClearMarkedPostsRequest.swift */; };
+		300CA7F21C5D554100EB2B6D /* GetCategoryFiltersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA63F1C5D548400EB2B6D /* GetCategoryFiltersRequest.swift */; };
+		300CA7F31C5D554100EB2B6D /* GetClientDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6401C5D548400EB2B6D /* GetClientDataRequest.swift */; };
+		300CA7F41C5D554100EB2B6D /* GetMarkedPostsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6411C5D548400EB2B6D /* GetMarkedPostsRequest.swift */; };
+		300CA7F51C5D554100EB2B6D /* MarkPostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6421C5D548400EB2B6D /* MarkPostRequest.swift */; };
+		300CA7F61C5D554100EB2B6D /* SetCategoryFiltersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6431C5D548400EB2B6D /* SetCategoryFiltersRequest.swift */; };
+		300CA7F71C5D554100EB2B6D /* SetClientDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6441C5D548400EB2B6D /* SetClientDataRequest.swift */; };
+		300CA7F81C5D554100EB2B6D /* BroadcastServerMessageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6461C5D548400EB2B6D /* BroadcastServerMessageRequest.swift */; };
+		300CA7F91C5D554100EB2B6D /* GetNewestEventIdRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6471C5D548400EB2B6D /* GetNewestEventIdRequest.swift */; };
+		300CA7FA1C5D554100EB2B6D /* PollForEventRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6481C5D548400EB2B6D /* PollForEventRequest.swift */; };
+		300CA7FB1C5D554100EB2B6D /* WaitForEventRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6491C5D548400EB2B6D /* WaitForEventRequest.swift */; };
+		300CA7FC1C5D554100EB2B6D /* DeleteMessageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA64B1C5D548400EB2B6D /* DeleteMessageRequest.swift */; };
+		300CA7FD1C5D554100EB2B6D /* GetMessageCountRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA64C1C5D548400EB2B6D /* GetMessageCountRequest.swift */; };
+		300CA7FE1C5D554100EB2B6D /* GetMessagesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA64D1C5D548400EB2B6D /* GetMessagesRequest.swift */; };
+		300CA7FF1C5D554100EB2B6D /* MarkMessageReadRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA64E1C5D548400EB2B6D /* MarkMessageReadRequest.swift */; };
+		300CA8001C5D554100EB2B6D /* SendMessageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA64F1C5D548400EB2B6D /* SendMessageRequest.swift */; };
+		300CA8011C5D554100EB2B6D /* DetachAccountRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6511C5D548400EB2B6D /* DetachAccountRequest.swift */; };
+		300CA8021C5D554100EB2B6D /* GenerateIdRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6521C5D548400EB2B6D /* GenerateIdRequest.swift */; };
+		300CA8031C5D554100EB2B6D /* GetUserSetupRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6531C5D548400EB2B6D /* GetUserSetupRequest.swift */; };
+		300CA8041C5D554100EB2B6D /* RegisterNotifierClientRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6541C5D548400EB2B6D /* RegisterNotifierClientRequest.swift */; };
+		300CA8051C5D554100EB2B6D /* RegisterRichClientRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6551C5D548400EB2B6D /* RegisterRichClientRequest.swift */; };
+		300CA8061C5D554100EB2B6D /* SetUserSetupRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6561C5D548400EB2B6D /* SetUserSetupRequest.swift */; };
+		300CA8071C5D554100EB2B6D /* WaitForNotificationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6571C5D548400EB2B6D /* WaitForNotificationRequest.swift */; };
+		300CA8081C5D554100EB2B6D /* GetNewestPostInfoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6591C5D548500EB2B6D /* GetNewestPostInfoRequest.swift */; };
+		300CA8091C5D554100EB2B6D /* GetParentIdRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA65A1C5D548500EB2B6D /* GetParentIdRequest.swift */; };
+		300CA80A1C5D554100EB2B6D /* GetPostLineageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA65B1C5D548500EB2B6D /* GetPostLineageRequest.swift */; };
+		300CA80B1C5D554100EB2B6D /* GetPostRangeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA65C1C5D548500EB2B6D /* GetPostRangeRequest.swift */; };
+		300CA80C1C5D554100EB2B6D /* GetPostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA65D1C5D548500EB2B6D /* GetPostRequest.swift */; };
+		300CA80D1C5D554100EB2B6D /* RequestReindexRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA65E1C5D548500EB2B6D /* RequestReindexRequest.swift */; };
+		300CA80E1C5D554100EB2B6D /* SearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA65F1C5D548500EB2B6D /* SearchRequest.swift */; };
+		300CA80F1C5D554100EB2B6D /* SetPostCategoryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6601C5D548500EB2B6D /* SetPostCategoryRequest.swift */; };
+		300CA8101C5D554100EB2B6D /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6611C5D548500EB2B6D /* Request.swift */; };
+		300CA8111C5D554100EB2B6D /* GetChattyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6631C5D548500EB2B6D /* GetChattyRequest.swift */; };
+		300CA8121C5D554100EB2B6D /* GetChattyRootPostsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6641C5D548500EB2B6D /* GetChattyRootPostsRequest.swift */; };
+		300CA8131C5D554100EB2B6D /* GetSubthreadRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6651C5D548500EB2B6D /* GetSubthreadRequest.swift */; };
+		300CA8141C5D554100EB2B6D /* GetThreadPostCountRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6661C5D548500EB2B6D /* GetThreadPostCountRequest.swift */; };
+		300CA8151C5D554100EB2B6D /* GetThreadPostIdsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6671C5D548500EB2B6D /* GetThreadPostIdsRequest.swift */; };
+		300CA8161C5D554100EB2B6D /* GetThreadRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6681C5D548500EB2B6D /* GetThreadRequest.swift */; };
+		300CA8171C5D554100EB2B6D /* CheckConnectionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA66A1C5D548500EB2B6D /* CheckConnectionRequest.swift */; };
+		300CA8181C5D554100EB2B6D /* GetAllTenYearUsersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA66B1C5D548500EB2B6D /* GetAllTenYearUsersRequest.swift */; };
+		300CA8191C5D554100EB2B6D /* GetAllUserRegistrationDatesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA66C1C5D548500EB2B6D /* GetAllUserRegistrationDatesRequest.swift */; };
+		300CA81A1C5D554100EB2B6D /* GetUserRegistrationDateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA66D1C5D548500EB2B6D /* GetUserRegistrationDateRequest.swift */; };
+		300CA81B1C5D554100EB2B6D /* VerifyCredentialsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA66E1C5D548500EB2B6D /* VerifyCredentialsRequest.swift */; };
+		300CA81C1C5D554100EB2B6D /* ClearMarkedPostsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6711C5D548500EB2B6D /* ClearMarkedPostsResponse.swift */; };
+		300CA81D1C5D554100EB2B6D /* GetCategoryFiltersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6721C5D548500EB2B6D /* GetCategoryFiltersResponse.swift */; };
+		300CA81E1C5D554100EB2B6D /* GetClientDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6731C5D548500EB2B6D /* GetClientDataResponse.swift */; };
+		300CA81F1C5D554100EB2B6D /* GetMarkedPostsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6741C5D548500EB2B6D /* GetMarkedPostsResponse.swift */; };
+		300CA8201C5D554100EB2B6D /* MarkPostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6751C5D548500EB2B6D /* MarkPostResponse.swift */; };
+		300CA8211C5D554100EB2B6D /* SetCategoryFiltersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6761C5D548500EB2B6D /* SetCategoryFiltersResponse.swift */; };
+		300CA8221C5D554100EB2B6D /* SetClientDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6771C5D548500EB2B6D /* SetClientDataResponse.swift */; };
+		300CA8231C5D554100EB2B6D /* CommonSuccessResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6791C5D548500EB2B6D /* CommonSuccessResponse.swift */; };
+		300CA8241C5D554100EB2B6D /* ApiErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA67B1C5D548500EB2B6D /* ApiErrorResponse.swift */; };
+		300CA8251C5D554100EB2B6D /* BroadcastServerMessageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA67D1C5D548500EB2B6D /* BroadcastServerMessageResponse.swift */; };
+		300CA8261C5D554100EB2B6D /* GetNewestEventIdResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA67E1C5D548500EB2B6D /* GetNewestEventIdResponse.swift */; };
+		300CA8271C5D554100EB2B6D /* PollForEventResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA67F1C5D548500EB2B6D /* PollForEventResponse.swift */; };
+		300CA8281C5D554100EB2B6D /* WaitForEventResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6801C5D548500EB2B6D /* WaitForEventResponse.swift */; };
+		300CA8291C5D554100EB2B6D /* DeleteMessageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6821C5D548500EB2B6D /* DeleteMessageResponse.swift */; };
+		300CA82A1C5D554100EB2B6D /* GetMessageCountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6831C5D548500EB2B6D /* GetMessageCountResponse.swift */; };
+		300CA82B1C5D554100EB2B6D /* GetMessagesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6841C5D548500EB2B6D /* GetMessagesResponse.swift */; };
+		300CA82C1C5D554100EB2B6D /* MarkMessageReadResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6851C5D548500EB2B6D /* MarkMessageReadResponse.swift */; };
+		300CA82D1C5D554200EB2B6D /* SendMessageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6861C5D548500EB2B6D /* SendMessageResponse.swift */; };
+		300CA82E1C5D554200EB2B6D /* DetachAccountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6881C5D548500EB2B6D /* DetachAccountResponse.swift */; };
+		300CA82F1C5D554200EB2B6D /* GenerateIdResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6891C5D548500EB2B6D /* GenerateIdResponse.swift */; };
+		300CA8301C5D554200EB2B6D /* GetUserSetupResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA68A1C5D548500EB2B6D /* GetUserSetupResponse.swift */; };
+		300CA8311C5D554200EB2B6D /* RegisterNotifierClientResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA68B1C5D548500EB2B6D /* RegisterNotifierClientResponse.swift */; };
+		300CA8321C5D554200EB2B6D /* RegisterRichClientResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA68C1C5D548500EB2B6D /* RegisterRichClientResponse.swift */; };
+		300CA8331C5D554200EB2B6D /* SetUserSetupResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA68D1C5D548500EB2B6D /* SetUserSetupResponse.swift */; };
+		300CA8341C5D554200EB2B6D /* WaitForNotificationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA68E1C5D548500EB2B6D /* WaitForNotificationResponse.swift */; };
+		300CA8351C5D554200EB2B6D /* GetNewestPostInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6901C5D548500EB2B6D /* GetNewestPostInfoResponse.swift */; };
+		300CA8361C5D554200EB2B6D /* GetParentIdResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6911C5D548500EB2B6D /* GetParentIdResponse.swift */; };
+		300CA8371C5D554200EB2B6D /* GetPostLineageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6921C5D548500EB2B6D /* GetPostLineageResponse.swift */; };
+		300CA8381C5D554200EB2B6D /* GetPostRangeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6931C5D548500EB2B6D /* GetPostRangeResponse.swift */; };
+		300CA8391C5D554200EB2B6D /* GetPostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6941C5D548500EB2B6D /* GetPostResponse.swift */; };
+		300CA83A1C5D554200EB2B6D /* RequestReindexResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6951C5D548500EB2B6D /* RequestReindexResponse.swift */; };
+		300CA83B1C5D554200EB2B6D /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6961C5D548500EB2B6D /* SearchResponse.swift */; };
+		300CA83C1C5D554200EB2B6D /* SetPostCategoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6971C5D548500EB2B6D /* SetPostCategoryResponse.swift */; };
+		300CA83D1C5D554200EB2B6D /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6981C5D548500EB2B6D /* Response.swift */; };
+		300CA83E1C5D554200EB2B6D /* GetChattyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA69A1C5D548500EB2B6D /* GetChattyResponse.swift */; };
+		300CA83F1C5D554200EB2B6D /* GetChattyRootPostsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA69B1C5D548500EB2B6D /* GetChattyRootPostsResponse.swift */; };
+		300CA8401C5D554200EB2B6D /* GetSubthreadResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA69C1C5D548500EB2B6D /* GetSubthreadResponse.swift */; };
+		300CA8411C5D554200EB2B6D /* GetThreadPostCountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA69D1C5D548500EB2B6D /* GetThreadPostCountResponse.swift */; };
+		300CA8421C5D554200EB2B6D /* GetThreadPostIdsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA69E1C5D548500EB2B6D /* GetThreadPostIdsResponse.swift */; };
+		300CA8431C5D554200EB2B6D /* GetThreadResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA69F1C5D548500EB2B6D /* GetThreadResponse.swift */; };
+		300CA8441C5D554200EB2B6D /* CheckConnectionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6A11C5D548500EB2B6D /* CheckConnectionResponse.swift */; };
+		300CA8451C5D554200EB2B6D /* GetAllTenYearUsersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6A21C5D548500EB2B6D /* GetAllTenYearUsersResponse.swift */; };
+		300CA8461C5D554200EB2B6D /* GetAllUserRegistrationDatesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6A31C5D548500EB2B6D /* GetAllUserRegistrationDatesResponse.swift */; };
+		300CA8471C5D554200EB2B6D /* GetUserRegistrationDateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6A41C5D548500EB2B6D /* GetUserRegistrationDateResponse.swift */; };
+		300CA8481C5D554200EB2B6D /* VerifyCredentialsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6A51C5D548500EB2B6D /* VerifyCredentialsResponse.swift */; };
+		300CA8491C5D554200EB2B6D /* Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6A71C5D548500EB2B6D /* Encoder.swift */; };
+		3041337B1C5E2DB8003168C6 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA61B1C5D548400EB2B6D /* Client.swift */; };
+		3041337C1C5E2DB8003168C6 /* ClientRequestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA61C1C5D548400EB2B6D /* ClientRequestResult.swift */; };
+		3041337D1C5E2DB8003168C6 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA61E1C5D548400EB2B6D /* Errors.swift */; };
+		3041337E1C5E2DB8003168C6 /* EventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA61F1C5D548400EB2B6D /* EventType.swift */; };
+		3041337F1C5E2DB8003168C6 /* Mailbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6201C5D548400EB2B6D /* Mailbox.swift */; };
+		304133801C5E2DB8003168C6 /* CommonMappableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6221C5D548400EB2B6D /* CommonMappableModel.swift */; };
+		304133811C5E2DB8003168C6 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6231C5D548400EB2B6D /* Event.swift */; };
+		304133821C5E2DB8003168C6 /* EventCategoryChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6241C5D548400EB2B6D /* EventCategoryChange.swift */; };
+		304133831C5E2DB8003168C6 /* EventLolCountUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6251C5D548400EB2B6D /* EventLolCountUpdate.swift */; };
+		304133841C5E2DB8003168C6 /* EventNewPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6261C5D548400EB2B6D /* EventNewPost.swift */; };
+		304133851C5E2DB8003168C6 /* EventServerMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6271C5D548400EB2B6D /* EventServerMessage.swift */; };
+		304133861C5E2DB8003168C6 /* LOL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6281C5D548400EB2B6D /* LOL.swift */; };
+		304133871C5E2DB8003168C6 /* MarkedPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6291C5D548400EB2B6D /* MarkedPost.swift */; };
+		304133881C5E2DB8003168C6 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA62A1C5D548400EB2B6D /* Message.swift */; };
+		304133891C5E2DB8003168C6 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA62B1C5D548400EB2B6D /* Notification.swift */; };
+		3041338A1C5E2DB8003168C6 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA62C1C5D548400EB2B6D /* Post.swift */; };
+		3041338B1C5E2DB8003168C6 /* PostLineage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA62D1C5D548400EB2B6D /* PostLineage.swift */; };
+		3041338C1C5E2DB8003168C6 /* PostRelationship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA62E1C5D548400EB2B6D /* PostRelationship.swift */; };
+		3041338D1C5E2DB8003168C6 /* PostType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA62F1C5D548400EB2B6D /* PostType.swift */; };
+		3041338E1C5E2DB8003168C6 /* RootPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6301C5D548400EB2B6D /* RootPost.swift */; };
+		3041338F1C5E2DB8003168C6 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6311C5D548400EB2B6D /* SearchResult.swift */; };
+		304133901C5E2DB8003168C6 /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6321C5D548400EB2B6D /* Thread.swift */; };
+		304133911C5E2DB8003168C6 /* ThreadPostCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6331C5D548400EB2B6D /* ThreadPostCount.swift */; };
+		304133921C5E2DB8003168C6 /* ThreadPostId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6341C5D548400EB2B6D /* ThreadPostId.swift */; };
+		304133931C5E2DB8003168C6 /* ThreadType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6351C5D548400EB2B6D /* ThreadType.swift */; };
+		304133941C5E2DB8003168C6 /* UserRegistrationDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6361C5D548400EB2B6D /* UserRegistrationDate.swift */; };
+		304133951C5E2DB8003168C6 /* UserSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6371C5D548400EB2B6D /* UserSetup.swift */; };
+		304133961C5E2DB8003168C6 /* MarkedPostType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6381C5D548400EB2B6D /* MarkedPostType.swift */; };
+		304133971C5E2DB8003168C6 /* ModerationFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6391C5D548400EB2B6D /* ModerationFlag.swift */; };
+		304133981C5E2DB8003168C6 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA63B1C5D548400EB2B6D /* Account.swift */; };
+		304133991C5E2DB8003168C6 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA63C1C5D548400EB2B6D /* API.swift */; };
+		3041339A1C5E2DB8003168C6 /* ClearMarkedPostsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA63E1C5D548400EB2B6D /* ClearMarkedPostsRequest.swift */; };
+		3041339B1C5E2DB8003168C6 /* GetCategoryFiltersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA63F1C5D548400EB2B6D /* GetCategoryFiltersRequest.swift */; };
+		3041339C1C5E2DB8003168C6 /* GetClientDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6401C5D548400EB2B6D /* GetClientDataRequest.swift */; };
+		3041339D1C5E2DB8003168C6 /* GetMarkedPostsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6411C5D548400EB2B6D /* GetMarkedPostsRequest.swift */; };
+		3041339E1C5E2DB8003168C6 /* MarkPostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6421C5D548400EB2B6D /* MarkPostRequest.swift */; };
+		3041339F1C5E2DB8003168C6 /* SetCategoryFiltersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6431C5D548400EB2B6D /* SetCategoryFiltersRequest.swift */; };
+		304133A01C5E2DB8003168C6 /* SetClientDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6441C5D548400EB2B6D /* SetClientDataRequest.swift */; };
+		304133A11C5E2DB8003168C6 /* BroadcastServerMessageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6461C5D548400EB2B6D /* BroadcastServerMessageRequest.swift */; };
+		304133A21C5E2DB8003168C6 /* GetNewestEventIdRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6471C5D548400EB2B6D /* GetNewestEventIdRequest.swift */; };
+		304133A31C5E2DB8003168C6 /* PollForEventRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6481C5D548400EB2B6D /* PollForEventRequest.swift */; };
+		304133A41C5E2DB8003168C6 /* WaitForEventRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6491C5D548400EB2B6D /* WaitForEventRequest.swift */; };
+		304133A51C5E2DB8003168C6 /* DeleteMessageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA64B1C5D548400EB2B6D /* DeleteMessageRequest.swift */; };
+		304133A61C5E2DB8003168C6 /* GetMessageCountRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA64C1C5D548400EB2B6D /* GetMessageCountRequest.swift */; };
+		304133A71C5E2DB8003168C6 /* GetMessagesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA64D1C5D548400EB2B6D /* GetMessagesRequest.swift */; };
+		304133A81C5E2DB8003168C6 /* MarkMessageReadRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA64E1C5D548400EB2B6D /* MarkMessageReadRequest.swift */; };
+		304133A91C5E2DB8003168C6 /* SendMessageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA64F1C5D548400EB2B6D /* SendMessageRequest.swift */; };
+		304133AA1C5E2DB8003168C6 /* DetachAccountRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6511C5D548400EB2B6D /* DetachAccountRequest.swift */; };
+		304133AB1C5E2DB8003168C6 /* GenerateIdRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6521C5D548400EB2B6D /* GenerateIdRequest.swift */; };
+		304133AC1C5E2DB8003168C6 /* GetUserSetupRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6531C5D548400EB2B6D /* GetUserSetupRequest.swift */; };
+		304133AD1C5E2DB8003168C6 /* RegisterNotifierClientRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6541C5D548400EB2B6D /* RegisterNotifierClientRequest.swift */; };
+		304133AE1C5E2DB8003168C6 /* RegisterRichClientRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6551C5D548400EB2B6D /* RegisterRichClientRequest.swift */; };
+		304133AF1C5E2DB8003168C6 /* SetUserSetupRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6561C5D548400EB2B6D /* SetUserSetupRequest.swift */; };
+		304133B01C5E2DB8003168C6 /* WaitForNotificationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6571C5D548400EB2B6D /* WaitForNotificationRequest.swift */; };
+		304133B11C5E2DB8003168C6 /* GetNewestPostInfoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6591C5D548500EB2B6D /* GetNewestPostInfoRequest.swift */; };
+		304133B21C5E2DB8003168C6 /* GetParentIdRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA65A1C5D548500EB2B6D /* GetParentIdRequest.swift */; };
+		304133B31C5E2DB8003168C6 /* GetPostLineageRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA65B1C5D548500EB2B6D /* GetPostLineageRequest.swift */; };
+		304133B41C5E2DB8003168C6 /* GetPostRangeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA65C1C5D548500EB2B6D /* GetPostRangeRequest.swift */; };
+		304133B51C5E2DB8003168C6 /* GetPostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA65D1C5D548500EB2B6D /* GetPostRequest.swift */; };
+		304133B61C5E2DB8003168C6 /* RequestReindexRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA65E1C5D548500EB2B6D /* RequestReindexRequest.swift */; };
+		304133B71C5E2DB8003168C6 /* SearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA65F1C5D548500EB2B6D /* SearchRequest.swift */; };
+		304133B81C5E2DB8003168C6 /* SetPostCategoryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6601C5D548500EB2B6D /* SetPostCategoryRequest.swift */; };
+		304133B91C5E2DB8003168C6 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6611C5D548500EB2B6D /* Request.swift */; };
+		304133BA1C5E2DB8003168C6 /* GetChattyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6631C5D548500EB2B6D /* GetChattyRequest.swift */; };
+		304133BB1C5E2DB8003168C6 /* GetChattyRootPostsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6641C5D548500EB2B6D /* GetChattyRootPostsRequest.swift */; };
+		304133BC1C5E2DB8003168C6 /* GetSubthreadRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6651C5D548500EB2B6D /* GetSubthreadRequest.swift */; };
+		304133BD1C5E2DB8003168C6 /* GetThreadPostCountRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6661C5D548500EB2B6D /* GetThreadPostCountRequest.swift */; };
+		304133BE1C5E2DB8003168C6 /* GetThreadPostIdsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6671C5D548500EB2B6D /* GetThreadPostIdsRequest.swift */; };
+		304133BF1C5E2DB8003168C6 /* GetThreadRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6681C5D548500EB2B6D /* GetThreadRequest.swift */; };
+		304133C01C5E2DB8003168C6 /* CheckConnectionRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA66A1C5D548500EB2B6D /* CheckConnectionRequest.swift */; };
+		304133C11C5E2DB8003168C6 /* GetAllTenYearUsersRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA66B1C5D548500EB2B6D /* GetAllTenYearUsersRequest.swift */; };
+		304133C21C5E2DB8003168C6 /* GetAllUserRegistrationDatesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA66C1C5D548500EB2B6D /* GetAllUserRegistrationDatesRequest.swift */; };
+		304133C31C5E2DB8003168C6 /* GetUserRegistrationDateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA66D1C5D548500EB2B6D /* GetUserRegistrationDateRequest.swift */; };
+		304133C41C5E2DB8003168C6 /* VerifyCredentialsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA66E1C5D548500EB2B6D /* VerifyCredentialsRequest.swift */; };
+		304133C51C5E2DB8003168C6 /* ClearMarkedPostsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6711C5D548500EB2B6D /* ClearMarkedPostsResponse.swift */; };
+		304133C61C5E2DB8003168C6 /* GetCategoryFiltersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6721C5D548500EB2B6D /* GetCategoryFiltersResponse.swift */; };
+		304133C71C5E2DB8003168C6 /* GetClientDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6731C5D548500EB2B6D /* GetClientDataResponse.swift */; };
+		304133C81C5E2DB8003168C6 /* GetMarkedPostsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6741C5D548500EB2B6D /* GetMarkedPostsResponse.swift */; };
+		304133C91C5E2DB8003168C6 /* MarkPostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6751C5D548500EB2B6D /* MarkPostResponse.swift */; };
+		304133CA1C5E2DB8003168C6 /* SetCategoryFiltersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6761C5D548500EB2B6D /* SetCategoryFiltersResponse.swift */; };
+		304133CB1C5E2DB8003168C6 /* SetClientDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6771C5D548500EB2B6D /* SetClientDataResponse.swift */; };
+		304133CC1C5E2DB8003168C6 /* CommonSuccessResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6791C5D548500EB2B6D /* CommonSuccessResponse.swift */; };
+		304133CD1C5E2DB8003168C6 /* ApiErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA67B1C5D548500EB2B6D /* ApiErrorResponse.swift */; };
+		304133CE1C5E2DB8003168C6 /* BroadcastServerMessageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA67D1C5D548500EB2B6D /* BroadcastServerMessageResponse.swift */; };
+		304133CF1C5E2DB8003168C6 /* GetNewestEventIdResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA67E1C5D548500EB2B6D /* GetNewestEventIdResponse.swift */; };
+		304133D01C5E2DB8003168C6 /* PollForEventResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA67F1C5D548500EB2B6D /* PollForEventResponse.swift */; };
+		304133D11C5E2DB8003168C6 /* WaitForEventResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6801C5D548500EB2B6D /* WaitForEventResponse.swift */; };
+		304133D21C5E2DB8003168C6 /* DeleteMessageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6821C5D548500EB2B6D /* DeleteMessageResponse.swift */; };
+		304133D31C5E2DB8003168C6 /* GetMessageCountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6831C5D548500EB2B6D /* GetMessageCountResponse.swift */; };
+		304133D41C5E2DB8003168C6 /* GetMessagesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6841C5D548500EB2B6D /* GetMessagesResponse.swift */; };
+		304133D51C5E2DB8003168C6 /* MarkMessageReadResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6851C5D548500EB2B6D /* MarkMessageReadResponse.swift */; };
+		304133D61C5E2DB8003168C6 /* SendMessageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6861C5D548500EB2B6D /* SendMessageResponse.swift */; };
+		304133D71C5E2DB8003168C6 /* DetachAccountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6881C5D548500EB2B6D /* DetachAccountResponse.swift */; };
+		304133D81C5E2DB8003168C6 /* GenerateIdResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6891C5D548500EB2B6D /* GenerateIdResponse.swift */; };
+		304133D91C5E2DB8003168C6 /* GetUserSetupResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA68A1C5D548500EB2B6D /* GetUserSetupResponse.swift */; };
+		304133DA1C5E2DB8003168C6 /* RegisterNotifierClientResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA68B1C5D548500EB2B6D /* RegisterNotifierClientResponse.swift */; };
+		304133DB1C5E2DB8003168C6 /* RegisterRichClientResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA68C1C5D548500EB2B6D /* RegisterRichClientResponse.swift */; };
+		304133DC1C5E2DB8003168C6 /* SetUserSetupResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA68D1C5D548500EB2B6D /* SetUserSetupResponse.swift */; };
+		304133DD1C5E2DB8003168C6 /* WaitForNotificationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA68E1C5D548500EB2B6D /* WaitForNotificationResponse.swift */; };
+		304133DE1C5E2DB8003168C6 /* GetNewestPostInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6901C5D548500EB2B6D /* GetNewestPostInfoResponse.swift */; };
+		304133DF1C5E2DB8003168C6 /* GetParentIdResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6911C5D548500EB2B6D /* GetParentIdResponse.swift */; };
+		304133E01C5E2DB8003168C6 /* GetPostLineageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6921C5D548500EB2B6D /* GetPostLineageResponse.swift */; };
+		304133E11C5E2DB8003168C6 /* GetPostRangeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6931C5D548500EB2B6D /* GetPostRangeResponse.swift */; };
+		304133E21C5E2DB8003168C6 /* GetPostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6941C5D548500EB2B6D /* GetPostResponse.swift */; };
+		304133E31C5E2DB8003168C6 /* RequestReindexResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6951C5D548500EB2B6D /* RequestReindexResponse.swift */; };
+		304133E41C5E2DB8003168C6 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6961C5D548500EB2B6D /* SearchResponse.swift */; };
+		304133E51C5E2DB8003168C6 /* SetPostCategoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6971C5D548500EB2B6D /* SetPostCategoryResponse.swift */; };
+		304133E61C5E2DB8003168C6 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6981C5D548500EB2B6D /* Response.swift */; };
+		304133E71C5E2DB8003168C6 /* GetChattyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA69A1C5D548500EB2B6D /* GetChattyResponse.swift */; };
+		304133E81C5E2DB8003168C6 /* GetChattyRootPostsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA69B1C5D548500EB2B6D /* GetChattyRootPostsResponse.swift */; };
+		304133E91C5E2DB8003168C6 /* GetSubthreadResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA69C1C5D548500EB2B6D /* GetSubthreadResponse.swift */; };
+		304133EA1C5E2DB8003168C6 /* GetThreadPostCountResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA69D1C5D548500EB2B6D /* GetThreadPostCountResponse.swift */; };
+		304133EB1C5E2DB8003168C6 /* GetThreadPostIdsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA69E1C5D548500EB2B6D /* GetThreadPostIdsResponse.swift */; };
+		304133EC1C5E2DB8003168C6 /* GetThreadResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA69F1C5D548500EB2B6D /* GetThreadResponse.swift */; };
+		304133ED1C5E2DB8003168C6 /* CheckConnectionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6A11C5D548500EB2B6D /* CheckConnectionResponse.swift */; };
+		304133EE1C5E2DB8003168C6 /* GetAllTenYearUsersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6A21C5D548500EB2B6D /* GetAllTenYearUsersResponse.swift */; };
+		304133EF1C5E2DB8003168C6 /* GetAllUserRegistrationDatesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6A31C5D548500EB2B6D /* GetAllUserRegistrationDatesResponse.swift */; };
+		304133F01C5E2DB8003168C6 /* GetUserRegistrationDateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6A41C5D548500EB2B6D /* GetUserRegistrationDateResponse.swift */; };
+		304133F11C5E2DB8003168C6 /* VerifyCredentialsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6A51C5D548500EB2B6D /* VerifyCredentialsResponse.swift */; };
+		304133F21C5E2DB8003168C6 /* Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6A71C5D548500EB2B6D /* Encoder.swift */; };
+		304133F31C5E2DC6003168C6 /* SwiftChatty.h in Headers */ = {isa = PBXBuildFile; fileRef = 300CA6031C5D546100EB2B6D /* SwiftChatty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E84C4AA08D6436A789F8A39 /* Pods_SwiftChatty_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 559045F942EA21133F3601DA /* Pods_SwiftChatty_tvOS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		300CA60C1C5D546100EB2B6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 300CA5F71C5D546100EB2B6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 300CA5FF1C5D546100EB2B6D;
+			remoteInfo = SwiftChatty;
+		};
+		300CA7301C5D54B700EB2B6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 300CA5F71C5D546100EB2B6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 300CA7241C5D54B700EB2B6D;
+			remoteInfo = "SwiftChatty-OSX";
+		};
+		300CA74C1C5D54CA00EB2B6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 300CA5F71C5D546100EB2B6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 300CA7401C5D54CA00EB2B6D;
+			remoteInfo = "SwiftChatty-tvOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06C276D8B00BFEF1A3908149 /* Pods_SwiftChatty_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftChatty_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1737E3BC39F48A8914266419 /* Pods_SwiftChatty_OSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftChatty_OSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23192838D1B85655D36EB19E /* Pods-SwiftChatty-OSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftChatty-OSX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftChatty-OSX/Pods-SwiftChatty-OSX.debug.xcconfig"; sourceTree = "<group>"; };
+		274922CEC0CF01743FD53CAE /* Pods-SwiftChatty-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftChatty-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftChatty-iOS/Pods-SwiftChatty-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		300CA6001C5D546100EB2B6D /* SwiftChatty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftChatty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		300CA6031C5D546100EB2B6D /* SwiftChatty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftChatty.h; sourceTree = "<group>"; };
+		300CA6051C5D546100EB2B6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		300CA60A1C5D546100EB2B6D /* SwiftChatty-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftChatty-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		300CA60F1C5D546100EB2B6D /* SwiftChattyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftChattyTests.swift; sourceTree = "<group>"; };
+		300CA6111C5D546100EB2B6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		300CA61B1C5D548400EB2B6D /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		300CA61C1C5D548400EB2B6D /* ClientRequestResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientRequestResult.swift; sourceTree = "<group>"; };
+		300CA61E1C5D548400EB2B6D /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		300CA61F1C5D548400EB2B6D /* EventType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventType.swift; sourceTree = "<group>"; };
+		300CA6201C5D548400EB2B6D /* Mailbox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mailbox.swift; sourceTree = "<group>"; };
+		300CA6221C5D548400EB2B6D /* CommonMappableModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonMappableModel.swift; sourceTree = "<group>"; };
+		300CA6231C5D548400EB2B6D /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		300CA6241C5D548400EB2B6D /* EventCategoryChange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCategoryChange.swift; sourceTree = "<group>"; };
+		300CA6251C5D548400EB2B6D /* EventLolCountUpdate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventLolCountUpdate.swift; sourceTree = "<group>"; };
+		300CA6261C5D548400EB2B6D /* EventNewPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventNewPost.swift; sourceTree = "<group>"; };
+		300CA6271C5D548400EB2B6D /* EventServerMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventServerMessage.swift; sourceTree = "<group>"; };
+		300CA6281C5D548400EB2B6D /* LOL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LOL.swift; sourceTree = "<group>"; };
+		300CA6291C5D548400EB2B6D /* MarkedPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkedPost.swift; sourceTree = "<group>"; };
+		300CA62A1C5D548400EB2B6D /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		300CA62B1C5D548400EB2B6D /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		300CA62C1C5D548400EB2B6D /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		300CA62D1C5D548400EB2B6D /* PostLineage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostLineage.swift; sourceTree = "<group>"; };
+		300CA62E1C5D548400EB2B6D /* PostRelationship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostRelationship.swift; sourceTree = "<group>"; };
+		300CA62F1C5D548400EB2B6D /* PostType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostType.swift; sourceTree = "<group>"; };
+		300CA6301C5D548400EB2B6D /* RootPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootPost.swift; sourceTree = "<group>"; };
+		300CA6311C5D548400EB2B6D /* SearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		300CA6321C5D548400EB2B6D /* Thread.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Thread.swift; sourceTree = "<group>"; };
+		300CA6331C5D548400EB2B6D /* ThreadPostCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadPostCount.swift; sourceTree = "<group>"; };
+		300CA6341C5D548400EB2B6D /* ThreadPostId.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadPostId.swift; sourceTree = "<group>"; };
+		300CA6351C5D548400EB2B6D /* ThreadType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreadType.swift; sourceTree = "<group>"; };
+		300CA6361C5D548400EB2B6D /* UserRegistrationDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRegistrationDate.swift; sourceTree = "<group>"; };
+		300CA6371C5D548400EB2B6D /* UserSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSetup.swift; sourceTree = "<group>"; };
+		300CA6381C5D548400EB2B6D /* MarkedPostType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkedPostType.swift; sourceTree = "<group>"; };
+		300CA6391C5D548400EB2B6D /* ModerationFlag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModerationFlag.swift; sourceTree = "<group>"; };
+		300CA63B1C5D548400EB2B6D /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		300CA63C1C5D548400EB2B6D /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		300CA63E1C5D548400EB2B6D /* ClearMarkedPostsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClearMarkedPostsRequest.swift; sourceTree = "<group>"; };
+		300CA63F1C5D548400EB2B6D /* GetCategoryFiltersRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCategoryFiltersRequest.swift; sourceTree = "<group>"; };
+		300CA6401C5D548400EB2B6D /* GetClientDataRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetClientDataRequest.swift; sourceTree = "<group>"; };
+		300CA6411C5D548400EB2B6D /* GetMarkedPostsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetMarkedPostsRequest.swift; sourceTree = "<group>"; };
+		300CA6421C5D548400EB2B6D /* MarkPostRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkPostRequest.swift; sourceTree = "<group>"; };
+		300CA6431C5D548400EB2B6D /* SetCategoryFiltersRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetCategoryFiltersRequest.swift; sourceTree = "<group>"; };
+		300CA6441C5D548400EB2B6D /* SetClientDataRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetClientDataRequest.swift; sourceTree = "<group>"; };
+		300CA6461C5D548400EB2B6D /* BroadcastServerMessageRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BroadcastServerMessageRequest.swift; sourceTree = "<group>"; };
+		300CA6471C5D548400EB2B6D /* GetNewestEventIdRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetNewestEventIdRequest.swift; sourceTree = "<group>"; };
+		300CA6481C5D548400EB2B6D /* PollForEventRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollForEventRequest.swift; sourceTree = "<group>"; };
+		300CA6491C5D548400EB2B6D /* WaitForEventRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaitForEventRequest.swift; sourceTree = "<group>"; };
+		300CA64B1C5D548400EB2B6D /* DeleteMessageRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteMessageRequest.swift; sourceTree = "<group>"; };
+		300CA64C1C5D548400EB2B6D /* GetMessageCountRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetMessageCountRequest.swift; sourceTree = "<group>"; };
+		300CA64D1C5D548400EB2B6D /* GetMessagesRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetMessagesRequest.swift; sourceTree = "<group>"; };
+		300CA64E1C5D548400EB2B6D /* MarkMessageReadRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkMessageReadRequest.swift; sourceTree = "<group>"; };
+		300CA64F1C5D548400EB2B6D /* SendMessageRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendMessageRequest.swift; sourceTree = "<group>"; };
+		300CA6511C5D548400EB2B6D /* DetachAccountRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetachAccountRequest.swift; sourceTree = "<group>"; };
+		300CA6521C5D548400EB2B6D /* GenerateIdRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateIdRequest.swift; sourceTree = "<group>"; };
+		300CA6531C5D548400EB2B6D /* GetUserSetupRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetUserSetupRequest.swift; sourceTree = "<group>"; };
+		300CA6541C5D548400EB2B6D /* RegisterNotifierClientRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterNotifierClientRequest.swift; sourceTree = "<group>"; };
+		300CA6551C5D548400EB2B6D /* RegisterRichClientRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterRichClientRequest.swift; sourceTree = "<group>"; };
+		300CA6561C5D548400EB2B6D /* SetUserSetupRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetUserSetupRequest.swift; sourceTree = "<group>"; };
+		300CA6571C5D548400EB2B6D /* WaitForNotificationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaitForNotificationRequest.swift; sourceTree = "<group>"; };
+		300CA6591C5D548500EB2B6D /* GetNewestPostInfoRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetNewestPostInfoRequest.swift; sourceTree = "<group>"; };
+		300CA65A1C5D548500EB2B6D /* GetParentIdRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetParentIdRequest.swift; sourceTree = "<group>"; };
+		300CA65B1C5D548500EB2B6D /* GetPostLineageRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetPostLineageRequest.swift; sourceTree = "<group>"; };
+		300CA65C1C5D548500EB2B6D /* GetPostRangeRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetPostRangeRequest.swift; sourceTree = "<group>"; };
+		300CA65D1C5D548500EB2B6D /* GetPostRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetPostRequest.swift; sourceTree = "<group>"; };
+		300CA65E1C5D548500EB2B6D /* RequestReindexRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestReindexRequest.swift; sourceTree = "<group>"; };
+		300CA65F1C5D548500EB2B6D /* SearchRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchRequest.swift; sourceTree = "<group>"; };
+		300CA6601C5D548500EB2B6D /* SetPostCategoryRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPostCategoryRequest.swift; sourceTree = "<group>"; };
+		300CA6611C5D548500EB2B6D /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		300CA6631C5D548500EB2B6D /* GetChattyRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetChattyRequest.swift; sourceTree = "<group>"; };
+		300CA6641C5D548500EB2B6D /* GetChattyRootPostsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetChattyRootPostsRequest.swift; sourceTree = "<group>"; };
+		300CA6651C5D548500EB2B6D /* GetSubthreadRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetSubthreadRequest.swift; sourceTree = "<group>"; };
+		300CA6661C5D548500EB2B6D /* GetThreadPostCountRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetThreadPostCountRequest.swift; sourceTree = "<group>"; };
+		300CA6671C5D548500EB2B6D /* GetThreadPostIdsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetThreadPostIdsRequest.swift; sourceTree = "<group>"; };
+		300CA6681C5D548500EB2B6D /* GetThreadRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetThreadRequest.swift; sourceTree = "<group>"; };
+		300CA66A1C5D548500EB2B6D /* CheckConnectionRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckConnectionRequest.swift; sourceTree = "<group>"; };
+		300CA66B1C5D548500EB2B6D /* GetAllTenYearUsersRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetAllTenYearUsersRequest.swift; sourceTree = "<group>"; };
+		300CA66C1C5D548500EB2B6D /* GetAllUserRegistrationDatesRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetAllUserRegistrationDatesRequest.swift; sourceTree = "<group>"; };
+		300CA66D1C5D548500EB2B6D /* GetUserRegistrationDateRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetUserRegistrationDateRequest.swift; sourceTree = "<group>"; };
+		300CA66E1C5D548500EB2B6D /* VerifyCredentialsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyCredentialsRequest.swift; sourceTree = "<group>"; };
+		300CA6711C5D548500EB2B6D /* ClearMarkedPostsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClearMarkedPostsResponse.swift; sourceTree = "<group>"; };
+		300CA6721C5D548500EB2B6D /* GetCategoryFiltersResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCategoryFiltersResponse.swift; sourceTree = "<group>"; };
+		300CA6731C5D548500EB2B6D /* GetClientDataResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetClientDataResponse.swift; sourceTree = "<group>"; };
+		300CA6741C5D548500EB2B6D /* GetMarkedPostsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetMarkedPostsResponse.swift; sourceTree = "<group>"; };
+		300CA6751C5D548500EB2B6D /* MarkPostResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkPostResponse.swift; sourceTree = "<group>"; };
+		300CA6761C5D548500EB2B6D /* SetCategoryFiltersResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetCategoryFiltersResponse.swift; sourceTree = "<group>"; };
+		300CA6771C5D548500EB2B6D /* SetClientDataResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetClientDataResponse.swift; sourceTree = "<group>"; };
+		300CA6791C5D548500EB2B6D /* CommonSuccessResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonSuccessResponse.swift; sourceTree = "<group>"; };
+		300CA67B1C5D548500EB2B6D /* ApiErrorResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiErrorResponse.swift; sourceTree = "<group>"; };
+		300CA67D1C5D548500EB2B6D /* BroadcastServerMessageResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BroadcastServerMessageResponse.swift; sourceTree = "<group>"; };
+		300CA67E1C5D548500EB2B6D /* GetNewestEventIdResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetNewestEventIdResponse.swift; sourceTree = "<group>"; };
+		300CA67F1C5D548500EB2B6D /* PollForEventResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollForEventResponse.swift; sourceTree = "<group>"; };
+		300CA6801C5D548500EB2B6D /* WaitForEventResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaitForEventResponse.swift; sourceTree = "<group>"; };
+		300CA6821C5D548500EB2B6D /* DeleteMessageResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteMessageResponse.swift; sourceTree = "<group>"; };
+		300CA6831C5D548500EB2B6D /* GetMessageCountResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetMessageCountResponse.swift; sourceTree = "<group>"; };
+		300CA6841C5D548500EB2B6D /* GetMessagesResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetMessagesResponse.swift; sourceTree = "<group>"; };
+		300CA6851C5D548500EB2B6D /* MarkMessageReadResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkMessageReadResponse.swift; sourceTree = "<group>"; };
+		300CA6861C5D548500EB2B6D /* SendMessageResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendMessageResponse.swift; sourceTree = "<group>"; };
+		300CA6881C5D548500EB2B6D /* DetachAccountResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetachAccountResponse.swift; sourceTree = "<group>"; };
+		300CA6891C5D548500EB2B6D /* GenerateIdResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateIdResponse.swift; sourceTree = "<group>"; };
+		300CA68A1C5D548500EB2B6D /* GetUserSetupResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetUserSetupResponse.swift; sourceTree = "<group>"; };
+		300CA68B1C5D548500EB2B6D /* RegisterNotifierClientResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterNotifierClientResponse.swift; sourceTree = "<group>"; };
+		300CA68C1C5D548500EB2B6D /* RegisterRichClientResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterRichClientResponse.swift; sourceTree = "<group>"; };
+		300CA68D1C5D548500EB2B6D /* SetUserSetupResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetUserSetupResponse.swift; sourceTree = "<group>"; };
+		300CA68E1C5D548500EB2B6D /* WaitForNotificationResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaitForNotificationResponse.swift; sourceTree = "<group>"; };
+		300CA6901C5D548500EB2B6D /* GetNewestPostInfoResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetNewestPostInfoResponse.swift; sourceTree = "<group>"; };
+		300CA6911C5D548500EB2B6D /* GetParentIdResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetParentIdResponse.swift; sourceTree = "<group>"; };
+		300CA6921C5D548500EB2B6D /* GetPostLineageResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetPostLineageResponse.swift; sourceTree = "<group>"; };
+		300CA6931C5D548500EB2B6D /* GetPostRangeResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetPostRangeResponse.swift; sourceTree = "<group>"; };
+		300CA6941C5D548500EB2B6D /* GetPostResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetPostResponse.swift; sourceTree = "<group>"; };
+		300CA6951C5D548500EB2B6D /* RequestReindexResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestReindexResponse.swift; sourceTree = "<group>"; };
+		300CA6961C5D548500EB2B6D /* SearchResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
+		300CA6971C5D548500EB2B6D /* SetPostCategoryResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetPostCategoryResponse.swift; sourceTree = "<group>"; };
+		300CA6981C5D548500EB2B6D /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		300CA69A1C5D548500EB2B6D /* GetChattyResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetChattyResponse.swift; sourceTree = "<group>"; };
+		300CA69B1C5D548500EB2B6D /* GetChattyRootPostsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetChattyRootPostsResponse.swift; sourceTree = "<group>"; };
+		300CA69C1C5D548500EB2B6D /* GetSubthreadResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetSubthreadResponse.swift; sourceTree = "<group>"; };
+		300CA69D1C5D548500EB2B6D /* GetThreadPostCountResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetThreadPostCountResponse.swift; sourceTree = "<group>"; };
+		300CA69E1C5D548500EB2B6D /* GetThreadPostIdsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetThreadPostIdsResponse.swift; sourceTree = "<group>"; };
+		300CA69F1C5D548500EB2B6D /* GetThreadResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetThreadResponse.swift; sourceTree = "<group>"; };
+		300CA6A11C5D548500EB2B6D /* CheckConnectionResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckConnectionResponse.swift; sourceTree = "<group>"; };
+		300CA6A21C5D548500EB2B6D /* GetAllTenYearUsersResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetAllTenYearUsersResponse.swift; sourceTree = "<group>"; };
+		300CA6A31C5D548500EB2B6D /* GetAllUserRegistrationDatesResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetAllUserRegistrationDatesResponse.swift; sourceTree = "<group>"; };
+		300CA6A41C5D548500EB2B6D /* GetUserRegistrationDateResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetUserRegistrationDateResponse.swift; sourceTree = "<group>"; };
+		300CA6A51C5D548500EB2B6D /* VerifyCredentialsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerifyCredentialsResponse.swift; sourceTree = "<group>"; };
+		300CA6A71C5D548500EB2B6D /* Encoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encoder.swift; sourceTree = "<group>"; };
+		300CA7251C5D54B700EB2B6D /* SwiftChatty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftChatty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		300CA72E1C5D54B700EB2B6D /* SwiftChatty-OSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftChatty-OSXTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		300CA7411C5D54CA00EB2B6D /* SwiftChatty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftChatty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		300CA74A1C5D54CA00EB2B6D /* SwiftChatty-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftChatty-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		304133731C5E2CF5003168C6 /* SwiftChatty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftChatty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		559045F942EA21133F3601DA /* Pods_SwiftChatty_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftChatty_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		634DADA57984DF49E0A5EE0C /* Pods-SwiftChatty-OSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftChatty-OSX.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftChatty-OSX/Pods-SwiftChatty-OSX.release.xcconfig"; sourceTree = "<group>"; };
+		7F2F451D170890538ED9C98E /* Pods_SwiftChatty_WatchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftChatty_WatchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91AFA69CC56C964813DF8BE9 /* Pods-SwiftChatty-WatchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftChatty-WatchOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftChatty-WatchOS/Pods-SwiftChatty-WatchOS.debug.xcconfig"; sourceTree = "<group>"; };
+		BF4BC91302DE4B912249E48C /* Pods-SwiftChatty-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftChatty-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftChatty-iOS/Pods-SwiftChatty-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		CEC96D2A2EA7108B0DB8675F /* Pods-SwiftChatty-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftChatty-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftChatty-tvOS/Pods-SwiftChatty-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		D64903326019F53F3139E5F6 /* Pods-SwiftChatty-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftChatty-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftChatty-tvOS/Pods-SwiftChatty-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		EFDCC6931C458CFE85E39C31 /* Pods-SwiftChatty-WatchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftChatty-WatchOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftChatty-WatchOS/Pods-SwiftChatty-WatchOS.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		300CA5FC1C5D546100EB2B6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FAC116845676654879F047F /* Pods_SwiftChatty_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		300CA6071C5D546100EB2B6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				300CA60B1C5D546100EB2B6D /* SwiftChatty.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		300CA7211C5D54B700EB2B6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25F0829AB36985E88ADB2FBE /* Pods_SwiftChatty_OSX.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		300CA72B1C5D54B700EB2B6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				300CA72F1C5D54B700EB2B6D /* SwiftChatty.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		300CA73D1C5D54CA00EB2B6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E84C4AA08D6436A789F8A39 /* Pods_SwiftChatty_tvOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		300CA7471C5D54CA00EB2B6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				300CA74B1C5D54CA00EB2B6D /* SwiftChatty.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3041336F1C5E2CF5003168C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0745460C0A0F93B148A402C2 /* Pods_SwiftChatty_WatchOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25A753BE65E38EEA7AA66274 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1737E3BC39F48A8914266419 /* Pods_SwiftChatty_OSX.framework */,
+				06C276D8B00BFEF1A3908149 /* Pods_SwiftChatty_iOS.framework */,
+				559045F942EA21133F3601DA /* Pods_SwiftChatty_tvOS.framework */,
+				7F2F451D170890538ED9C98E /* Pods_SwiftChatty_WatchOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		300CA5F61C5D546100EB2B6D = {
+			isa = PBXGroup;
+			children = (
+				300CA6021C5D546100EB2B6D /* SwiftChatty */,
+				300CA60E1C5D546100EB2B6D /* SwiftChattyTests */,
+				300CA6011C5D546100EB2B6D /* Products */,
+				8FE2BEF65628B4AB5C76BDA2 /* Pods */,
+				25A753BE65E38EEA7AA66274 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		300CA6011C5D546100EB2B6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				300CA6001C5D546100EB2B6D /* SwiftChatty.framework */,
+				300CA60A1C5D546100EB2B6D /* SwiftChatty-iOSTests.xctest */,
+				300CA7251C5D54B700EB2B6D /* SwiftChatty.framework */,
+				300CA72E1C5D54B700EB2B6D /* SwiftChatty-OSXTests.xctest */,
+				300CA7411C5D54CA00EB2B6D /* SwiftChatty.framework */,
+				300CA74A1C5D54CA00EB2B6D /* SwiftChatty-tvOSTests.xctest */,
+				304133731C5E2CF5003168C6 /* SwiftChatty.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		300CA6021C5D546100EB2B6D /* SwiftChatty */ = {
+			isa = PBXGroup;
+			children = (
+				300CA61A1C5D548400EB2B6D /* Client */,
+				300CA61D1C5D548400EB2B6D /* Common Models */,
+				300CA63A1C5D548400EB2B6D /* Requests */,
+				300CA66F1C5D548500EB2B6D /* Responses */,
+				300CA6A61C5D548500EB2B6D /* Utilities */,
+				300CA6031C5D546100EB2B6D /* SwiftChatty.h */,
+				300CA6051C5D546100EB2B6D /* Info.plist */,
+			);
+			path = SwiftChatty;
+			sourceTree = "<group>";
+		};
+		300CA60E1C5D546100EB2B6D /* SwiftChattyTests */ = {
+			isa = PBXGroup;
+			children = (
+				300CA60F1C5D546100EB2B6D /* SwiftChattyTests.swift */,
+				300CA6111C5D546100EB2B6D /* Info.plist */,
+			);
+			path = SwiftChattyTests;
+			sourceTree = "<group>";
+		};
+		300CA61A1C5D548400EB2B6D /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				300CA61B1C5D548400EB2B6D /* Client.swift */,
+				300CA61C1C5D548400EB2B6D /* ClientRequestResult.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		300CA61D1C5D548400EB2B6D /* Common Models */ = {
+			isa = PBXGroup;
+			children = (
+				300CA61E1C5D548400EB2B6D /* Errors.swift */,
+				300CA61F1C5D548400EB2B6D /* EventType.swift */,
+				300CA6201C5D548400EB2B6D /* Mailbox.swift */,
+				300CA6211C5D548400EB2B6D /* Mappable */,
+				300CA6381C5D548400EB2B6D /* MarkedPostType.swift */,
+				300CA6391C5D548400EB2B6D /* ModerationFlag.swift */,
+			);
+			path = "Common Models";
+			sourceTree = "<group>";
+		};
+		300CA6211C5D548400EB2B6D /* Mappable */ = {
+			isa = PBXGroup;
+			children = (
+				300CA6221C5D548400EB2B6D /* CommonMappableModel.swift */,
+				300CA6231C5D548400EB2B6D /* Event.swift */,
+				300CA6241C5D548400EB2B6D /* EventCategoryChange.swift */,
+				300CA6251C5D548400EB2B6D /* EventLolCountUpdate.swift */,
+				300CA6261C5D548400EB2B6D /* EventNewPost.swift */,
+				300CA6271C5D548400EB2B6D /* EventServerMessage.swift */,
+				300CA6281C5D548400EB2B6D /* LOL.swift */,
+				300CA6291C5D548400EB2B6D /* MarkedPost.swift */,
+				300CA62A1C5D548400EB2B6D /* Message.swift */,
+				300CA62B1C5D548400EB2B6D /* Notification.swift */,
+				300CA62C1C5D548400EB2B6D /* Post.swift */,
+				300CA62D1C5D548400EB2B6D /* PostLineage.swift */,
+				300CA62E1C5D548400EB2B6D /* PostRelationship.swift */,
+				300CA62F1C5D548400EB2B6D /* PostType.swift */,
+				300CA6301C5D548400EB2B6D /* RootPost.swift */,
+				300CA6311C5D548400EB2B6D /* SearchResult.swift */,
+				300CA6321C5D548400EB2B6D /* Thread.swift */,
+				300CA6331C5D548400EB2B6D /* ThreadPostCount.swift */,
+				300CA6341C5D548400EB2B6D /* ThreadPostId.swift */,
+				300CA6351C5D548400EB2B6D /* ThreadType.swift */,
+				300CA6361C5D548400EB2B6D /* UserRegistrationDate.swift */,
+				300CA6371C5D548400EB2B6D /* UserSetup.swift */,
+			);
+			path = Mappable;
+			sourceTree = "<group>";
+		};
+		300CA63A1C5D548400EB2B6D /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				300CA63B1C5D548400EB2B6D /* Account.swift */,
+				300CA63C1C5D548400EB2B6D /* API.swift */,
+				300CA6611C5D548500EB2B6D /* Request.swift */,
+				300CA63D1C5D548400EB2B6D /* Client Data */,
+				300CA6451C5D548400EB2B6D /* Events */,
+				300CA64A1C5D548400EB2B6D /* Messages */,
+				300CA6501C5D548400EB2B6D /* Notifications */,
+				300CA6581C5D548400EB2B6D /* Posts */,
+				300CA6621C5D548500EB2B6D /* Threads */,
+				300CA6691C5D548500EB2B6D /* Users */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		300CA63D1C5D548400EB2B6D /* Client Data */ = {
+			isa = PBXGroup;
+			children = (
+				300CA63E1C5D548400EB2B6D /* ClearMarkedPostsRequest.swift */,
+				300CA63F1C5D548400EB2B6D /* GetCategoryFiltersRequest.swift */,
+				300CA6401C5D548400EB2B6D /* GetClientDataRequest.swift */,
+				300CA6411C5D548400EB2B6D /* GetMarkedPostsRequest.swift */,
+				300CA6421C5D548400EB2B6D /* MarkPostRequest.swift */,
+				300CA6431C5D548400EB2B6D /* SetCategoryFiltersRequest.swift */,
+				300CA6441C5D548400EB2B6D /* SetClientDataRequest.swift */,
+			);
+			path = "Client Data";
+			sourceTree = "<group>";
+		};
+		300CA6451C5D548400EB2B6D /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				300CA6461C5D548400EB2B6D /* BroadcastServerMessageRequest.swift */,
+				300CA6471C5D548400EB2B6D /* GetNewestEventIdRequest.swift */,
+				300CA6481C5D548400EB2B6D /* PollForEventRequest.swift */,
+				300CA6491C5D548400EB2B6D /* WaitForEventRequest.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		300CA64A1C5D548400EB2B6D /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				300CA64B1C5D548400EB2B6D /* DeleteMessageRequest.swift */,
+				300CA64C1C5D548400EB2B6D /* GetMessageCountRequest.swift */,
+				300CA64D1C5D548400EB2B6D /* GetMessagesRequest.swift */,
+				300CA64E1C5D548400EB2B6D /* MarkMessageReadRequest.swift */,
+				300CA64F1C5D548400EB2B6D /* SendMessageRequest.swift */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		300CA6501C5D548400EB2B6D /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				300CA6511C5D548400EB2B6D /* DetachAccountRequest.swift */,
+				300CA6521C5D548400EB2B6D /* GenerateIdRequest.swift */,
+				300CA6531C5D548400EB2B6D /* GetUserSetupRequest.swift */,
+				300CA6541C5D548400EB2B6D /* RegisterNotifierClientRequest.swift */,
+				300CA6551C5D548400EB2B6D /* RegisterRichClientRequest.swift */,
+				300CA6561C5D548400EB2B6D /* SetUserSetupRequest.swift */,
+				300CA6571C5D548400EB2B6D /* WaitForNotificationRequest.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		300CA6581C5D548400EB2B6D /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				300CA6591C5D548500EB2B6D /* GetNewestPostInfoRequest.swift */,
+				300CA65A1C5D548500EB2B6D /* GetParentIdRequest.swift */,
+				300CA65B1C5D548500EB2B6D /* GetPostLineageRequest.swift */,
+				300CA65C1C5D548500EB2B6D /* GetPostRangeRequest.swift */,
+				300CA65D1C5D548500EB2B6D /* GetPostRequest.swift */,
+				300CA65E1C5D548500EB2B6D /* RequestReindexRequest.swift */,
+				300CA65F1C5D548500EB2B6D /* SearchRequest.swift */,
+				300CA6601C5D548500EB2B6D /* SetPostCategoryRequest.swift */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		300CA6621C5D548500EB2B6D /* Threads */ = {
+			isa = PBXGroup;
+			children = (
+				300CA6631C5D548500EB2B6D /* GetChattyRequest.swift */,
+				300CA6641C5D548500EB2B6D /* GetChattyRootPostsRequest.swift */,
+				300CA6651C5D548500EB2B6D /* GetSubthreadRequest.swift */,
+				300CA6661C5D548500EB2B6D /* GetThreadPostCountRequest.swift */,
+				300CA6671C5D548500EB2B6D /* GetThreadPostIdsRequest.swift */,
+				300CA6681C5D548500EB2B6D /* GetThreadRequest.swift */,
+			);
+			path = Threads;
+			sourceTree = "<group>";
+		};
+		300CA6691C5D548500EB2B6D /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				300CA66A1C5D548500EB2B6D /* CheckConnectionRequest.swift */,
+				300CA66B1C5D548500EB2B6D /* GetAllTenYearUsersRequest.swift */,
+				300CA66C1C5D548500EB2B6D /* GetAllUserRegistrationDatesRequest.swift */,
+				300CA66D1C5D548500EB2B6D /* GetUserRegistrationDateRequest.swift */,
+				300CA66E1C5D548500EB2B6D /* VerifyCredentialsRequest.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		300CA66F1C5D548500EB2B6D /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				300CA6981C5D548500EB2B6D /* Response.swift */,
+				300CA6701C5D548500EB2B6D /* Client Data */,
+				300CA6781C5D548500EB2B6D /* Common */,
+				300CA67A1C5D548500EB2B6D /* Errors */,
+				300CA67C1C5D548500EB2B6D /* Events */,
+				300CA6811C5D548500EB2B6D /* Messages */,
+				300CA6871C5D548500EB2B6D /* Notifications */,
+				300CA68F1C5D548500EB2B6D /* Posts */,
+				300CA6991C5D548500EB2B6D /* Threads */,
+				300CA6A01C5D548500EB2B6D /* Users */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		300CA6701C5D548500EB2B6D /* Client Data */ = {
+			isa = PBXGroup;
+			children = (
+				300CA6711C5D548500EB2B6D /* ClearMarkedPostsResponse.swift */,
+				300CA6721C5D548500EB2B6D /* GetCategoryFiltersResponse.swift */,
+				300CA6731C5D548500EB2B6D /* GetClientDataResponse.swift */,
+				300CA6741C5D548500EB2B6D /* GetMarkedPostsResponse.swift */,
+				300CA6751C5D548500EB2B6D /* MarkPostResponse.swift */,
+				300CA6761C5D548500EB2B6D /* SetCategoryFiltersResponse.swift */,
+				300CA6771C5D548500EB2B6D /* SetClientDataResponse.swift */,
+			);
+			path = "Client Data";
+			sourceTree = "<group>";
+		};
+		300CA6781C5D548500EB2B6D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				300CA6791C5D548500EB2B6D /* CommonSuccessResponse.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		300CA67A1C5D548500EB2B6D /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				300CA67B1C5D548500EB2B6D /* ApiErrorResponse.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		300CA67C1C5D548500EB2B6D /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				300CA67D1C5D548500EB2B6D /* BroadcastServerMessageResponse.swift */,
+				300CA67E1C5D548500EB2B6D /* GetNewestEventIdResponse.swift */,
+				300CA67F1C5D548500EB2B6D /* PollForEventResponse.swift */,
+				300CA6801C5D548500EB2B6D /* WaitForEventResponse.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		300CA6811C5D548500EB2B6D /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				300CA6821C5D548500EB2B6D /* DeleteMessageResponse.swift */,
+				300CA6831C5D548500EB2B6D /* GetMessageCountResponse.swift */,
+				300CA6841C5D548500EB2B6D /* GetMessagesResponse.swift */,
+				300CA6851C5D548500EB2B6D /* MarkMessageReadResponse.swift */,
+				300CA6861C5D548500EB2B6D /* SendMessageResponse.swift */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		300CA6871C5D548500EB2B6D /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				300CA6881C5D548500EB2B6D /* DetachAccountResponse.swift */,
+				300CA6891C5D548500EB2B6D /* GenerateIdResponse.swift */,
+				300CA68A1C5D548500EB2B6D /* GetUserSetupResponse.swift */,
+				300CA68B1C5D548500EB2B6D /* RegisterNotifierClientResponse.swift */,
+				300CA68C1C5D548500EB2B6D /* RegisterRichClientResponse.swift */,
+				300CA68D1C5D548500EB2B6D /* SetUserSetupResponse.swift */,
+				300CA68E1C5D548500EB2B6D /* WaitForNotificationResponse.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		300CA68F1C5D548500EB2B6D /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				300CA6901C5D548500EB2B6D /* GetNewestPostInfoResponse.swift */,
+				300CA6911C5D548500EB2B6D /* GetParentIdResponse.swift */,
+				300CA6921C5D548500EB2B6D /* GetPostLineageResponse.swift */,
+				300CA6931C5D548500EB2B6D /* GetPostRangeResponse.swift */,
+				300CA6941C5D548500EB2B6D /* GetPostResponse.swift */,
+				300CA6951C5D548500EB2B6D /* RequestReindexResponse.swift */,
+				300CA6961C5D548500EB2B6D /* SearchResponse.swift */,
+				300CA6971C5D548500EB2B6D /* SetPostCategoryResponse.swift */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		300CA6991C5D548500EB2B6D /* Threads */ = {
+			isa = PBXGroup;
+			children = (
+				300CA69A1C5D548500EB2B6D /* GetChattyResponse.swift */,
+				300CA69B1C5D548500EB2B6D /* GetChattyRootPostsResponse.swift */,
+				300CA69C1C5D548500EB2B6D /* GetSubthreadResponse.swift */,
+				300CA69D1C5D548500EB2B6D /* GetThreadPostCountResponse.swift */,
+				300CA69E1C5D548500EB2B6D /* GetThreadPostIdsResponse.swift */,
+				300CA69F1C5D548500EB2B6D /* GetThreadResponse.swift */,
+			);
+			path = Threads;
+			sourceTree = "<group>";
+		};
+		300CA6A01C5D548500EB2B6D /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				300CA6A11C5D548500EB2B6D /* CheckConnectionResponse.swift */,
+				300CA6A21C5D548500EB2B6D /* GetAllTenYearUsersResponse.swift */,
+				300CA6A31C5D548500EB2B6D /* GetAllUserRegistrationDatesResponse.swift */,
+				300CA6A41C5D548500EB2B6D /* GetUserRegistrationDateResponse.swift */,
+				300CA6A51C5D548500EB2B6D /* VerifyCredentialsResponse.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		300CA6A61C5D548500EB2B6D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				300CA6A71C5D548500EB2B6D /* Encoder.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		8FE2BEF65628B4AB5C76BDA2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23192838D1B85655D36EB19E /* Pods-SwiftChatty-OSX.debug.xcconfig */,
+				634DADA57984DF49E0A5EE0C /* Pods-SwiftChatty-OSX.release.xcconfig */,
+				274922CEC0CF01743FD53CAE /* Pods-SwiftChatty-iOS.debug.xcconfig */,
+				BF4BC91302DE4B912249E48C /* Pods-SwiftChatty-iOS.release.xcconfig */,
+				CEC96D2A2EA7108B0DB8675F /* Pods-SwiftChatty-tvOS.debug.xcconfig */,
+				D64903326019F53F3139E5F6 /* Pods-SwiftChatty-tvOS.release.xcconfig */,
+				91AFA69CC56C964813DF8BE9 /* Pods-SwiftChatty-WatchOS.debug.xcconfig */,
+				EFDCC6931C458CFE85E39C31 /* Pods-SwiftChatty-WatchOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		300CA5FD1C5D546100EB2B6D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				300CA6041C5D546100EB2B6D /* SwiftChatty.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		300CA7221C5D54B700EB2B6D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				300CA7591C5D552C00EB2B6D /* SwiftChatty.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		300CA73E1C5D54CA00EB2B6D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				300CA7581C5D552800EB2B6D /* SwiftChatty.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		304133701C5E2CF5003168C6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				304133F31C5E2DC6003168C6 /* SwiftChatty.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		300CA5FF1C5D546100EB2B6D /* SwiftChatty-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 300CA6141C5D546100EB2B6D /* Build configuration list for PBXNativeTarget "SwiftChatty-iOS" */;
+			buildPhases = (
+				CB5671FC975A121B39F5AF68 /* Check Pods Manifest.lock */,
+				300CA5FB1C5D546100EB2B6D /* Sources */,
+				300CA5FC1C5D546100EB2B6D /* Frameworks */,
+				300CA5FD1C5D546100EB2B6D /* Headers */,
+				300CA5FE1C5D546100EB2B6D /* Resources */,
+				186CD2D96469A09CFBB92540 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftChatty-iOS";
+			productName = SwiftChatty;
+			productReference = 300CA6001C5D546100EB2B6D /* SwiftChatty.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		300CA6091C5D546100EB2B6D /* SwiftChatty-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 300CA6171C5D546100EB2B6D /* Build configuration list for PBXNativeTarget "SwiftChatty-iOSTests" */;
+			buildPhases = (
+				300CA6061C5D546100EB2B6D /* Sources */,
+				300CA6071C5D546100EB2B6D /* Frameworks */,
+				300CA6081C5D546100EB2B6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				300CA60D1C5D546100EB2B6D /* PBXTargetDependency */,
+			);
+			name = "SwiftChatty-iOSTests";
+			productName = SwiftChattyTests;
+			productReference = 300CA60A1C5D546100EB2B6D /* SwiftChatty-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		300CA7241C5D54B700EB2B6D /* SwiftChatty-OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 300CA7361C5D54B700EB2B6D /* Build configuration list for PBXNativeTarget "SwiftChatty-OSX" */;
+			buildPhases = (
+				F34628C78635326A5A6EAE6D /* Check Pods Manifest.lock */,
+				300CA7201C5D54B700EB2B6D /* Sources */,
+				300CA7211C5D54B700EB2B6D /* Frameworks */,
+				300CA7221C5D54B700EB2B6D /* Headers */,
+				300CA7231C5D54B700EB2B6D /* Resources */,
+				09DF7532AA829F5F3063AB5C /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftChatty-OSX";
+			productName = "SwiftChatty-OSX";
+			productReference = 300CA7251C5D54B700EB2B6D /* SwiftChatty.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		300CA72D1C5D54B700EB2B6D /* SwiftChatty-OSXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 300CA7391C5D54B700EB2B6D /* Build configuration list for PBXNativeTarget "SwiftChatty-OSXTests" */;
+			buildPhases = (
+				300CA72A1C5D54B700EB2B6D /* Sources */,
+				300CA72B1C5D54B700EB2B6D /* Frameworks */,
+				300CA72C1C5D54B700EB2B6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				300CA7311C5D54B700EB2B6D /* PBXTargetDependency */,
+			);
+			name = "SwiftChatty-OSXTests";
+			productName = "SwiftChatty-OSXTests";
+			productReference = 300CA72E1C5D54B700EB2B6D /* SwiftChatty-OSXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		300CA7401C5D54CA00EB2B6D /* SwiftChatty-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 300CA7521C5D54CA00EB2B6D /* Build configuration list for PBXNativeTarget "SwiftChatty-tvOS" */;
+			buildPhases = (
+				4A31279541D573750B3EC6CF /* Check Pods Manifest.lock */,
+				300CA73C1C5D54CA00EB2B6D /* Sources */,
+				300CA73D1C5D54CA00EB2B6D /* Frameworks */,
+				300CA73E1C5D54CA00EB2B6D /* Headers */,
+				300CA73F1C5D54CA00EB2B6D /* Resources */,
+				CF30582DEC20C43431CC13F0 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftChatty-tvOS";
+			productName = "SwiftChatty-tvOS";
+			productReference = 300CA7411C5D54CA00EB2B6D /* SwiftChatty.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		300CA7491C5D54CA00EB2B6D /* SwiftChatty-tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 300CA7551C5D54CA00EB2B6D /* Build configuration list for PBXNativeTarget "SwiftChatty-tvOSTests" */;
+			buildPhases = (
+				300CA7461C5D54CA00EB2B6D /* Sources */,
+				300CA7471C5D54CA00EB2B6D /* Frameworks */,
+				300CA7481C5D54CA00EB2B6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				300CA74D1C5D54CA00EB2B6D /* PBXTargetDependency */,
+			);
+			name = "SwiftChatty-tvOSTests";
+			productName = "SwiftChatty-tvOSTests";
+			productReference = 300CA74A1C5D54CA00EB2B6D /* SwiftChatty-tvOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		304133721C5E2CF5003168C6 /* SwiftChatty-WatchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3041337A1C5E2CF5003168C6 /* Build configuration list for PBXNativeTarget "SwiftChatty-WatchOS" */;
+			buildPhases = (
+				9AA4A639CB0EFD6AAA242632 /* Check Pods Manifest.lock */,
+				3041336E1C5E2CF5003168C6 /* Sources */,
+				3041336F1C5E2CF5003168C6 /* Frameworks */,
+				304133701C5E2CF5003168C6 /* Headers */,
+				304133711C5E2CF5003168C6 /* Resources */,
+				4910FD5A9601FC5C34D2F36C /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftChatty-WatchOS";
+			productName = "SwiftChatty-WatchOS";
+			productReference = 304133731C5E2CF5003168C6 /* SwiftChatty.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		300CA5F71C5D546100EB2B6D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Andre Bocchini";
+				TargetAttributes = {
+					300CA5FF1C5D546100EB2B6D = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					300CA6091C5D546100EB2B6D = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					300CA7241C5D54B700EB2B6D = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					300CA72D1C5D54B700EB2B6D = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					300CA7401C5D54CA00EB2B6D = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					300CA7491C5D54CA00EB2B6D = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					304133721C5E2CF5003168C6 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 300CA5FA1C5D546100EB2B6D /* Build configuration list for PBXProject "SwiftChatty" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 300CA5F61C5D546100EB2B6D;
+			productRefGroup = 300CA6011C5D546100EB2B6D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				300CA5FF1C5D546100EB2B6D /* SwiftChatty-iOS */,
+				300CA6091C5D546100EB2B6D /* SwiftChatty-iOSTests */,
+				300CA7241C5D54B700EB2B6D /* SwiftChatty-OSX */,
+				300CA72D1C5D54B700EB2B6D /* SwiftChatty-OSXTests */,
+				300CA7401C5D54CA00EB2B6D /* SwiftChatty-tvOS */,
+				300CA7491C5D54CA00EB2B6D /* SwiftChatty-tvOSTests */,
+				304133721C5E2CF5003168C6 /* SwiftChatty-WatchOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		300CA5FE1C5D546100EB2B6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		300CA6081C5D546100EB2B6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		300CA7231C5D54B700EB2B6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		300CA72C1C5D54B700EB2B6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		300CA73F1C5D54CA00EB2B6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		300CA7481C5D54CA00EB2B6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		304133711C5E2CF5003168C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09DF7532AA829F5F3063AB5C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftChatty-OSX/Pods-SwiftChatty-OSX-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		186CD2D96469A09CFBB92540 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftChatty-iOS/Pods-SwiftChatty-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4910FD5A9601FC5C34D2F36C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftChatty-WatchOS/Pods-SwiftChatty-WatchOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A31279541D573750B3EC6CF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9AA4A639CB0EFD6AAA242632 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CB5671FC975A121B39F5AF68 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CF30582DEC20C43431CC13F0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftChatty-tvOS/Pods-SwiftChatty-tvOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F34628C78635326A5A6EAE6D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		300CA5FB1C5D546100EB2B6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				300CA6AD1C5D548500EB2B6D /* CommonMappableModel.swift in Sources */,
+				300CA6C91C5D548500EB2B6D /* GetClientDataRequest.swift in Sources */,
+				300CA6E11C5D548500EB2B6D /* GetPostRangeRequest.swift in Sources */,
+				300CA6BC1C5D548500EB2B6D /* SearchResult.swift in Sources */,
+				300CA6A81C5D548500EB2B6D /* Client.swift in Sources */,
+				300CA71D1C5D548500EB2B6D /* GetUserRegistrationDateResponse.swift in Sources */,
+				300CA6F91C5D548500EB2B6D /* CommonSuccessResponse.swift in Sources */,
+				300CA6EC1C5D548500EB2B6D /* GetThreadRequest.swift in Sources */,
+				300CA6E01C5D548500EB2B6D /* GetPostLineageRequest.swift in Sources */,
+				300CA7101C5D548500EB2B6D /* RequestReindexResponse.swift in Sources */,
+				300CA70E1C5D548500EB2B6D /* GetPostRangeResponse.swift in Sources */,
+				300CA6F11C5D548500EB2B6D /* VerifyCredentialsRequest.swift in Sources */,
+				300CA7011C5D548500EB2B6D /* GetMessagesResponse.swift in Sources */,
+				300CA7041C5D548500EB2B6D /* DetachAccountResponse.swift in Sources */,
+				300CA6D51C5D548500EB2B6D /* MarkMessageReadRequest.swift in Sources */,
+				300CA6ED1C5D548500EB2B6D /* CheckConnectionRequest.swift in Sources */,
+				300CA6E31C5D548500EB2B6D /* RequestReindexRequest.swift in Sources */,
+				300CA6E51C5D548500EB2B6D /* SetPostCategoryRequest.swift in Sources */,
+				300CA6DB1C5D548500EB2B6D /* RegisterRichClientRequest.swift in Sources */,
+				300CA7111C5D548500EB2B6D /* SearchResponse.swift in Sources */,
+				300CA7091C5D548500EB2B6D /* SetUserSetupResponse.swift in Sources */,
+				300CA6B41C5D548500EB2B6D /* MarkedPost.swift in Sources */,
+				300CA6CA1C5D548500EB2B6D /* GetMarkedPostsRequest.swift in Sources */,
+				300CA7071C5D548500EB2B6D /* RegisterNotifierClientResponse.swift in Sources */,
+				300CA6AF1C5D548500EB2B6D /* EventCategoryChange.swift in Sources */,
+				300CA6C51C5D548500EB2B6D /* Account.swift in Sources */,
+				300CA7081C5D548500EB2B6D /* RegisterRichClientResponse.swift in Sources */,
+				300CA6B31C5D548500EB2B6D /* LOL.swift in Sources */,
+				300CA7141C5D548500EB2B6D /* GetChattyResponse.swift in Sources */,
+				300CA6C21C5D548500EB2B6D /* UserSetup.swift in Sources */,
+				300CA70A1C5D548500EB2B6D /* WaitForNotificationResponse.swift in Sources */,
+				300CA6C31C5D548500EB2B6D /* MarkedPostType.swift in Sources */,
+				300CA71F1C5D548500EB2B6D /* Encoder.swift in Sources */,
+				300CA6F81C5D548500EB2B6D /* SetClientDataResponse.swift in Sources */,
+				300CA6F61C5D548500EB2B6D /* MarkPostResponse.swift in Sources */,
+				300CA6E21C5D548500EB2B6D /* GetPostRequest.swift in Sources */,
+				300CA6E81C5D548500EB2B6D /* GetChattyRootPostsRequest.swift in Sources */,
+				300CA6AC1C5D548500EB2B6D /* Mailbox.swift in Sources */,
+				300CA6C41C5D548500EB2B6D /* ModerationFlag.swift in Sources */,
+				300CA70B1C5D548500EB2B6D /* GetNewestPostInfoResponse.swift in Sources */,
+				300CA6EA1C5D548500EB2B6D /* GetThreadPostCountRequest.swift in Sources */,
+				300CA6EE1C5D548500EB2B6D /* GetAllTenYearUsersRequest.swift in Sources */,
+				300CA6F31C5D548500EB2B6D /* GetCategoryFiltersResponse.swift in Sources */,
+				300CA7131C5D548500EB2B6D /* Response.swift in Sources */,
+				300CA6F41C5D548500EB2B6D /* GetClientDataResponse.swift in Sources */,
+				300CA6B01C5D548500EB2B6D /* EventLolCountUpdate.swift in Sources */,
+				300CA6F01C5D548500EB2B6D /* GetUserRegistrationDateRequest.swift in Sources */,
+				300CA6CF1C5D548500EB2B6D /* GetNewestEventIdRequest.swift in Sources */,
+				300CA6B91C5D548500EB2B6D /* PostRelationship.swift in Sources */,
+				300CA6B21C5D548500EB2B6D /* EventServerMessage.swift in Sources */,
+				300CA6D11C5D548500EB2B6D /* WaitForEventRequest.swift in Sources */,
+				300CA6E61C5D548500EB2B6D /* Request.swift in Sources */,
+				300CA7021C5D548500EB2B6D /* MarkMessageReadResponse.swift in Sources */,
+				300CA6AA1C5D548500EB2B6D /* Errors.swift in Sources */,
+				300CA7181C5D548500EB2B6D /* GetThreadPostIdsResponse.swift in Sources */,
+				300CA6EF1C5D548500EB2B6D /* GetAllUserRegistrationDatesRequest.swift in Sources */,
+				300CA6D71C5D548500EB2B6D /* DetachAccountRequest.swift in Sources */,
+				300CA7191C5D548500EB2B6D /* GetThreadResponse.swift in Sources */,
+				300CA6DE1C5D548500EB2B6D /* GetNewestPostInfoRequest.swift in Sources */,
+				300CA6AB1C5D548500EB2B6D /* EventType.swift in Sources */,
+				300CA6CB1C5D548500EB2B6D /* MarkPostRequest.swift in Sources */,
+				300CA6BB1C5D548500EB2B6D /* RootPost.swift in Sources */,
+				300CA7151C5D548500EB2B6D /* GetChattyRootPostsResponse.swift in Sources */,
+				300CA7161C5D548500EB2B6D /* GetSubthreadResponse.swift in Sources */,
+				300CA6BD1C5D548500EB2B6D /* Thread.swift in Sources */,
+				300CA6DD1C5D548500EB2B6D /* WaitForNotificationRequest.swift in Sources */,
+				300CA70D1C5D548500EB2B6D /* GetPostLineageResponse.swift in Sources */,
+				300CA6BE1C5D548500EB2B6D /* ThreadPostCount.swift in Sources */,
+				300CA6C81C5D548500EB2B6D /* GetCategoryFiltersRequest.swift in Sources */,
+				300CA6FB1C5D548500EB2B6D /* BroadcastServerMessageResponse.swift in Sources */,
+				300CA7001C5D548500EB2B6D /* GetMessageCountResponse.swift in Sources */,
+				300CA6B11C5D548500EB2B6D /* EventNewPost.swift in Sources */,
+				300CA6BF1C5D548500EB2B6D /* ThreadPostId.swift in Sources */,
+				300CA6C71C5D548500EB2B6D /* ClearMarkedPostsRequest.swift in Sources */,
+				300CA6E71C5D548500EB2B6D /* GetChattyRequest.swift in Sources */,
+				300CA71C1C5D548500EB2B6D /* GetAllUserRegistrationDatesResponse.swift in Sources */,
+				300CA6D01C5D548500EB2B6D /* PollForEventRequest.swift in Sources */,
+				300CA6C11C5D548500EB2B6D /* UserRegistrationDate.swift in Sources */,
+				300CA6FD1C5D548500EB2B6D /* PollForEventResponse.swift in Sources */,
+				300CA6D31C5D548500EB2B6D /* GetMessageCountRequest.swift in Sources */,
+				300CA6B81C5D548500EB2B6D /* PostLineage.swift in Sources */,
+				300CA71E1C5D548500EB2B6D /* VerifyCredentialsResponse.swift in Sources */,
+				300CA7031C5D548500EB2B6D /* SendMessageResponse.swift in Sources */,
+				300CA6C61C5D548500EB2B6D /* API.swift in Sources */,
+				300CA6D91C5D548500EB2B6D /* GetUserSetupRequest.swift in Sources */,
+				300CA6B71C5D548500EB2B6D /* Post.swift in Sources */,
+				300CA6F71C5D548500EB2B6D /* SetCategoryFiltersResponse.swift in Sources */,
+				300CA6B61C5D548500EB2B6D /* Notification.swift in Sources */,
+				300CA6FC1C5D548500EB2B6D /* GetNewestEventIdResponse.swift in Sources */,
+				300CA6E91C5D548500EB2B6D /* GetSubthreadRequest.swift in Sources */,
+				300CA6AE1C5D548500EB2B6D /* Event.swift in Sources */,
+				300CA6CC1C5D548500EB2B6D /* SetCategoryFiltersRequest.swift in Sources */,
+				300CA6DF1C5D548500EB2B6D /* GetParentIdRequest.swift in Sources */,
+				300CA6FE1C5D548500EB2B6D /* WaitForEventResponse.swift in Sources */,
+				300CA6D21C5D548500EB2B6D /* DeleteMessageRequest.swift in Sources */,
+				300CA6D61C5D548500EB2B6D /* SendMessageRequest.swift in Sources */,
+				300CA6CD1C5D548500EB2B6D /* SetClientDataRequest.swift in Sources */,
+				300CA70F1C5D548500EB2B6D /* GetPostResponse.swift in Sources */,
+				300CA7061C5D548500EB2B6D /* GetUserSetupResponse.swift in Sources */,
+				300CA6A91C5D548500EB2B6D /* ClientRequestResult.swift in Sources */,
+				300CA6CE1C5D548500EB2B6D /* BroadcastServerMessageRequest.swift in Sources */,
+				300CA6B51C5D548500EB2B6D /* Message.swift in Sources */,
+				300CA6D81C5D548500EB2B6D /* GenerateIdRequest.swift in Sources */,
+				300CA6E41C5D548500EB2B6D /* SearchRequest.swift in Sources */,
+				300CA7171C5D548500EB2B6D /* GetThreadPostCountResponse.swift in Sources */,
+				300CA71A1C5D548500EB2B6D /* CheckConnectionResponse.swift in Sources */,
+				300CA6FA1C5D548500EB2B6D /* ApiErrorResponse.swift in Sources */,
+				300CA6C01C5D548500EB2B6D /* ThreadType.swift in Sources */,
+				300CA70C1C5D548500EB2B6D /* GetParentIdResponse.swift in Sources */,
+				300CA6EB1C5D548500EB2B6D /* GetThreadPostIdsRequest.swift in Sources */,
+				300CA71B1C5D548500EB2B6D /* GetAllTenYearUsersResponse.swift in Sources */,
+				300CA7121C5D548500EB2B6D /* SetPostCategoryResponse.swift in Sources */,
+				300CA6F21C5D548500EB2B6D /* ClearMarkedPostsResponse.swift in Sources */,
+				300CA6D41C5D548500EB2B6D /* GetMessagesRequest.swift in Sources */,
+				300CA7051C5D548500EB2B6D /* GenerateIdResponse.swift in Sources */,
+				300CA6DA1C5D548500EB2B6D /* RegisterNotifierClientRequest.swift in Sources */,
+				300CA6F51C5D548500EB2B6D /* GetMarkedPostsResponse.swift in Sources */,
+				300CA6FF1C5D548500EB2B6D /* DeleteMessageResponse.swift in Sources */,
+				300CA6DC1C5D548500EB2B6D /* SetUserSetupRequest.swift in Sources */,
+				300CA6BA1C5D548500EB2B6D /* PostType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		300CA6061C5D546100EB2B6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				300CA6101C5D546100EB2B6D /* SwiftChattyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		300CA7201C5D54B700EB2B6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				300CA75A1C5D553900EB2B6D /* Client.swift in Sources */,
+				300CA75B1C5D553900EB2B6D /* ClientRequestResult.swift in Sources */,
+				300CA75C1C5D553900EB2B6D /* Errors.swift in Sources */,
+				300CA75D1C5D553900EB2B6D /* EventType.swift in Sources */,
+				300CA75E1C5D553900EB2B6D /* Mailbox.swift in Sources */,
+				300CA75F1C5D553900EB2B6D /* CommonMappableModel.swift in Sources */,
+				300CA7601C5D553900EB2B6D /* Event.swift in Sources */,
+				300CA7611C5D553900EB2B6D /* EventCategoryChange.swift in Sources */,
+				300CA7621C5D553900EB2B6D /* EventLolCountUpdate.swift in Sources */,
+				300CA7631C5D553900EB2B6D /* EventNewPost.swift in Sources */,
+				300CA7641C5D553900EB2B6D /* EventServerMessage.swift in Sources */,
+				300CA7651C5D553900EB2B6D /* LOL.swift in Sources */,
+				300CA7661C5D553900EB2B6D /* MarkedPost.swift in Sources */,
+				300CA7671C5D553900EB2B6D /* Message.swift in Sources */,
+				300CA7681C5D553900EB2B6D /* Notification.swift in Sources */,
+				300CA7691C5D553900EB2B6D /* Post.swift in Sources */,
+				300CA76A1C5D553900EB2B6D /* PostLineage.swift in Sources */,
+				300CA76B1C5D553900EB2B6D /* PostRelationship.swift in Sources */,
+				300CA76C1C5D553900EB2B6D /* PostType.swift in Sources */,
+				300CA76D1C5D553900EB2B6D /* RootPost.swift in Sources */,
+				300CA76E1C5D553900EB2B6D /* SearchResult.swift in Sources */,
+				300CA76F1C5D553900EB2B6D /* Thread.swift in Sources */,
+				300CA7701C5D553900EB2B6D /* ThreadPostCount.swift in Sources */,
+				300CA7711C5D553900EB2B6D /* ThreadPostId.swift in Sources */,
+				300CA7721C5D553900EB2B6D /* ThreadType.swift in Sources */,
+				300CA7731C5D553900EB2B6D /* UserRegistrationDate.swift in Sources */,
+				300CA7741C5D553900EB2B6D /* UserSetup.swift in Sources */,
+				300CA7751C5D553900EB2B6D /* MarkedPostType.swift in Sources */,
+				300CA7761C5D553900EB2B6D /* ModerationFlag.swift in Sources */,
+				300CA7771C5D553900EB2B6D /* Account.swift in Sources */,
+				300CA7781C5D553900EB2B6D /* API.swift in Sources */,
+				300CA7791C5D553900EB2B6D /* ClearMarkedPostsRequest.swift in Sources */,
+				300CA77A1C5D553900EB2B6D /* GetCategoryFiltersRequest.swift in Sources */,
+				300CA77B1C5D553900EB2B6D /* GetClientDataRequest.swift in Sources */,
+				300CA77C1C5D553900EB2B6D /* GetMarkedPostsRequest.swift in Sources */,
+				300CA77D1C5D553900EB2B6D /* MarkPostRequest.swift in Sources */,
+				300CA77E1C5D553900EB2B6D /* SetCategoryFiltersRequest.swift in Sources */,
+				300CA77F1C5D553900EB2B6D /* SetClientDataRequest.swift in Sources */,
+				300CA7801C5D553900EB2B6D /* BroadcastServerMessageRequest.swift in Sources */,
+				300CA7811C5D553900EB2B6D /* GetNewestEventIdRequest.swift in Sources */,
+				300CA7821C5D553900EB2B6D /* PollForEventRequest.swift in Sources */,
+				300CA7831C5D553900EB2B6D /* WaitForEventRequest.swift in Sources */,
+				300CA7841C5D553900EB2B6D /* DeleteMessageRequest.swift in Sources */,
+				300CA7851C5D553900EB2B6D /* GetMessageCountRequest.swift in Sources */,
+				300CA7861C5D553900EB2B6D /* GetMessagesRequest.swift in Sources */,
+				300CA7871C5D553900EB2B6D /* MarkMessageReadRequest.swift in Sources */,
+				300CA7881C5D553900EB2B6D /* SendMessageRequest.swift in Sources */,
+				300CA7891C5D553900EB2B6D /* DetachAccountRequest.swift in Sources */,
+				300CA78A1C5D553900EB2B6D /* GenerateIdRequest.swift in Sources */,
+				300CA78B1C5D553900EB2B6D /* GetUserSetupRequest.swift in Sources */,
+				300CA78C1C5D553900EB2B6D /* RegisterNotifierClientRequest.swift in Sources */,
+				300CA78D1C5D553900EB2B6D /* RegisterRichClientRequest.swift in Sources */,
+				300CA78E1C5D553900EB2B6D /* SetUserSetupRequest.swift in Sources */,
+				300CA78F1C5D553900EB2B6D /* WaitForNotificationRequest.swift in Sources */,
+				300CA7901C5D553900EB2B6D /* GetNewestPostInfoRequest.swift in Sources */,
+				300CA7911C5D553900EB2B6D /* GetParentIdRequest.swift in Sources */,
+				300CA7921C5D553900EB2B6D /* GetPostLineageRequest.swift in Sources */,
+				300CA7931C5D553900EB2B6D /* GetPostRangeRequest.swift in Sources */,
+				300CA7941C5D553900EB2B6D /* GetPostRequest.swift in Sources */,
+				300CA7951C5D553900EB2B6D /* RequestReindexRequest.swift in Sources */,
+				300CA7961C5D553900EB2B6D /* SearchRequest.swift in Sources */,
+				300CA7971C5D553900EB2B6D /* SetPostCategoryRequest.swift in Sources */,
+				300CA7981C5D553900EB2B6D /* Request.swift in Sources */,
+				300CA7991C5D553900EB2B6D /* GetChattyRequest.swift in Sources */,
+				300CA79A1C5D553900EB2B6D /* GetChattyRootPostsRequest.swift in Sources */,
+				300CA79B1C5D553900EB2B6D /* GetSubthreadRequest.swift in Sources */,
+				300CA79C1C5D553900EB2B6D /* GetThreadPostCountRequest.swift in Sources */,
+				300CA79D1C5D553900EB2B6D /* GetThreadPostIdsRequest.swift in Sources */,
+				300CA79E1C5D553900EB2B6D /* GetThreadRequest.swift in Sources */,
+				300CA79F1C5D553900EB2B6D /* CheckConnectionRequest.swift in Sources */,
+				300CA7A01C5D553900EB2B6D /* GetAllTenYearUsersRequest.swift in Sources */,
+				300CA7A11C5D553900EB2B6D /* GetAllUserRegistrationDatesRequest.swift in Sources */,
+				300CA7A21C5D553900EB2B6D /* GetUserRegistrationDateRequest.swift in Sources */,
+				300CA7A31C5D553900EB2B6D /* VerifyCredentialsRequest.swift in Sources */,
+				300CA7A41C5D553900EB2B6D /* ClearMarkedPostsResponse.swift in Sources */,
+				300CA7A51C5D553900EB2B6D /* GetCategoryFiltersResponse.swift in Sources */,
+				300CA7A61C5D553900EB2B6D /* GetClientDataResponse.swift in Sources */,
+				300CA7A71C5D553900EB2B6D /* GetMarkedPostsResponse.swift in Sources */,
+				300CA7A81C5D553900EB2B6D /* MarkPostResponse.swift in Sources */,
+				300CA7A91C5D553900EB2B6D /* SetCategoryFiltersResponse.swift in Sources */,
+				300CA7AA1C5D553900EB2B6D /* SetClientDataResponse.swift in Sources */,
+				300CA7AB1C5D553900EB2B6D /* CommonSuccessResponse.swift in Sources */,
+				300CA7AC1C5D553900EB2B6D /* ApiErrorResponse.swift in Sources */,
+				300CA7AD1C5D553900EB2B6D /* BroadcastServerMessageResponse.swift in Sources */,
+				300CA7AE1C5D553900EB2B6D /* GetNewestEventIdResponse.swift in Sources */,
+				300CA7AF1C5D553900EB2B6D /* PollForEventResponse.swift in Sources */,
+				300CA7B01C5D553900EB2B6D /* WaitForEventResponse.swift in Sources */,
+				300CA7B11C5D553900EB2B6D /* DeleteMessageResponse.swift in Sources */,
+				300CA7B21C5D553900EB2B6D /* GetMessageCountResponse.swift in Sources */,
+				300CA7B31C5D553900EB2B6D /* GetMessagesResponse.swift in Sources */,
+				300CA7B41C5D553900EB2B6D /* MarkMessageReadResponse.swift in Sources */,
+				300CA7B51C5D553900EB2B6D /* SendMessageResponse.swift in Sources */,
+				300CA7B61C5D553900EB2B6D /* DetachAccountResponse.swift in Sources */,
+				300CA7B71C5D553900EB2B6D /* GenerateIdResponse.swift in Sources */,
+				300CA7B81C5D553900EB2B6D /* GetUserSetupResponse.swift in Sources */,
+				300CA7B91C5D553900EB2B6D /* RegisterNotifierClientResponse.swift in Sources */,
+				300CA7BA1C5D553900EB2B6D /* RegisterRichClientResponse.swift in Sources */,
+				300CA7BB1C5D553900EB2B6D /* SetUserSetupResponse.swift in Sources */,
+				300CA7BC1C5D553900EB2B6D /* WaitForNotificationResponse.swift in Sources */,
+				300CA7BD1C5D553900EB2B6D /* GetNewestPostInfoResponse.swift in Sources */,
+				300CA7BE1C5D553900EB2B6D /* GetParentIdResponse.swift in Sources */,
+				300CA7BF1C5D553900EB2B6D /* GetPostLineageResponse.swift in Sources */,
+				300CA7C01C5D553900EB2B6D /* GetPostRangeResponse.swift in Sources */,
+				300CA7C11C5D553900EB2B6D /* GetPostResponse.swift in Sources */,
+				300CA7C21C5D553900EB2B6D /* RequestReindexResponse.swift in Sources */,
+				300CA7C31C5D553900EB2B6D /* SearchResponse.swift in Sources */,
+				300CA7C41C5D553A00EB2B6D /* SetPostCategoryResponse.swift in Sources */,
+				300CA7C51C5D553A00EB2B6D /* Response.swift in Sources */,
+				300CA7C61C5D553A00EB2B6D /* GetChattyResponse.swift in Sources */,
+				300CA7C71C5D553A00EB2B6D /* GetChattyRootPostsResponse.swift in Sources */,
+				300CA7C81C5D553A00EB2B6D /* GetSubthreadResponse.swift in Sources */,
+				300CA7C91C5D553A00EB2B6D /* GetThreadPostCountResponse.swift in Sources */,
+				300CA7CA1C5D553A00EB2B6D /* GetThreadPostIdsResponse.swift in Sources */,
+				300CA7CB1C5D553A00EB2B6D /* GetThreadResponse.swift in Sources */,
+				300CA7CC1C5D553A00EB2B6D /* CheckConnectionResponse.swift in Sources */,
+				300CA7CD1C5D553A00EB2B6D /* GetAllTenYearUsersResponse.swift in Sources */,
+				300CA7CE1C5D553A00EB2B6D /* GetAllUserRegistrationDatesResponse.swift in Sources */,
+				300CA7CF1C5D553A00EB2B6D /* GetUserRegistrationDateResponse.swift in Sources */,
+				300CA7D01C5D553A00EB2B6D /* VerifyCredentialsResponse.swift in Sources */,
+				300CA7D11C5D553A00EB2B6D /* Encoder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		300CA72A1C5D54B700EB2B6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		300CA73C1C5D54CA00EB2B6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				300CA7D21C5D554000EB2B6D /* Client.swift in Sources */,
+				300CA7D31C5D554000EB2B6D /* ClientRequestResult.swift in Sources */,
+				300CA7D41C5D554000EB2B6D /* Errors.swift in Sources */,
+				300CA7D51C5D554000EB2B6D /* EventType.swift in Sources */,
+				300CA7D61C5D554000EB2B6D /* Mailbox.swift in Sources */,
+				300CA7D71C5D554000EB2B6D /* CommonMappableModel.swift in Sources */,
+				300CA7D81C5D554000EB2B6D /* Event.swift in Sources */,
+				300CA7D91C5D554000EB2B6D /* EventCategoryChange.swift in Sources */,
+				300CA7DA1C5D554000EB2B6D /* EventLolCountUpdate.swift in Sources */,
+				300CA7DB1C5D554000EB2B6D /* EventNewPost.swift in Sources */,
+				300CA7DC1C5D554000EB2B6D /* EventServerMessage.swift in Sources */,
+				300CA7DD1C5D554000EB2B6D /* LOL.swift in Sources */,
+				300CA7DE1C5D554000EB2B6D /* MarkedPost.swift in Sources */,
+				300CA7DF1C5D554000EB2B6D /* Message.swift in Sources */,
+				300CA7E01C5D554000EB2B6D /* Notification.swift in Sources */,
+				300CA7E11C5D554000EB2B6D /* Post.swift in Sources */,
+				300CA7E21C5D554000EB2B6D /* PostLineage.swift in Sources */,
+				300CA7E31C5D554000EB2B6D /* PostRelationship.swift in Sources */,
+				300CA7E41C5D554000EB2B6D /* PostType.swift in Sources */,
+				300CA7E51C5D554000EB2B6D /* RootPost.swift in Sources */,
+				300CA7E61C5D554000EB2B6D /* SearchResult.swift in Sources */,
+				300CA7E71C5D554000EB2B6D /* Thread.swift in Sources */,
+				300CA7E81C5D554100EB2B6D /* ThreadPostCount.swift in Sources */,
+				300CA7E91C5D554100EB2B6D /* ThreadPostId.swift in Sources */,
+				300CA7EA1C5D554100EB2B6D /* ThreadType.swift in Sources */,
+				300CA7EB1C5D554100EB2B6D /* UserRegistrationDate.swift in Sources */,
+				300CA7EC1C5D554100EB2B6D /* UserSetup.swift in Sources */,
+				300CA7ED1C5D554100EB2B6D /* MarkedPostType.swift in Sources */,
+				300CA7EE1C5D554100EB2B6D /* ModerationFlag.swift in Sources */,
+				300CA7EF1C5D554100EB2B6D /* Account.swift in Sources */,
+				300CA7F01C5D554100EB2B6D /* API.swift in Sources */,
+				300CA7F11C5D554100EB2B6D /* ClearMarkedPostsRequest.swift in Sources */,
+				300CA7F21C5D554100EB2B6D /* GetCategoryFiltersRequest.swift in Sources */,
+				300CA7F31C5D554100EB2B6D /* GetClientDataRequest.swift in Sources */,
+				300CA7F41C5D554100EB2B6D /* GetMarkedPostsRequest.swift in Sources */,
+				300CA7F51C5D554100EB2B6D /* MarkPostRequest.swift in Sources */,
+				300CA7F61C5D554100EB2B6D /* SetCategoryFiltersRequest.swift in Sources */,
+				300CA7F71C5D554100EB2B6D /* SetClientDataRequest.swift in Sources */,
+				300CA7F81C5D554100EB2B6D /* BroadcastServerMessageRequest.swift in Sources */,
+				300CA7F91C5D554100EB2B6D /* GetNewestEventIdRequest.swift in Sources */,
+				300CA7FA1C5D554100EB2B6D /* PollForEventRequest.swift in Sources */,
+				300CA7FB1C5D554100EB2B6D /* WaitForEventRequest.swift in Sources */,
+				300CA7FC1C5D554100EB2B6D /* DeleteMessageRequest.swift in Sources */,
+				300CA7FD1C5D554100EB2B6D /* GetMessageCountRequest.swift in Sources */,
+				300CA7FE1C5D554100EB2B6D /* GetMessagesRequest.swift in Sources */,
+				300CA7FF1C5D554100EB2B6D /* MarkMessageReadRequest.swift in Sources */,
+				300CA8001C5D554100EB2B6D /* SendMessageRequest.swift in Sources */,
+				300CA8011C5D554100EB2B6D /* DetachAccountRequest.swift in Sources */,
+				300CA8021C5D554100EB2B6D /* GenerateIdRequest.swift in Sources */,
+				300CA8031C5D554100EB2B6D /* GetUserSetupRequest.swift in Sources */,
+				300CA8041C5D554100EB2B6D /* RegisterNotifierClientRequest.swift in Sources */,
+				300CA8051C5D554100EB2B6D /* RegisterRichClientRequest.swift in Sources */,
+				300CA8061C5D554100EB2B6D /* SetUserSetupRequest.swift in Sources */,
+				300CA8071C5D554100EB2B6D /* WaitForNotificationRequest.swift in Sources */,
+				300CA8081C5D554100EB2B6D /* GetNewestPostInfoRequest.swift in Sources */,
+				300CA8091C5D554100EB2B6D /* GetParentIdRequest.swift in Sources */,
+				300CA80A1C5D554100EB2B6D /* GetPostLineageRequest.swift in Sources */,
+				300CA80B1C5D554100EB2B6D /* GetPostRangeRequest.swift in Sources */,
+				300CA80C1C5D554100EB2B6D /* GetPostRequest.swift in Sources */,
+				300CA80D1C5D554100EB2B6D /* RequestReindexRequest.swift in Sources */,
+				300CA80E1C5D554100EB2B6D /* SearchRequest.swift in Sources */,
+				300CA80F1C5D554100EB2B6D /* SetPostCategoryRequest.swift in Sources */,
+				300CA8101C5D554100EB2B6D /* Request.swift in Sources */,
+				300CA8111C5D554100EB2B6D /* GetChattyRequest.swift in Sources */,
+				300CA8121C5D554100EB2B6D /* GetChattyRootPostsRequest.swift in Sources */,
+				300CA8131C5D554100EB2B6D /* GetSubthreadRequest.swift in Sources */,
+				300CA8141C5D554100EB2B6D /* GetThreadPostCountRequest.swift in Sources */,
+				300CA8151C5D554100EB2B6D /* GetThreadPostIdsRequest.swift in Sources */,
+				300CA8161C5D554100EB2B6D /* GetThreadRequest.swift in Sources */,
+				300CA8171C5D554100EB2B6D /* CheckConnectionRequest.swift in Sources */,
+				300CA8181C5D554100EB2B6D /* GetAllTenYearUsersRequest.swift in Sources */,
+				300CA8191C5D554100EB2B6D /* GetAllUserRegistrationDatesRequest.swift in Sources */,
+				300CA81A1C5D554100EB2B6D /* GetUserRegistrationDateRequest.swift in Sources */,
+				300CA81B1C5D554100EB2B6D /* VerifyCredentialsRequest.swift in Sources */,
+				300CA81C1C5D554100EB2B6D /* ClearMarkedPostsResponse.swift in Sources */,
+				300CA81D1C5D554100EB2B6D /* GetCategoryFiltersResponse.swift in Sources */,
+				300CA81E1C5D554100EB2B6D /* GetClientDataResponse.swift in Sources */,
+				300CA81F1C5D554100EB2B6D /* GetMarkedPostsResponse.swift in Sources */,
+				300CA8201C5D554100EB2B6D /* MarkPostResponse.swift in Sources */,
+				300CA8211C5D554100EB2B6D /* SetCategoryFiltersResponse.swift in Sources */,
+				300CA8221C5D554100EB2B6D /* SetClientDataResponse.swift in Sources */,
+				300CA8231C5D554100EB2B6D /* CommonSuccessResponse.swift in Sources */,
+				300CA8241C5D554100EB2B6D /* ApiErrorResponse.swift in Sources */,
+				300CA8251C5D554100EB2B6D /* BroadcastServerMessageResponse.swift in Sources */,
+				300CA8261C5D554100EB2B6D /* GetNewestEventIdResponse.swift in Sources */,
+				300CA8271C5D554100EB2B6D /* PollForEventResponse.swift in Sources */,
+				300CA8281C5D554100EB2B6D /* WaitForEventResponse.swift in Sources */,
+				300CA8291C5D554100EB2B6D /* DeleteMessageResponse.swift in Sources */,
+				300CA82A1C5D554100EB2B6D /* GetMessageCountResponse.swift in Sources */,
+				300CA82B1C5D554100EB2B6D /* GetMessagesResponse.swift in Sources */,
+				300CA82C1C5D554100EB2B6D /* MarkMessageReadResponse.swift in Sources */,
+				300CA82D1C5D554200EB2B6D /* SendMessageResponse.swift in Sources */,
+				300CA82E1C5D554200EB2B6D /* DetachAccountResponse.swift in Sources */,
+				300CA82F1C5D554200EB2B6D /* GenerateIdResponse.swift in Sources */,
+				300CA8301C5D554200EB2B6D /* GetUserSetupResponse.swift in Sources */,
+				300CA8311C5D554200EB2B6D /* RegisterNotifierClientResponse.swift in Sources */,
+				300CA8321C5D554200EB2B6D /* RegisterRichClientResponse.swift in Sources */,
+				300CA8331C5D554200EB2B6D /* SetUserSetupResponse.swift in Sources */,
+				300CA8341C5D554200EB2B6D /* WaitForNotificationResponse.swift in Sources */,
+				300CA8351C5D554200EB2B6D /* GetNewestPostInfoResponse.swift in Sources */,
+				300CA8361C5D554200EB2B6D /* GetParentIdResponse.swift in Sources */,
+				300CA8371C5D554200EB2B6D /* GetPostLineageResponse.swift in Sources */,
+				300CA8381C5D554200EB2B6D /* GetPostRangeResponse.swift in Sources */,
+				300CA8391C5D554200EB2B6D /* GetPostResponse.swift in Sources */,
+				300CA83A1C5D554200EB2B6D /* RequestReindexResponse.swift in Sources */,
+				300CA83B1C5D554200EB2B6D /* SearchResponse.swift in Sources */,
+				300CA83C1C5D554200EB2B6D /* SetPostCategoryResponse.swift in Sources */,
+				300CA83D1C5D554200EB2B6D /* Response.swift in Sources */,
+				300CA83E1C5D554200EB2B6D /* GetChattyResponse.swift in Sources */,
+				300CA83F1C5D554200EB2B6D /* GetChattyRootPostsResponse.swift in Sources */,
+				300CA8401C5D554200EB2B6D /* GetSubthreadResponse.swift in Sources */,
+				300CA8411C5D554200EB2B6D /* GetThreadPostCountResponse.swift in Sources */,
+				300CA8421C5D554200EB2B6D /* GetThreadPostIdsResponse.swift in Sources */,
+				300CA8431C5D554200EB2B6D /* GetThreadResponse.swift in Sources */,
+				300CA8441C5D554200EB2B6D /* CheckConnectionResponse.swift in Sources */,
+				300CA8451C5D554200EB2B6D /* GetAllTenYearUsersResponse.swift in Sources */,
+				300CA8461C5D554200EB2B6D /* GetAllUserRegistrationDatesResponse.swift in Sources */,
+				300CA8471C5D554200EB2B6D /* GetUserRegistrationDateResponse.swift in Sources */,
+				300CA8481C5D554200EB2B6D /* VerifyCredentialsResponse.swift in Sources */,
+				300CA8491C5D554200EB2B6D /* Encoder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		300CA7461C5D54CA00EB2B6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3041336E1C5E2CF5003168C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3041337B1C5E2DB8003168C6 /* Client.swift in Sources */,
+				3041337C1C5E2DB8003168C6 /* ClientRequestResult.swift in Sources */,
+				3041337D1C5E2DB8003168C6 /* Errors.swift in Sources */,
+				3041337E1C5E2DB8003168C6 /* EventType.swift in Sources */,
+				3041337F1C5E2DB8003168C6 /* Mailbox.swift in Sources */,
+				304133801C5E2DB8003168C6 /* CommonMappableModel.swift in Sources */,
+				304133811C5E2DB8003168C6 /* Event.swift in Sources */,
+				304133821C5E2DB8003168C6 /* EventCategoryChange.swift in Sources */,
+				304133831C5E2DB8003168C6 /* EventLolCountUpdate.swift in Sources */,
+				304133841C5E2DB8003168C6 /* EventNewPost.swift in Sources */,
+				304133851C5E2DB8003168C6 /* EventServerMessage.swift in Sources */,
+				304133861C5E2DB8003168C6 /* LOL.swift in Sources */,
+				304133871C5E2DB8003168C6 /* MarkedPost.swift in Sources */,
+				304133881C5E2DB8003168C6 /* Message.swift in Sources */,
+				304133891C5E2DB8003168C6 /* Notification.swift in Sources */,
+				3041338A1C5E2DB8003168C6 /* Post.swift in Sources */,
+				3041338B1C5E2DB8003168C6 /* PostLineage.swift in Sources */,
+				3041338C1C5E2DB8003168C6 /* PostRelationship.swift in Sources */,
+				3041338D1C5E2DB8003168C6 /* PostType.swift in Sources */,
+				3041338E1C5E2DB8003168C6 /* RootPost.swift in Sources */,
+				3041338F1C5E2DB8003168C6 /* SearchResult.swift in Sources */,
+				304133901C5E2DB8003168C6 /* Thread.swift in Sources */,
+				304133911C5E2DB8003168C6 /* ThreadPostCount.swift in Sources */,
+				304133921C5E2DB8003168C6 /* ThreadPostId.swift in Sources */,
+				304133931C5E2DB8003168C6 /* ThreadType.swift in Sources */,
+				304133941C5E2DB8003168C6 /* UserRegistrationDate.swift in Sources */,
+				304133951C5E2DB8003168C6 /* UserSetup.swift in Sources */,
+				304133961C5E2DB8003168C6 /* MarkedPostType.swift in Sources */,
+				304133971C5E2DB8003168C6 /* ModerationFlag.swift in Sources */,
+				304133981C5E2DB8003168C6 /* Account.swift in Sources */,
+				304133991C5E2DB8003168C6 /* API.swift in Sources */,
+				3041339A1C5E2DB8003168C6 /* ClearMarkedPostsRequest.swift in Sources */,
+				3041339B1C5E2DB8003168C6 /* GetCategoryFiltersRequest.swift in Sources */,
+				3041339C1C5E2DB8003168C6 /* GetClientDataRequest.swift in Sources */,
+				3041339D1C5E2DB8003168C6 /* GetMarkedPostsRequest.swift in Sources */,
+				3041339E1C5E2DB8003168C6 /* MarkPostRequest.swift in Sources */,
+				3041339F1C5E2DB8003168C6 /* SetCategoryFiltersRequest.swift in Sources */,
+				304133A01C5E2DB8003168C6 /* SetClientDataRequest.swift in Sources */,
+				304133A11C5E2DB8003168C6 /* BroadcastServerMessageRequest.swift in Sources */,
+				304133A21C5E2DB8003168C6 /* GetNewestEventIdRequest.swift in Sources */,
+				304133A31C5E2DB8003168C6 /* PollForEventRequest.swift in Sources */,
+				304133A41C5E2DB8003168C6 /* WaitForEventRequest.swift in Sources */,
+				304133A51C5E2DB8003168C6 /* DeleteMessageRequest.swift in Sources */,
+				304133A61C5E2DB8003168C6 /* GetMessageCountRequest.swift in Sources */,
+				304133A71C5E2DB8003168C6 /* GetMessagesRequest.swift in Sources */,
+				304133A81C5E2DB8003168C6 /* MarkMessageReadRequest.swift in Sources */,
+				304133A91C5E2DB8003168C6 /* SendMessageRequest.swift in Sources */,
+				304133AA1C5E2DB8003168C6 /* DetachAccountRequest.swift in Sources */,
+				304133AB1C5E2DB8003168C6 /* GenerateIdRequest.swift in Sources */,
+				304133AC1C5E2DB8003168C6 /* GetUserSetupRequest.swift in Sources */,
+				304133AD1C5E2DB8003168C6 /* RegisterNotifierClientRequest.swift in Sources */,
+				304133AE1C5E2DB8003168C6 /* RegisterRichClientRequest.swift in Sources */,
+				304133AF1C5E2DB8003168C6 /* SetUserSetupRequest.swift in Sources */,
+				304133B01C5E2DB8003168C6 /* WaitForNotificationRequest.swift in Sources */,
+				304133B11C5E2DB8003168C6 /* GetNewestPostInfoRequest.swift in Sources */,
+				304133B21C5E2DB8003168C6 /* GetParentIdRequest.swift in Sources */,
+				304133B31C5E2DB8003168C6 /* GetPostLineageRequest.swift in Sources */,
+				304133B41C5E2DB8003168C6 /* GetPostRangeRequest.swift in Sources */,
+				304133B51C5E2DB8003168C6 /* GetPostRequest.swift in Sources */,
+				304133B61C5E2DB8003168C6 /* RequestReindexRequest.swift in Sources */,
+				304133B71C5E2DB8003168C6 /* SearchRequest.swift in Sources */,
+				304133B81C5E2DB8003168C6 /* SetPostCategoryRequest.swift in Sources */,
+				304133B91C5E2DB8003168C6 /* Request.swift in Sources */,
+				304133BA1C5E2DB8003168C6 /* GetChattyRequest.swift in Sources */,
+				304133BB1C5E2DB8003168C6 /* GetChattyRootPostsRequest.swift in Sources */,
+				304133BC1C5E2DB8003168C6 /* GetSubthreadRequest.swift in Sources */,
+				304133BD1C5E2DB8003168C6 /* GetThreadPostCountRequest.swift in Sources */,
+				304133BE1C5E2DB8003168C6 /* GetThreadPostIdsRequest.swift in Sources */,
+				304133BF1C5E2DB8003168C6 /* GetThreadRequest.swift in Sources */,
+				304133C01C5E2DB8003168C6 /* CheckConnectionRequest.swift in Sources */,
+				304133C11C5E2DB8003168C6 /* GetAllTenYearUsersRequest.swift in Sources */,
+				304133C21C5E2DB8003168C6 /* GetAllUserRegistrationDatesRequest.swift in Sources */,
+				304133C31C5E2DB8003168C6 /* GetUserRegistrationDateRequest.swift in Sources */,
+				304133C41C5E2DB8003168C6 /* VerifyCredentialsRequest.swift in Sources */,
+				304133C51C5E2DB8003168C6 /* ClearMarkedPostsResponse.swift in Sources */,
+				304133C61C5E2DB8003168C6 /* GetCategoryFiltersResponse.swift in Sources */,
+				304133C71C5E2DB8003168C6 /* GetClientDataResponse.swift in Sources */,
+				304133C81C5E2DB8003168C6 /* GetMarkedPostsResponse.swift in Sources */,
+				304133C91C5E2DB8003168C6 /* MarkPostResponse.swift in Sources */,
+				304133CA1C5E2DB8003168C6 /* SetCategoryFiltersResponse.swift in Sources */,
+				304133CB1C5E2DB8003168C6 /* SetClientDataResponse.swift in Sources */,
+				304133CC1C5E2DB8003168C6 /* CommonSuccessResponse.swift in Sources */,
+				304133CD1C5E2DB8003168C6 /* ApiErrorResponse.swift in Sources */,
+				304133CE1C5E2DB8003168C6 /* BroadcastServerMessageResponse.swift in Sources */,
+				304133CF1C5E2DB8003168C6 /* GetNewestEventIdResponse.swift in Sources */,
+				304133D01C5E2DB8003168C6 /* PollForEventResponse.swift in Sources */,
+				304133D11C5E2DB8003168C6 /* WaitForEventResponse.swift in Sources */,
+				304133D21C5E2DB8003168C6 /* DeleteMessageResponse.swift in Sources */,
+				304133D31C5E2DB8003168C6 /* GetMessageCountResponse.swift in Sources */,
+				304133D41C5E2DB8003168C6 /* GetMessagesResponse.swift in Sources */,
+				304133D51C5E2DB8003168C6 /* MarkMessageReadResponse.swift in Sources */,
+				304133D61C5E2DB8003168C6 /* SendMessageResponse.swift in Sources */,
+				304133D71C5E2DB8003168C6 /* DetachAccountResponse.swift in Sources */,
+				304133D81C5E2DB8003168C6 /* GenerateIdResponse.swift in Sources */,
+				304133D91C5E2DB8003168C6 /* GetUserSetupResponse.swift in Sources */,
+				304133DA1C5E2DB8003168C6 /* RegisterNotifierClientResponse.swift in Sources */,
+				304133DB1C5E2DB8003168C6 /* RegisterRichClientResponse.swift in Sources */,
+				304133DC1C5E2DB8003168C6 /* SetUserSetupResponse.swift in Sources */,
+				304133DD1C5E2DB8003168C6 /* WaitForNotificationResponse.swift in Sources */,
+				304133DE1C5E2DB8003168C6 /* GetNewestPostInfoResponse.swift in Sources */,
+				304133DF1C5E2DB8003168C6 /* GetParentIdResponse.swift in Sources */,
+				304133E01C5E2DB8003168C6 /* GetPostLineageResponse.swift in Sources */,
+				304133E11C5E2DB8003168C6 /* GetPostRangeResponse.swift in Sources */,
+				304133E21C5E2DB8003168C6 /* GetPostResponse.swift in Sources */,
+				304133E31C5E2DB8003168C6 /* RequestReindexResponse.swift in Sources */,
+				304133E41C5E2DB8003168C6 /* SearchResponse.swift in Sources */,
+				304133E51C5E2DB8003168C6 /* SetPostCategoryResponse.swift in Sources */,
+				304133E61C5E2DB8003168C6 /* Response.swift in Sources */,
+				304133E71C5E2DB8003168C6 /* GetChattyResponse.swift in Sources */,
+				304133E81C5E2DB8003168C6 /* GetChattyRootPostsResponse.swift in Sources */,
+				304133E91C5E2DB8003168C6 /* GetSubthreadResponse.swift in Sources */,
+				304133EA1C5E2DB8003168C6 /* GetThreadPostCountResponse.swift in Sources */,
+				304133EB1C5E2DB8003168C6 /* GetThreadPostIdsResponse.swift in Sources */,
+				304133EC1C5E2DB8003168C6 /* GetThreadResponse.swift in Sources */,
+				304133ED1C5E2DB8003168C6 /* CheckConnectionResponse.swift in Sources */,
+				304133EE1C5E2DB8003168C6 /* GetAllTenYearUsersResponse.swift in Sources */,
+				304133EF1C5E2DB8003168C6 /* GetAllUserRegistrationDatesResponse.swift in Sources */,
+				304133F01C5E2DB8003168C6 /* GetUserRegistrationDateResponse.swift in Sources */,
+				304133F11C5E2DB8003168C6 /* VerifyCredentialsResponse.swift in Sources */,
+				304133F21C5E2DB8003168C6 /* Encoder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		300CA60D1C5D546100EB2B6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 300CA5FF1C5D546100EB2B6D /* SwiftChatty-iOS */;
+			targetProxy = 300CA60C1C5D546100EB2B6D /* PBXContainerItemProxy */;
+		};
+		300CA7311C5D54B700EB2B6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 300CA7241C5D54B700EB2B6D /* SwiftChatty-OSX */;
+			targetProxy = 300CA7301C5D54B700EB2B6D /* PBXContainerItemProxy */;
+		};
+		300CA74D1C5D54CA00EB2B6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 300CA7401C5D54CA00EB2B6D /* SwiftChatty-tvOS */;
+			targetProxy = 300CA74C1C5D54CA00EB2B6D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		300CA6121C5D546100EB2B6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		300CA6131C5D546100EB2B6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		300CA6151C5D546100EB2B6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 274922CEC0CF01743FD53CAE /* Pods-SwiftChatty-iOS.debug.xcconfig */;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SwiftChatty/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrebocchini.SwiftChatty;
+				PRODUCT_NAME = SwiftChatty;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		300CA6161C5D546100EB2B6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF4BC91302DE4B912249E48C /* Pods-SwiftChatty-iOS.release.xcconfig */;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SwiftChatty/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrebocchini.SwiftChatty;
+				PRODUCT_NAME = SwiftChatty;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		300CA6181C5D546100EB2B6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SwiftChattyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrebocchini.SwiftChattyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		300CA6191C5D546100EB2B6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SwiftChattyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrebocchini.SwiftChattyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		300CA7371C5D54B700EB2B6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23192838D1B85655D36EB19E /* Pods-SwiftChatty-OSX.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftChatty/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrebocchini.SwiftChatty-OSX";
+				PRODUCT_NAME = SwiftChatty;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		300CA7381C5D54B700EB2B6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 634DADA57984DF49E0A5EE0C /* Pods-SwiftChatty-OSX.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftChatty/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrebocchini.SwiftChatty-OSX";
+				PRODUCT_NAME = SwiftChatty;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		300CA73A1C5D54B700EB2B6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "SwiftChatty-OSXTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks @loader_path/Frameworks  @executable_path/Frameworks ";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrebocchini.SwiftChatty-OSXTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		300CA73B1C5D54B700EB2B6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "SwiftChatty-OSXTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks @loader_path/Frameworks  @executable_path/Frameworks ";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrebocchini.SwiftChatty-OSXTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		300CA7531C5D54CA00EB2B6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEC96D2A2EA7108B0DB8675F /* Pods-SwiftChatty-tvOS.debug.xcconfig */;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftChatty/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrebocchini.SwiftChatty-tvOS";
+				PRODUCT_NAME = SwiftChatty;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		300CA7541C5D54CA00EB2B6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D64903326019F53F3139E5F6 /* Pods-SwiftChatty-tvOS.release.xcconfig */;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftChatty/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrebocchini.SwiftChatty-tvOS";
+				PRODUCT_NAME = SwiftChatty;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		300CA7561C5D54CA00EB2B6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "SwiftChatty-tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @executable_path/../Frameworks  @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrebocchini.SwiftChatty-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		300CA7571C5D54CA00EB2B6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "SwiftChatty-tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks @executable_path/../Frameworks  @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrebocchini.SwiftChatty-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
+		304133781C5E2CF5003168C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91AFA69CC56C964813DF8BE9 /* Pods-SwiftChatty-WatchOS.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftChatty/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrebocchini.SwiftChatty-WatchOS";
+				PRODUCT_NAME = SwiftChatty;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		304133791C5E2CF5003168C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFDCC6931C458CFE85E39C31 /* Pods-SwiftChatty-WatchOS.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftChatty/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrebocchini.SwiftChatty-WatchOS";
+				PRODUCT_NAME = SwiftChatty;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		300CA5FA1C5D546100EB2B6D /* Build configuration list for PBXProject "SwiftChatty" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				300CA6121C5D546100EB2B6D /* Debug */,
+				300CA6131C5D546100EB2B6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		300CA6141C5D546100EB2B6D /* Build configuration list for PBXNativeTarget "SwiftChatty-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				300CA6151C5D546100EB2B6D /* Debug */,
+				300CA6161C5D546100EB2B6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		300CA6171C5D546100EB2B6D /* Build configuration list for PBXNativeTarget "SwiftChatty-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				300CA6181C5D546100EB2B6D /* Debug */,
+				300CA6191C5D546100EB2B6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		300CA7361C5D54B700EB2B6D /* Build configuration list for PBXNativeTarget "SwiftChatty-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				300CA7371C5D54B700EB2B6D /* Debug */,
+				300CA7381C5D54B700EB2B6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		300CA7391C5D54B700EB2B6D /* Build configuration list for PBXNativeTarget "SwiftChatty-OSXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				300CA73A1C5D54B700EB2B6D /* Debug */,
+				300CA73B1C5D54B700EB2B6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		300CA7521C5D54CA00EB2B6D /* Build configuration list for PBXNativeTarget "SwiftChatty-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				300CA7531C5D54CA00EB2B6D /* Debug */,
+				300CA7541C5D54CA00EB2B6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		300CA7551C5D54CA00EB2B6D /* Build configuration list for PBXNativeTarget "SwiftChatty-tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				300CA7561C5D54CA00EB2B6D /* Debug */,
+				300CA7571C5D54CA00EB2B6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3041337A1C5E2CF5003168C6 /* Build configuration list for PBXNativeTarget "SwiftChatty-WatchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				304133781C5E2CF5003168C6 /* Debug */,
+				304133791C5E2CF5003168C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 300CA5F71C5D546100EB2B6D /* Project object */;
+}

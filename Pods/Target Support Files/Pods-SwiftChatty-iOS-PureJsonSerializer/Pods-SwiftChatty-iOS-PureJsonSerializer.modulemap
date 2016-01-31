@@ -1,0 +1,6 @@
+framework module PureJsonSerializer {
+  umbrella header "Pods-SwiftChatty-iOS-PureJsonSerializer-umbrella.h"
+
+  export *
+  module * { export * }
+}

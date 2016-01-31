@@ -1,0 +1,16 @@
+PODS:
+  - Alamofire (3.1.5)
+  - Genome (2.0.1):
+    - PureJsonSerializer (~> 1.0.0)
+  - PureJsonSerializer (1.0.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - Genome
+
+SPEC CHECKSUMS:
+  Alamofire: 5f730ba29fd113b7ddd71c1e65d0c630acf5d7b0
+  Genome: 503add4d4156631f0b43587432148994f3f7e783
+  PureJsonSerializer: 81d6bc0e21ed4b837193279aa3d29981f75f9057
+
+COCOAPODS: 0.39.0

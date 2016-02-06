@@ -17,7 +17,7 @@ public struct GetThreadPostIdsResponse {
 
 }
 
-extension GetThreadPostIdsResponse: Response {
+extension GetThreadPostIdsResponse: MappableResponse {
 
     public mutating func sequence(map: Map) throws {
         try threadsPostIds <~ map["threads"]

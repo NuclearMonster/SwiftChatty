@@ -18,7 +18,7 @@ public struct GetNewestPostInfoResponse {
 
 }
 
-extension GetNewestPostInfoResponse: Response {
+extension GetNewestPostInfoResponse: MappableResponse {
 
     public mutating func sequence(map: Map) throws {
         try id <~ map["id"]

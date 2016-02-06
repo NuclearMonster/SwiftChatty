@@ -17,7 +17,7 @@ public struct GetUserSetupResponse {
 
 }
 
-extension GetUserSetupResponse: Response {
+extension GetUserSetupResponse: MappableResponse {
 
     public mutating func sequence(map: Map) throws {
         var triggerOnReply: Bool = false

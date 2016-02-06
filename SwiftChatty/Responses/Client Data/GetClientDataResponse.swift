@@ -17,7 +17,7 @@ public struct GetClientDataResponse {
 
 }
 
-extension GetClientDataResponse: Response {
+extension GetClientDataResponse: MappableResponse {
 
     public mutating func sequence(map: Map) throws {
         try data <~ map["data"]

@@ -9,6 +9,7 @@
 public enum ApiRoot: String {
 
     case WinChatty = "https://winchatty.com"
+    case Lol = "http://www.lmnopc.com"
 
 }
 
@@ -70,5 +71,8 @@ public enum ApiEndpoint: String {
     case WaitForNotification = "/v2/notifications/waitForNotification"
     case GetUserSetup = "/v2/notifications/getUserSetup"
     case SetUserSetup = "/v2/notifications/setUserSetup"
+
+    // MARK: Lol
+    case Lol = "/greasemonkey/shacklol/report.php"
 
 }

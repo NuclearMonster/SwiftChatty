@@ -18,7 +18,7 @@ public struct GetMessageCountResponse {
 
 }
 
-extension GetMessageCountResponse: Response {
+extension GetMessageCountResponse: MappableResponse {
 
     public mutating func sequence(map: Map) throws {
         try total <~ map ["total"]

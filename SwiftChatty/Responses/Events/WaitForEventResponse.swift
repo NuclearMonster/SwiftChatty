@@ -18,7 +18,7 @@ public struct WaitForEventResponse {
 
 }
 
-extension WaitForEventResponse: Response {
+extension WaitForEventResponse: MappableResponse {
 
     public mutating func sequence(map: Map) throws {
         try lastEventId <~ map ["lastEventId"]

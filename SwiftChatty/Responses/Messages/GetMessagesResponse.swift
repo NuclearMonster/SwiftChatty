@@ -20,7 +20,7 @@ public struct GetMessagesResponse {
 
 }
 
-extension GetMessagesResponse: Response {
+extension GetMessagesResponse: MappableResponse {
 
     public mutating func sequence(map: Map) throws {
         try page <~ map["page"]

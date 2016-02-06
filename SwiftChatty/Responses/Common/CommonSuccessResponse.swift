@@ -10,7 +10,7 @@ import Genome
 
 /// Some of the API requests just return an success acknowledgement response.
 /// This is the protocol that models that response.
-public protocol CommonSuccessResponse: Response {
+public protocol CommonSuccessResponse: MappableResponse {
 
     var result: String { get set }
 

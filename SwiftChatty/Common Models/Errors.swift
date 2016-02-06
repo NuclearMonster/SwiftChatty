@@ -22,6 +22,8 @@ public enum Error: ErrorType {
     case MappingError
     /// An error on the client's system.  Most likely a networking error.
     case SystemError(code: Int, domain: String)
+    /// An error from the lol API
+    case LolError(message: String)
     /// Catch all for errors that can't be matched to one of the other categories.
     case UnkownError
 

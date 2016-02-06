@@ -17,7 +17,7 @@ public struct GetNewestEventIdResponse {
 
 }
 
-extension GetNewestEventIdResponse: Response {
+extension GetNewestEventIdResponse: MappableResponse {
 
     public mutating func sequence(map: Map) throws {
         try eventId <~ map ["eventId"]

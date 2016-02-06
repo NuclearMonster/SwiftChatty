@@ -17,7 +17,7 @@ public struct GetParentIdResponse {
 
 }
 
-extension GetParentIdResponse: Response {
+extension GetParentIdResponse: MappableResponse {
 
     public mutating func sequence(map: Map) throws {
         try relationships <~ map["relationships"]

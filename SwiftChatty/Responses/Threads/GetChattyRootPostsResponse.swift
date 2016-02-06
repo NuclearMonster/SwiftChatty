@@ -18,7 +18,7 @@ public struct GetChattyRootPostsResponse {
 
 }
 
-extension GetChattyRootPostsResponse: Response {
+extension GetChattyRootPostsResponse: MappableResponse {
 
     public mutating func sequence(map: Map) throws {
         try totalThreadCount <~ map["totalThreadCount"]

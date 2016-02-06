@@ -18,11 +18,11 @@ public final class Client {
     ///
     /// - parameter request: The Request object containing details about the API endpoint we want
     ///   to reach and any necessary parameters.
-    /// - parameter completion: A completion block to handle the response.  It takes a Response
-    ///   object as a parameter.  This response object should be a corresponding object to the
-    ///   request that was made so it can be mapped properly.  For example, a GetPostRequest
-    ///   should be matched by a GetPostResponse.
-    public static func request<SerializedObject: Response>
+    /// - parameter completion: A completion block to handle the response.  It takes a 
+    ///   MappableResponse object as a parameter.  This response object should be a corresponding 
+    ///   object to the request that was made so it can be mapped properly.  For example, a 
+    ///   GetPostRequest should be matched by a GetPostResponse.
+    public static func request<SerializedObject: MappableResponse>
         (request: Request, completion: ClientRequestResult<SerializedObject> -> Void) {
 
         Alamofire.request(request).responseJSON(options: .AllowFragments) { response in
@@ -49,6 +49,37 @@ public final class Client {
             case .Failure(let error):
                 completion(.Failure(
                     Error.SystemError(code: error.code, domain: error.domain)))
+            }
+        }
+    }
+
+    /// Places a request using the Request object passed into it, and stores the
+    /// response in the corresponding case in ClientRequestResult depending on whether the request
+    /// was successful or not.
+    ///
+    /// Since the WinChatty API does not allow you to LOL posts, this request method is made
+    /// to take a special post object with parameters that allows it to talk to the ThomW's lol
+    /// server.
+    ///
+    /// - parameter request: The Request object containing details about the API endpoint we want
+    ///   to reach and any necessary parameters.
+    /// - parameter completion: A completion block to handle the response.  It takes a 
+    ///   LolPostResponse object as a parameter.
+    public static func request
+            (request: Request, completion: ClientRequestResult<LolPostResponse> -> Void) {
+
+        Alamofire.request(request).responseString { response in
+            switch response.result {
+            case .Success(let message):
+                if message.hasPrefix("ok") {
+                    let lolResponse: LolPostResponse = LolPostResponse(message: message)
+                    completion(.Success(lolResponse))
+                } else {
+                    completion(.Failure(Error.LolError(message: message)))
+                }
+            case .Failure(let error):
+                completion(.Failure(
+                Error.SystemError(code: error.code, domain: error.domain)))
             }
         }
     }

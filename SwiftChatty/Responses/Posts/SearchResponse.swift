@@ -17,7 +17,7 @@ public struct SearchResponse {
 
 }
 
-extension SearchResponse: Response {
+extension SearchResponse: MappableResponse {
 
     public mutating func sequence(map: Map) throws {
         try results <~ map["posts"]

@@ -17,7 +17,7 @@ public struct GetAllUserRegistrationDatesResponse {
 
 }
 
-extension GetAllUserRegistrationDatesResponse: Response {
+extension GetAllUserRegistrationDatesResponse: MappableResponse {
 
     public mutating func sequence(map: Map) throws {
         try registrationDates <~ map["users"]

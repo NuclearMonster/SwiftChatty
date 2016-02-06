@@ -21,7 +21,7 @@ public struct GetCategoryFiltersResponse {
 
 }
 
-extension GetCategoryFiltersResponse: Response {
+extension GetCategoryFiltersResponse: MappableResponse {
 
     public mutating func sequence(map: Map) throws {
         try nws <~ map["filters.nws"]

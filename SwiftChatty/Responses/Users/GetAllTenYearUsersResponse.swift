@@ -17,7 +17,7 @@ public struct GetAllTenYearUsersResponse {
 
 }
 
-extension GetAllTenYearUsersResponse: Response {
+extension GetAllTenYearUsersResponse: MappableResponse {
 
     public mutating func sequence(map: Map) throws {
         try users <~ map["users"]

@@ -17,7 +17,7 @@ public struct WaitForNotificationResponse {
 
 }
 
-extension WaitForNotificationResponse: Response {
+extension WaitForNotificationResponse: MappableResponse {
 
     public mutating func sequence(map: Map) throws {
         try notifications <~ map ["messages"]

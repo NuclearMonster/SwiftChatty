@@ -13,7 +13,7 @@ import Genome
 /// - SeeAlso: http://winchatty.com/v2/readme#_Toc421451658
 public struct LOL {
 
-    public var tag: String = ""
+    public var tag: LolTag = .Unknown
     public var count: Int = 0
 
     public init() {}
@@ -23,7 +23,12 @@ public struct LOL {
 extension LOL: CommonMappableModel {
 
     public mutating func sequence(map: Map) throws {
-        try tag <~ map["tag"]
+        var tagString = ""
+        try tagString <~ map["tag"]
+        if let tag = LolTag(rawValue: tagString) {
+            self.tag = tag
+        }
+
         try count <~ map["count"]
     }
 

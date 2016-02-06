@@ -17,7 +17,7 @@ public struct GetChattyResponse {
 
 }
 
-extension GetChattyResponse: Response {
+extension GetChattyResponse: MappableResponse {
 
     public mutating func sequence(map: Map) throws {
         try threads <~ map["threads"]

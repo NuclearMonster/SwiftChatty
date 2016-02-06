@@ -8,4 +8,4 @@
 
 import Genome
 
-public protocol Response: BasicMappable {}
+public protocol MappableResponse: BasicMappable {}

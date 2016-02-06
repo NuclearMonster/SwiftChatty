@@ -10,7 +10,7 @@
 public enum ClientRequestResult<ResponseType> {
 
     /// In the case of a success, the Success case should hold and object
-    /// that conforms to the Response protocol
+    /// that conforms to the MappableResponse protocol, or LolResponse
     case Success(ResponseType)
     /// In the case of an error, the Failure case should an object that
     /// conforms to error type

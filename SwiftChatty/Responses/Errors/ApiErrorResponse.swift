@@ -21,7 +21,7 @@ public struct ApiErrorResponse: ErrorType {
 
 }
 
-extension ApiErrorResponse: Response {
+extension ApiErrorResponse: MappableResponse {
 
     public mutating func sequence(map: Map) throws {
         try error <~ map["error"]

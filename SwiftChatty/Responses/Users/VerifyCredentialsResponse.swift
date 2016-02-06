@@ -18,7 +18,7 @@ public struct VerifyCredentialsResponse {
 
 }
 
-extension VerifyCredentialsResponse: Response {
+extension VerifyCredentialsResponse: MappableResponse {
 
     public mutating func sequence(map: Map) throws {
         try isValid <~ map["isValid"]

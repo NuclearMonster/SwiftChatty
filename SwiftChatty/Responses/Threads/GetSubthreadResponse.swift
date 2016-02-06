@@ -17,7 +17,7 @@ public struct GetSubthreadResponse {
 
 }
 
-extension GetSubthreadResponse: Response {
+extension GetSubthreadResponse: MappableResponse {
 
     public mutating func sequence(map: Map) throws {
         try threads <~ map["subthreads"]

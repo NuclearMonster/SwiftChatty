@@ -33,7 +33,7 @@ extension EventLolCountUpdates: CommonMappableModel {
 public struct LolCountUpdate {
 
     public var postId: Int = 0
-    public var tag: String = ""
+    public var tag: LolTag = .Unknown
     public var count: Int = 0
 
     public init() {}
@@ -44,7 +44,13 @@ extension LolCountUpdate: CommonMappableModel {
 
     public mutating func sequence(map: Map) throws {
         try postId <~ map["postId"]
-        try tag <~ map["tag"]
+
+        var tagString = ""
+        try tagString <~ map["tag"]
+        if let tag = LolTag(rawValue: tagString) {
+            self.tag = tag
+        }
+
         try count <~ map["count"]
     }
 

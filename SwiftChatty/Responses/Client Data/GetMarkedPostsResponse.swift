@@ -17,7 +17,7 @@ public struct GetMarkedPostsResponse {
 
 }
 
-extension GetMarkedPostsResponse: Response {
+extension GetMarkedPostsResponse: MappableResponse {
 
     public mutating func sequence(map: Map) throws {
         try markedPosts <~ map["markedPosts"]

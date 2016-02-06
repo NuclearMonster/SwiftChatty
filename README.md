@@ -33,7 +33,7 @@ If you [look at the documentation](http://winchatty.com/v2/readme#_Toc421451664)
 * **offset**: Number of threads to skip (for paging)
 * **limit**: Maximum number of threads to return (for paging)
 * **username**: If provided, this allows the isParticipant flag to be returned for each thread indicating whether the user posted that thread or replied to it.
-* **data**: If provided, posts from this day will be returned rather than the currently active chatty posts. 
+* **date**: If provided, posts from this day will be returned rather than the currently active chatty posts. 
 
 Using SwiftChatty, you'd create a request for that API call like this:
 
@@ -78,18 +78,23 @@ You will need to add an exception similar to this one to your Info.plist file.
 ```
 <key>NSAppTransportSecurity</key>
 <dict>
-    <key>NSExceptionDomains</key>
-    <dict>
-        <key>winchatty.com</key>
-        <dict>
-            <key>NSExceptionMinimumTLSVersion</key>
-            <string>TLSv1.2</string>
-            <key>NSExceptionRequiresForwardSecrecy</key>
-            <false/>
-            <key>NSIncludeSubdomains</key>
-            <true/>
-        </dict>
-    </dict>
+	<key>NSExceptionDomains</key>
+	<dict>
+		<key>www.lmnopc.com</key>
+		<dict>
+			<key>NSExceptionAllowsInsecureHTTPLoads</key>
+			<true/>
+		</dict>
+		<key>winchatty.com</key>
+		<dict>
+			<key>NSExceptionMinimumTLSVersion</key>
+			<string>TLSv1.2</string>
+			<key>NSExceptionRequiresForwardSecrecy</key>
+			<false/>
+			<key>NSIncludeSubdomains</key>
+			<true/>
+		</dict>
+	</dict>
 </dict>
 ```
 # WatchOS (or any mixed target) projects

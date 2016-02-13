@@ -44,6 +44,10 @@ extension ThreadType {
             return Post()
         }
     }
+
+    public func isParticipant(username: String) -> Bool {
+        return self.posts.filter( { $0.author == username } ).count > 0
+    }
     /// Calculates how many subthreads deep a particular post is
     ///
     /// - paramter post: Post that we want to calculate the depth for

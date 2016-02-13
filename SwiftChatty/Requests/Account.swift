@@ -8,13 +8,10 @@
 
 public struct Account {
 
-    public let username: String?
-    public let password: String?
+    public var username: String?
+    public var password: String?
 
-    public init() {
-        self.username = nil
-        self.password = nil
-    }
+    public init() {}
 
     public init(withUsername username: String, password: String) {
         self.username = username

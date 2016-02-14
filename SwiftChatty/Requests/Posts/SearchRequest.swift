@@ -11,6 +11,7 @@ public struct SearchRequest: Request {
 
     public let endpoint: ApiEndpoint = .Search
     public var parameters: [String : AnyObject] = [:]
+    public var timeout: Double = 30
 
     public init(withTerms terms: String?, author: String?, parentAuthor: String?,
         category: ModerationFlag?, offset: Int?, limit: Int?, oldestFirst: Bool?) {

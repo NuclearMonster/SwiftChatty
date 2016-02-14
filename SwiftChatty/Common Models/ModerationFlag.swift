@@ -14,8 +14,9 @@ public enum ModerationFlag: String {
     case Nws = "nws"
     case Stupid = "stupid"
     case Political = "political"
-    case Tanget = "tangent"
+    case Tangent = "tangent"
     case Informative = "informative"
     case Nuked = "nuked"
 
+    public static let allFlags = [OnTopic, Nws, Stupid, Political, Tangent, Informative, Nuked]
 }

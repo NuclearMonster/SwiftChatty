@@ -20,6 +20,8 @@ public enum Error: ErrorType {
     case ArgumentError(message: String)
     /// A result of failure to map the response received with the rules provided.
     case MappingError
+    /// Invalid credentials were provider when making a request that requires valid login
+    case InvalidLoginError
     /// An error on the client's system.  Most likely a networking error.
     case SystemError(code: Int, domain: String)
     /// An error from the lol API

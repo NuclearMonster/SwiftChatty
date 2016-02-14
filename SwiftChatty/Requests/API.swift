@@ -31,6 +31,7 @@ public enum ApiEndpoint: String {
     case GetPostRange = "/v2/getPostRange"
     case GetParentId = "/v2/getParentId"
     case GetPostLineage = "/v2/getPostLineage"
+    case PostComment = "/v2/postComment"
     case Search = "/v2/search"
     case RequestReindex = "/v2/requestReindex"
     case SetPostCategory = "/v2/setPostCategory"

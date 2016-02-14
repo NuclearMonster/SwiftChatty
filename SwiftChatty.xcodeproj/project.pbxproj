@@ -10,6 +10,8 @@
 		0745460C0A0F93B148A402C2 /* Pods_SwiftChatty_WatchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F2F451D170890538ED9C98E /* Pods_SwiftChatty_WatchOS.framework */; };
 		1FAC116845676654879F047F /* Pods_SwiftChatty_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C276D8B00BFEF1A3908149 /* Pods_SwiftChatty_iOS.framework */; };
 		25F0829AB36985E88ADB2FBE /* Pods_SwiftChatty_OSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1737E3BC39F48A8914266419 /* Pods_SwiftChatty_OSX.framework */; };
+		3004F5AF1C70D4B30069FC43 /* PostCommentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004F5AE1C70D4B30069FC43 /* PostCommentRequest.swift */; };
+		3004F5B11C70D50E0069FC43 /* PostCommentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004F5B01C70D50E0069FC43 /* PostCommentResponse.swift */; };
 		300CA6041C5D546100EB2B6D /* SwiftChatty.h in Headers */ = {isa = PBXBuildFile; fileRef = 300CA6031C5D546100EB2B6D /* SwiftChatty.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		300CA60B1C5D546100EB2B6D /* SwiftChatty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 300CA6001C5D546100EB2B6D /* SwiftChatty.framework */; };
 		300CA6101C5D546100EB2B6D /* SwiftChattyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA60F1C5D546100EB2B6D /* SwiftChattyTests.swift */; };
@@ -533,6 +535,8 @@
 		1737E3BC39F48A8914266419 /* Pods_SwiftChatty_OSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftChatty_OSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23192838D1B85655D36EB19E /* Pods-SwiftChatty-OSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftChatty-OSX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftChatty-OSX/Pods-SwiftChatty-OSX.debug.xcconfig"; sourceTree = "<group>"; };
 		274922CEC0CF01743FD53CAE /* Pods-SwiftChatty-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftChatty-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftChatty-iOS/Pods-SwiftChatty-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		3004F5AE1C70D4B30069FC43 /* PostCommentRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCommentRequest.swift; sourceTree = "<group>"; };
+		3004F5B01C70D50E0069FC43 /* PostCommentResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCommentResponse.swift; sourceTree = "<group>"; };
 		300CA6001C5D546100EB2B6D /* SwiftChatty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftChatty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		300CA6031C5D546100EB2B6D /* SwiftChatty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftChatty.h; sourceTree = "<group>"; };
 		300CA6051C5D546100EB2B6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -925,6 +929,7 @@
 				300CA65C1C5D548500EB2B6D /* GetPostRangeRequest.swift */,
 				300CA65D1C5D548500EB2B6D /* GetPostRequest.swift */,
 				30F649F81C661A5C00470512 /* LolPostRequest.swift */,
+				3004F5AE1C70D4B30069FC43 /* PostCommentRequest.swift */,
 				300CA65E1C5D548500EB2B6D /* RequestReindexRequest.swift */,
 				300CA65F1C5D548500EB2B6D /* SearchRequest.swift */,
 				300CA6601C5D548500EB2B6D /* SetPostCategoryRequest.swift */,
@@ -1050,6 +1055,7 @@
 				300CA6931C5D548500EB2B6D /* GetPostRangeResponse.swift */,
 				300CA6941C5D548500EB2B6D /* GetPostResponse.swift */,
 				819F19F99B077DB1AE430107 /* LolPostResponse.swift */,
+				3004F5B01C70D50E0069FC43 /* PostCommentResponse.swift */,
 				300CA6951C5D548500EB2B6D /* RequestReindexResponse.swift */,
 				300CA6961C5D548500EB2B6D /* SearchResponse.swift */,
 				300CA6971C5D548500EB2B6D /* SetPostCategoryResponse.swift */,
@@ -1570,6 +1576,7 @@
 				300CA7021C5D548500EB2B6D /* MarkMessageReadResponse.swift in Sources */,
 				300CA6AA1C5D548500EB2B6D /* Errors.swift in Sources */,
 				300CA7181C5D548500EB2B6D /* GetThreadPostIdsResponse.swift in Sources */,
+				3004F5B11C70D50E0069FC43 /* PostCommentResponse.swift in Sources */,
 				300CA6EF1C5D548500EB2B6D /* GetAllUserRegistrationDatesRequest.swift in Sources */,
 				300CA6D71C5D548500EB2B6D /* DetachAccountRequest.swift in Sources */,
 				300CA7191C5D548500EB2B6D /* GetThreadResponse.swift in Sources */,
@@ -1630,6 +1637,7 @@
 				300CA6F21C5D548500EB2B6D /* ClearMarkedPostsResponse.swift in Sources */,
 				300CA6D41C5D548500EB2B6D /* GetMessagesRequest.swift in Sources */,
 				300CA7051C5D548500EB2B6D /* GenerateIdResponse.swift in Sources */,
+				3004F5AF1C70D4B30069FC43 /* PostCommentRequest.swift in Sources */,
 				300CA6DA1C5D548500EB2B6D /* RegisterNotifierClientRequest.swift in Sources */,
 				300CA6F51C5D548500EB2B6D /* GetMarkedPostsResponse.swift in Sources */,
 				300CA6FF1C5D548500EB2B6D /* DeleteMessageResponse.swift in Sources */,

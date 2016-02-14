@@ -39,6 +39,8 @@ public final class Client {
                             completion(.Failure(Error.ArgumentError(message: error.message)))
                         case "ERR_SERVER":
                             completion(.Failure(Error.ServerError(message: error.message)))
+                        case "ERR_INVALID_LOGIN":
+                            completion(.Failure(Error.InvalidLoginError))
                         default:
                             completion(.Failure(Error.UnkownError))
                         }

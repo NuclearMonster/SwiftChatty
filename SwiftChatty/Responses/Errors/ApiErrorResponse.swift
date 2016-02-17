@@ -11,7 +11,7 @@ import Genome
 /// Error model used the API to communicate problems to clients.
 ///
 /// - SeeAlso: http://winchatty.com/v2/readme#_Toc421451659
-public struct ApiErrorResponse: ErrorType {
+public struct ApiErrorResponse {
 
     public var error: Bool = true
     public var code: String = ""

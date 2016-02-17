@@ -14,6 +14,6 @@ public enum ClientRequestResult<ResponseType> {
     case Success(ResponseType)
     /// In the case of an error, the Failure case should an object that
     /// conforms to error type
-    case Failure(ErrorType)
+    case Failure(Error)
 
 }

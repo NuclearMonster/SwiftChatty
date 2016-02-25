@@ -1,3 +1,5 @@
+![Build Status](https://travis-ci.org/andrebocchini/SwiftChatty.svg?branch=master)
+
 # What is SwiftChatty?
 
 SwiftChatty is an iOS/OSX/tvOS/WatchOS framework written in Swift that models the [WinChatty

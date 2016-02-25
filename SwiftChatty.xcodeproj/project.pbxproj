@@ -379,6 +379,21 @@
 		300CA8471C5D554200EB2B6D /* GetUserRegistrationDateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6A41C5D548500EB2B6D /* GetUserRegistrationDateResponse.swift */; };
 		300CA8481C5D554200EB2B6D /* VerifyCredentialsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6A51C5D548500EB2B6D /* VerifyCredentialsResponse.swift */; };
 		300CA8491C5D554200EB2B6D /* Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6A71C5D548500EB2B6D /* Encoder.swift */; };
+		301B89F81C7EA70B0009648B /* LolTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302814271C6627FE0056A498 /* LolTag.swift */; };
+		301B89F91C7EA70B0009648B /* LolPostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F649F81C661A5C00470512 /* LolPostRequest.swift */; };
+		301B89FA1C7EA70B0009648B /* PostCommentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004F5AE1C70D4B30069FC43 /* PostCommentRequest.swift */; };
+		301B89FB1C7EA70B0009648B /* LolPostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819F19F99B077DB1AE430107 /* LolPostResponse.swift */; };
+		301B89FC1C7EA70B0009648B /* PostCommentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004F5B01C70D50E0069FC43 /* PostCommentResponse.swift */; };
+		301B89FD1C7EA7160009648B /* LolTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302814271C6627FE0056A498 /* LolTag.swift */; };
+		301B89FE1C7EA7160009648B /* LolPostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F649F81C661A5C00470512 /* LolPostRequest.swift */; };
+		301B89FF1C7EA7160009648B /* PostCommentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004F5AE1C70D4B30069FC43 /* PostCommentRequest.swift */; };
+		301B8A001C7EA7160009648B /* LolPostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819F19F99B077DB1AE430107 /* LolPostResponse.swift */; };
+		301B8A011C7EA7160009648B /* PostCommentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004F5B01C70D50E0069FC43 /* PostCommentResponse.swift */; };
+		301B8A021C7EA71D0009648B /* LolTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302814271C6627FE0056A498 /* LolTag.swift */; };
+		301B8A031C7EA71D0009648B /* LolPostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F649F81C661A5C00470512 /* LolPostRequest.swift */; };
+		301B8A041C7EA71D0009648B /* PostCommentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004F5AE1C70D4B30069FC43 /* PostCommentRequest.swift */; };
+		301B8A051C7EA71D0009648B /* LolPostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 819F19F99B077DB1AE430107 /* LolPostResponse.swift */; };
+		301B8A061C7EA71D0009648B /* PostCommentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3004F5B01C70D50E0069FC43 /* PostCommentResponse.swift */; };
 		302814281C6627FE0056A498 /* LolTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302814271C6627FE0056A498 /* LolTag.swift */; };
 		3041337B1C5E2DB8003168C6 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA61B1C5D548400EB2B6D /* Client.swift */; };
 		3041337C1C5E2DB8003168C6 /* ClientRequestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA61C1C5D548400EB2B6D /* ClientRequestResult.swift */; };
@@ -1659,6 +1674,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				301B8A021C7EA71D0009648B /* LolTag.swift in Sources */,
+				301B8A031C7EA71D0009648B /* LolPostRequest.swift in Sources */,
+				301B8A041C7EA71D0009648B /* PostCommentRequest.swift in Sources */,
+				301B8A051C7EA71D0009648B /* LolPostResponse.swift in Sources */,
+				301B8A061C7EA71D0009648B /* PostCommentResponse.swift in Sources */,
 				300CA75A1C5D553900EB2B6D /* Client.swift in Sources */,
 				300CA75B1C5D553900EB2B6D /* ClientRequestResult.swift in Sources */,
 				300CA75C1C5D553900EB2B6D /* Errors.swift in Sources */,
@@ -1793,6 +1813,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				301B89FD1C7EA7160009648B /* LolTag.swift in Sources */,
+				301B89FE1C7EA7160009648B /* LolPostRequest.swift in Sources */,
+				301B89FF1C7EA7160009648B /* PostCommentRequest.swift in Sources */,
+				301B8A001C7EA7160009648B /* LolPostResponse.swift in Sources */,
+				301B8A011C7EA7160009648B /* PostCommentResponse.swift in Sources */,
 				300CA7D21C5D554000EB2B6D /* Client.swift in Sources */,
 				300CA7D31C5D554000EB2B6D /* ClientRequestResult.swift in Sources */,
 				300CA7D41C5D554000EB2B6D /* Errors.swift in Sources */,
@@ -1927,6 +1952,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				301B89F81C7EA70B0009648B /* LolTag.swift in Sources */,
+				301B89F91C7EA70B0009648B /* LolPostRequest.swift in Sources */,
+				301B89FA1C7EA70B0009648B /* PostCommentRequest.swift in Sources */,
+				301B89FB1C7EA70B0009648B /* LolPostResponse.swift in Sources */,
+				301B89FC1C7EA70B0009648B /* PostCommentResponse.swift in Sources */,
 				3041337B1C5E2DB8003168C6 /* Client.swift in Sources */,
 				3041337C1C5E2DB8003168C6 /* ClientRequestResult.swift in Sources */,
 				3041337D1C5E2DB8003168C6 /* Errors.swift in Sources */,

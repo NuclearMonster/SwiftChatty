@@ -1,0 +1,6 @@
+framework module Pods_SwiftChatty_tvOSTests {
+  umbrella header "Pods-SwiftChatty-tvOSTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

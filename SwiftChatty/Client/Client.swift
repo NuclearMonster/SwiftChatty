@@ -41,6 +41,8 @@ public final class Client {
                             completion(.Failure(Error.ServerError(message: error.message)))
                         case "ERR_INVALID_LOGIN":
                             completion(.Failure(Error.InvalidLoginError))
+                        case "ERR_TOO_MANY_EVENTS":
+                            completion(.Failure(Error.TooManyEvents))
                         default:
                             completion(.Failure(Error.UnkownError))
                         }

@@ -26,6 +26,8 @@ public enum Error: ErrorType {
     case SystemError(code: Int, domain: String)
     /// An error from the lol API
     case LolError(message: String)
+    /// An error returned if more than 10,000 events have occurred since your specified lastEventId
+    case TooManyEvents
     /// Catch all for errors that can't be matched to one of the other categories.
     case UnkownError
 

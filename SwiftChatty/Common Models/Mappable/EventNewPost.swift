@@ -15,7 +15,7 @@ public struct EventNewPost: EventDataType {
 
     public var postId: Int = 0
     public var post: Post = Post()
-    public var parentAuthor: String = ""
+    public var parentAuthor: String?
 
     public init() {}
 

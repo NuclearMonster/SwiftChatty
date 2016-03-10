@@ -1,4 +1,4 @@
-![Build Status](https://travis-ci.org/andrebocchini/SwiftChatty.svg?branch=master)
+[![Build Status](https://travis-ci.org/andrebocchini/SwiftChatty.svg?branch=master)](https://travis-ci.org/andrebocchini/SwiftChatty)
 
 # What is SwiftChatty?
 

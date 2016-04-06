@@ -516,9 +516,6 @@
 		304133F21C5E2DB8003168C6 /* Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300CA6A71C5D548500EB2B6D /* Encoder.swift */; };
 		304133F31C5E2DC6003168C6 /* SwiftChatty.h in Headers */ = {isa = PBXBuildFile; fileRef = 300CA6031C5D546100EB2B6D /* SwiftChatty.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		307E7EDC1C7F2CEA0087C051 /* Pods_SwiftChatty_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 307E7EDB1C7F2CEA0087C051 /* Pods_SwiftChatty_iOS.framework */; };
-		30D0B7631C7F25D400D46C7A /* ErrorsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D0B7621C7F25D400D46C7A /* ErrorsTest.swift */; };
-		30D0B7641C7F25D400D46C7A /* ErrorsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D0B7621C7F25D400D46C7A /* ErrorsTest.swift */; };
-		30D0B7651C7F25D400D46C7A /* ErrorsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D0B7621C7F25D400D46C7A /* ErrorsTest.swift */; };
 		30F649F91C661A5C00470512 /* LolPostRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F649F81C661A5C00470512 /* LolPostRequest.swift */; };
 		4E84C4AA08D6436A789F8A39 /* Pods_SwiftChatty_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 559045F942EA21133F3601DA /* Pods_SwiftChatty_tvOS.framework */; };
 		6F864D3FD470A84DBAE77651 /* Pods_SwiftChatty_OSXTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8869B7EBADE00D2D765D91C /* Pods_SwiftChatty_OSXTests.framework */; };
@@ -695,7 +692,6 @@
 		307E7ED71C7F2CA80087C051 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-watchos/Pods-SwiftChatty-WatchOS/Alamofire.framework"; sourceTree = "<group>"; };
 		307E7ED91C7F2CAD0087C051 /* Genome.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Genome.framework; path = "Pods/../build/Debug-watchos/Pods-SwiftChatty-WatchOS/Genome.framework"; sourceTree = "<group>"; };
 		307E7EDB1C7F2CEA0087C051 /* Pods_SwiftChatty_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_SwiftChatty_iOS.framework; path = "Pods/../build/Debug-iphoneos/Pods_SwiftChatty_iOS.framework"; sourceTree = "<group>"; };
-		30D0B7621C7F25D400D46C7A /* ErrorsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorsTest.swift; sourceTree = "<group>"; };
 		30F649F81C661A5C00470512 /* LolPostRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LolPostRequest.swift; sourceTree = "<group>"; };
 		559045F942EA21133F3601DA /* Pods_SwiftChatty_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftChatty_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58381A67DBAFD6B178173EDB /* Pods-SwiftChatty-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftChatty-tvOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftChatty-tvOSTests/Pods-SwiftChatty-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -839,7 +835,6 @@
 		300CA60E1C5D546100EB2B6D /* SwiftChattyTests */ = {
 			isa = PBXGroup;
 			children = (
-				30D0B7611C7F258C00D46C7A /* Common Models */,
 				300CA6111C5D546100EB2B6D /* Info.plist */,
 			);
 			path = SwiftChattyTests;
@@ -1139,14 +1134,6 @@
 				300CA6A71C5D548500EB2B6D /* Encoder.swift */,
 			);
 			path = Utilities;
-			sourceTree = "<group>";
-		};
-		30D0B7611C7F258C00D46C7A /* Common Models */ = {
-			isa = PBXGroup;
-			children = (
-				30D0B7621C7F25D400D46C7A /* ErrorsTest.swift */,
-			);
-			path = "Common Models";
 			sourceTree = "<group>";
 		};
 		8FE2BEF65628B4AB5C76BDA2 /* Pods */ = {
@@ -1854,7 +1841,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30D0B7631C7F25D400D46C7A /* ErrorsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1994,7 +1980,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30D0B7641C7F25D400D46C7A /* ErrorsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2134,7 +2119,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30D0B7651C7F25D400D46C7A /* ErrorsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

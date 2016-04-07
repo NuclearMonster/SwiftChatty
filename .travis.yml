@@ -11,5 +11,5 @@ script:
   - xctool -workspace SwiftChatty.xcworkspace -scheme SwiftChatty-tvOS CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
   - xctool -workspace SwiftChatty.xcworkspace -scheme SwiftChatty-WatchOS CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
   
-  - xctool test -workspace SwiftChatty.xcworkspace -scheme SwiftChatty-iOSTests CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -sdk iphonesimulator
-  - xctool test -workspace SwiftChatty.xcworkspace -scheme SwiftChatty-OSXTests CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+  #- xctool test -workspace SwiftChatty.xcworkspace -scheme SwiftChatty-iOSTests CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -sdk iphonesimulator
+  #- xctool test -workspace SwiftChatty.xcworkspace -scheme SwiftChatty-OSXTests CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO

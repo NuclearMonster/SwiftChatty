@@ -1,0 +1,6 @@
+framework module Genome {
+  umbrella header "Genome-OSX-umbrella.h"
+
+  export *
+  module * { export * }
+}

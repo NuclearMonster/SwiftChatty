@@ -4,7 +4,6 @@
 //
 //  Created by Andre Bocchini on 1/20/16.
 //  Copyright © 2016 Andre Bocchini. All rights reserved.
-//
 
 import Alamofire
 
@@ -12,7 +11,7 @@ import Alamofire
 public struct VerifyCredentialsRequest: Request {
 
     public let endpoint: ApiEndpoint = .VerifyCredentials
-    public let httpMethod: Alamofire.Method = .POST
+    public let httpMethod: HTTPMethod = .post
     public let account: Account
 
     public init(withAccount account: Account) {

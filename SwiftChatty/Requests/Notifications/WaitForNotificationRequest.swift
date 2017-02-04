@@ -4,7 +4,6 @@
 //
 //  Created by Andre Bocchini on 1/28/16.
 //  Copyright © 2016 Andre Bocchini. All rights reserved.
-//
 
 import Alamofire
 
@@ -12,10 +11,10 @@ import Alamofire
 public struct WaitForNotificationRequest: Request {
 
     public let endpoint: ApiEndpoint = .WaitForNotification
-    public let httpMethod: Alamofire.Method = .POST
-    public var parameters: [String : AnyObject] = [:]
+    public let httpMethod: HTTPMethod = .post
+    public var customParameters: [String : Any] = [:]
 
     public init(withClientId clientId: String) {
-        self.parameters["clientId"] = clientId
+        self.customParameters["clientId"] = clientId 
     }
 }

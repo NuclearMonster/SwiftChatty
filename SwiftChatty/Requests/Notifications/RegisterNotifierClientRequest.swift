@@ -4,7 +4,6 @@
 //
 //  Created by Andre Bocchini on 1/28/16.
 //  Copyright © 2016 Andre Bocchini. All rights reserved.
-//
 
 import Alamofire
 
@@ -12,11 +11,11 @@ import Alamofire
 public struct RegisterNotifierClientRequest: Request {
 
     public let endpoint: ApiEndpoint = .RegisterNotifierClient
-    public let httpMethod: Alamofire.Method = .POST
-    public var parameters: [String : AnyObject] = [:]
+    public let httpMethod: HTTPMethod = .post
+    public var customParameters: [String : Any] = [:]
 
     public init(withId id: String, name: String) {
-        self.parameters["id"] = id
-        self.parameters["name"] = name
+        self.customParameters["id"] = id 
+        self.customParameters["name"] = name 
     }
 }

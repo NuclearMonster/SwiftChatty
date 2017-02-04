@@ -28,7 +28,7 @@ public struct SearchResult: PostType {
 
 extension SearchResult: CommonMappableModel {
 
-    public mutating func sequence(map: Map) throws {
+    public mutating func sequence(_ map: Map) throws {
         try id <~ map["id"]
         try threadId <~ map["threadId"]
         try parentId <~ map["parentId"]

@@ -4,7 +4,6 @@
 //
 //  Created by Andre Bocchini on 1/28/16.
 //  Copyright © 2016 Andre Bocchini. All rights reserved.
-//
 
 import Alamofire
 
@@ -12,16 +11,16 @@ import Alamofire
 public struct SetUserSetupRequest: Request {
 
     public let endpoint: ApiEndpoint = .SetUserSetup
-    public let httpMethod: Alamofire.Method = .POST
+    public let httpMethod: HTTPMethod = .post
     public let account: Account
-    public var parameters: [String : AnyObject] = [:]
+    public var customParameters: [String : Any] = [:]
 
     public init(withAccount account: Account, triggerOnReply: Bool, triggerOnMention: Bool,
         triggerKeywords: [String]) {
 
         self.account = account
-        self.parameters["triggerOnReply"] = triggerOnReply ? "true" : "false"
-        self.parameters["triggerOnMention"] = triggerOnMention ? "true" : "false"
+        self.customParameters["triggerOnReply"] = triggerOnReply ? "true" : "false"
+        self.customParameters["triggerOnMention"] = triggerOnMention ? "true" : "false"
 
         if triggerKeywords.count > 0 {
             var concatenatedWords = ""
@@ -32,7 +31,7 @@ public struct SetUserSetupRequest: Request {
                     concatenatedWords = "\(concatenatedWords),\(word)"
                 }
             }
-            self.parameters["triggerKeywords"] = concatenatedWords
+            self.customParameters["triggerKeywords"] = concatenatedWords 
         }
     }
 }

@@ -3,23 +3,22 @@
 //  SwiftChatty
 //
 //  Created by Andre Bocchini on 1/26/16.
-//  Copyright © 2016 Andre Bocchini. All rights reserved.
-//
+//  Copyright © 2016 Andre Bocchini. All rights reserved.//
 
 public enum ThreadSortOrder {
 
     /// All posts sorted by date only, with the newer ones first
-    case FlatNewestFirst
+    case flatNewestFirst
     /// All posts sorted by date only, with the older ones first
-    case FlatOldestFirst
+    case flatOldestFirst
     /// All replies directly below the root post sorted by date with the newer ones first, 
     /// and all of the replies below those organized by threads with the older
     /// ones first.  The root post is always the first post in the thread.
-    case ThreadedNewestFirst
+    case threadedNewestFirst
     /// All replies directly below the root post sorted by date with the older ones first,
     /// and all of the replies below those organized by threads with the older
     /// ones first.  The root post is always the first post in the thread.
-    case ThreadedOldestFirst
+    case threadedOldestFirst
 
 }
 
@@ -45,7 +44,7 @@ extension ThreadType {
         }
     }
 
-    public func isParticipant(username: String) -> Bool {
+    public func isParticipant(_ username: String) -> Bool {
         return self.posts.filter( { $0.author == username } ).count > 0
     }
     /// Calculates how many subthreads deep a particular post is
@@ -83,7 +82,7 @@ extension ThreadType {
 
         if descendantPosts.count > 0 {
             for descendantPost in descendantPosts {
-                descendantPosts.appendContentsOf(self.descendants(forPost: descendantPost))
+                descendantPosts.append(contentsOf: self.descendants(forPost: descendantPost))
             }
         }
 
@@ -95,7 +94,7 @@ extension ThreadType {
     /// - parameter post: The post under which we want to find the top level posts
     /// - returns: An array of posts consisting of the top level posts under the post passed in as
     ///   a parameter.
-    public func topLevelPosts(posts: [Post], underPost root: Post) -> [Post] {
+    public func topLevelPosts(_ posts: [Post], underPost root: Post) -> [Post] {
         var topLevelPosts = [Post]()
 
         for post in posts {
@@ -107,60 +106,60 @@ extension ThreadType {
         return topLevelPosts
     }
 
-    public mutating func sort(order: ThreadSortOrder) {
+    public mutating func sort(_ order: ThreadSortOrder) {
         switch(order) {
-        case .FlatNewestFirst: fallthrough
-        case .FlatOldestFirst:
+        case .flatNewestFirst: fallthrough
+        case .flatOldestFirst:
             self.flatSort(order)
-        case .ThreadedNewestFirst: fallthrough
-        case .ThreadedOldestFirst:
+        case .threadedNewestFirst: fallthrough
+        case .threadedOldestFirst:
             self.threadedSort(order)
         }
     }
 
-    private mutating func flatSort(order: ThreadSortOrder) {
-        if (order == .ThreadedOldestFirst) {
-            self.posts.sortInPlace {
+    fileprivate mutating func flatSort(_ order: ThreadSortOrder) {
+        if (order == .threadedOldestFirst) {
+            self.posts.sort {
                 return $0.older(than: $1)
             }
         } else {
-            self.posts.sortInPlace {
+            self.posts.sort {
                 return $0.newer(than: $1)
             }
         }
     }
 
-    private mutating func threadedSort(order: ThreadSortOrder) {
+    fileprivate mutating func threadedSort(_ order: ThreadSortOrder) {
         let postsArrayWithoutRootPost = self.posts.filter( { $0.id != self.id } )
         let rootPost = self.rootPost()
 
         var threadedPosts = [Post]()
         var topLevelPosts = self.topLevelPosts(postsArrayWithoutRootPost, underPost: rootPost)
 
-        if (order == .ThreadedOldestFirst) {
-            topLevelPosts.sortInPlace( { return $0.older(than: $1) } )
+        if (order == .threadedOldestFirst) {
+            topLevelPosts.sort( by: { return $0.older(than: $1) } )
         } else {
-            topLevelPosts.sortInPlace( { return $0.newer(than: $1) } )
+            topLevelPosts.sort( by: { return $0.newer(than: $1) } )
         }
 
         threadedPosts.append(rootPost)
         for topLevelPost in topLevelPosts {
             threadedPosts.append(topLevelPost)
-            threadedPosts.appendContentsOf(orderedThread(postsArrayWithoutRootPost, root: topLevelPost))
+            threadedPosts.append(contentsOf: orderedThread(postsArrayWithoutRootPost, root: topLevelPost))
         }
 
         self.posts = threadedPosts
     }
 
-    private func orderedThread(posts: [Post], root: Post) -> [Post] {
+    fileprivate func orderedThread(_ posts: [Post], root: Post) -> [Post] {
         var topLevelPosts = self.topLevelPosts(posts, underPost: root)
         var result = [Post]()
 
-        topLevelPosts.sortInPlace( { $0.older(than: $1) } )
+        topLevelPosts.sort( by: { $0.older(than: $1) } )
 
         for topLevelPost in topLevelPosts {
             result.append(topLevelPost)
-            result.appendContentsOf(orderedThread(posts, root: topLevelPost))
+            result.append(contentsOf: orderedThread(posts, root: topLevelPost))
         }
 
         return result

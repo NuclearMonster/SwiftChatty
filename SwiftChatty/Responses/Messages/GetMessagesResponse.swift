@@ -3,8 +3,7 @@
 //  SwiftChatty
 //
 //  Created by Andre Bocchini on 1/24/16.
-//  Copyright © 2016 Andre Bocchini. All rights reserved.
-//
+//  Copyright © 2016 Andre Bocchini. All rights reserved.//
 
 import Genome
 
@@ -22,7 +21,7 @@ public struct GetMessagesResponse {
 
 extension GetMessagesResponse: MappableResponse {
 
-    public mutating func sequence(map: Map) throws {
+    public mutating func sequence(_ map: Map) throws {
         try page <~ map["page"]
         try totalPages <~ map["totalPages"]
         try totalMessages <~ map["totalMessages"]

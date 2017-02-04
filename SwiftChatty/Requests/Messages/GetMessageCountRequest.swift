@@ -4,7 +4,6 @@
 //
 //  Created by Andre Bocchini on 1/24/16.
 //  Copyright © 2016 Andre Bocchini. All rights reserved.
-//
 
 import Alamofire
 
@@ -13,7 +12,7 @@ public struct GetMesssageCountRequest: Request {
 
     public let endpoint: ApiEndpoint = .GetMessageCount
     public let account: Account
-    public let httpMethod: Alamofire.Method = .POST
+    public let httpMethod: HTTPMethod = .post
 
     public init(withAccount account: Account) {
         self.account = account

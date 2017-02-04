@@ -3,8 +3,7 @@
 //  SwiftChatty
 //
 //  Created by Andre Bocchini on 2/6/16.
-//  Copyright © 2016 Andre Bocchini. All rights reserved.
-//
+//  Copyright © 2016 Andre Bocchini. All rights reserved.//
 
 public enum LolTag : String {
 

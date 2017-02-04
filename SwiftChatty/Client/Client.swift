@@ -4,7 +4,6 @@
 //
 //  Created by Andre Bocchini on 1/16/16.
 //  Copyright (c) 2016 Andre Bocchini. All rights reserved.
-//
 
 import Alamofire
 import Genome
@@ -23,36 +22,37 @@ public final class Client {
     ///   object to the request that was made so it can be mapped properly.  For example, a 
     ///   GetPostRequest should be matched by a GetPostResponse.
     public static func request<SerializedObject: MappableResponse>
-        (request: Request, completion: ClientRequestResult<SerializedObject> -> Void) {
+        (_ request: Request, completion: @escaping (ClientRequestResult<SerializedObject>) -> Void) {
 
-        Alamofire.request(request).responseJSON(options: .AllowFragments) { response in
+        Alamofire.request(request).responseData {
+            (response: DataResponse) in
+            
             switch response.result {
-            case .Success(let value):
+            case .success(let value):
                 do {
-                    let shackRequestResult = try SerializedObject(js: value)
-                    completion(.Success(shackRequestResult))
+                    let shackRequestResult = try SerializedObject(node: value)
+                    completion(.success(shackRequestResult))
                 } catch {
                     do {
-                        let error = try ApiErrorResponse(js: value)
+                        let error = try ApiErrorResponse(node: value)
                         switch error.code {
                         case "ERR_ARGUMENT":
-                            completion(.Failure(Error.ArgumentError(message: error.message)))
+                            completion(.failure(SwiftChattyError.argumentError(message: error.message)))
                         case "ERR_SERVER":
-                            completion(.Failure(Error.ServerError(message: error.message)))
+                            completion(.failure(SwiftChattyError.serverError(message: error.message)))
                         case "ERR_INVALID_LOGIN":
-                            completion(.Failure(Error.InvalidLoginError))
+                            completion(.failure(SwiftChattyError.invalidLoginError))
                         case "ERR_TOO_MANY_EVENTS":
-                            completion(.Failure(Error.TooManyEvents))
+                            completion(.failure(SwiftChattyError.tooManyEvents))
                         default:
-                            completion(.Failure(Error.UnkownError))
+                            completion(.failure(SwiftChattyError.unkownError))
                         }
                     } catch {
-                        completion(.Failure(Error.MappingError))
+                        completion(.failure(SwiftChattyError.mappingError))
                     }
                 }
-            case .Failure(let error):
-                completion(.Failure(
-                    Error.SystemError(code: error.code, domain: error.domain)))
+            case .failure(let error):
+                completion(.failure(SwiftChattyError.systemError(localizedDescription: error.localizedDescription)))
             }
         }
     }
@@ -70,20 +70,22 @@ public final class Client {
     /// - parameter completion: A completion block to handle the response.  It takes a 
     ///   LolPostResponse object as a parameter.
     public static func request
-            (request: Request, completion: ClientRequestResult<LolPostResponse> -> Void) {
+        (_ request: Request, completion: @escaping (ClientRequestResult<LolPostResponse>) -> Void) {
 
-        Alamofire.request(request).responseString { response in
+        Alamofire.request(request).responseString {
+            (response: DataResponse) in
+            
             switch response.result {
-            case .Success(let message):
+            case .success(let message):
                 if message.hasPrefix("ok") {
                     let lolResponse: LolPostResponse = LolPostResponse(message: message)
-                    completion(.Success(lolResponse))
+                    completion(.success(lolResponse))
                 } else {
-                    completion(.Failure(Error.LolError(message: message)))
+                    completion(.failure(SwiftChattyError.lolError(message: message)))
                 }
-            case .Failure(let error):
-                completion(.Failure(
-                Error.SystemError(code: error.code, domain: error.domain)))
+            case .failure(let error):
+                completion(.failure(
+                    SwiftChattyError.systemError(localizedDescription: error.localizedDescription)))
             }
         }
     }

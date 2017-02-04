@@ -4,7 +4,6 @@
 //
 //  Created by Andre Bocchini on 1/24/16.
 //  Copyright © 2016 Andre Bocchini. All rights reserved.
-//
 
 import Alamofire
 
@@ -13,13 +12,13 @@ public struct DeleteMessageRequest: Request {
 
     public let endpoint: ApiEndpoint = .DeleteMessage
     public let account: Account
-    public let httpMethod: Alamofire.Method = .POST
-    public var parameters: [String : AnyObject] = [:]
+    public let httpMethod: HTTPMethod = .post
+    public var customParameters: [String : Any] = [:]
 
     public init(withAccount account: Account, messageId: Int, folder: Mailbox) {
         self.account = account
-        self.parameters["messageId"] = messageId
-        self.parameters["folder"] = folder.rawValue
+        self.customParameters["messageId"] = messageId 
+        self.customParameters["folder"] = folder.rawValue 
     }
 
 }

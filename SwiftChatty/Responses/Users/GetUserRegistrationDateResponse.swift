@@ -3,8 +3,7 @@
 //  SwiftChatty
 //
 //  Created by Andre Bocchini on 1/21/16.
-//  Copyright © 2016 Andre Bocchini. All rights reserved.
-//
+//  Copyright © 2016 Andre Bocchini. All rights reserved.//
 
 import Genome
 
@@ -19,7 +18,7 @@ public struct GetUserRegistrationDateResponse {
 
 extension GetUserRegistrationDateResponse: MappableResponse {
 
-    public mutating func sequence(map: Map) throws {
+    public mutating func sequence(_ map: Map) throws {
         try registrationDates <~ map["users"]
     }
 

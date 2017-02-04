@@ -10,32 +10,32 @@
 public struct SearchRequest: Request {
 
     public let endpoint: ApiEndpoint = .Search
-    public var parameters: [String : AnyObject] = [:]
+    public var customParameters: [String : Any] = [:]
     public var timeout: Double = 30
 
     public init(withTerms terms: String?, author: String?, parentAuthor: String?,
         category: ModerationFlag?, offset: Int?, limit: Int?, oldestFirst: Bool?) {
 
         if let termsParameter = terms {
-            self.parameters["terms"] = termsParameter
+            self.customParameters["terms"] = termsParameter 
         }
         if let authorParameter = author {
-            self.parameters["author"] = authorParameter
+            self.customParameters["author"] = authorParameter 
         }
         if let parentAuthorParameter = parentAuthor {
-            self.parameters["parentAuthor"] = parentAuthorParameter
+            self.customParameters["parentAuthor"] = parentAuthorParameter 
         }
         if let categoryParameter = category {
-            self.parameters["category"] = categoryParameter.rawValue
+            self.customParameters["category"] = categoryParameter.rawValue 
         }
         if let offsetParameter = offset {
-            self.parameters["offset"] = offsetParameter
+            self.customParameters["offset"] = offsetParameter 
         }
         if let limitParameter = limit {
-            self.parameters["limit"] = limitParameter
+            self.customParameters["limit"] = limitParameter 
         }
         if let oldestFirstParameter = oldestFirst {
-            self.parameters["oldestFirst"] = oldestFirstParameter
+            self.customParameters["oldestFirst"] = oldestFirstParameter 
         }
     }
 

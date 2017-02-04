@@ -3,8 +3,7 @@
 //  SwiftChatty
 //
 //  Created by Andre Bocchini on 1/26/16.
-//  Copyright © 2016 Andre Bocchini. All rights reserved.
-//
+//  Copyright © 2016 Andre Bocchini. All rights reserved.//
 
 import Genome
 
@@ -23,7 +22,7 @@ public struct EventNewPost: EventDataType {
 
 extension EventNewPost: CommonMappableModel {
 
-    public mutating func sequence(map: Map) throws {
+    public mutating func sequence(_ map: Map) throws {
         try postId <~ map["postId"]
         try post <~ map["post"]
         try parentAuthor <~ map["parentAuthor"]

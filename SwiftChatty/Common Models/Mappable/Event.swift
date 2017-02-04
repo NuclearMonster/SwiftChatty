@@ -3,8 +3,7 @@
 //  SwiftChatty
 //
 //  Created by Andre Bocchini on 1/26/16.
-//  Copyright © 2016 Andre Bocchini. All rights reserved.
-//
+//  Copyright © 2016 Andre Bocchini. All rights reserved.//
 
 import Genome
 
@@ -29,7 +28,7 @@ public struct Event {
 
 extension Event: CommonMappableModel {
 
-    public mutating func sequence(map: Map) throws {
+    public mutating func sequence(_ map: Map) throws {
         var typeString: String = ""
 
         try id <~ map["eventId"]

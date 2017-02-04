@@ -4,7 +4,6 @@
 //
 //  Created by Andre Bocchini on 1/24/16.
 //  Copyright © 2016 Andre Bocchini. All rights reserved.
-//
 
 import Alamofire
 
@@ -12,11 +11,11 @@ import Alamofire
 public struct RequestReindexRequest: Request {
 
     public let endpoint: ApiEndpoint = .RequestReindex
-    public var parameters: [String : AnyObject] = [:]
-    public let httpMethod: Alamofire.Method = .POST
+    public var customParameters: [String : Any] = [:]
+    public let httpMethod: HTTPMethod = .post
 
     public init(withPostId postId: Int) {
-        self.parameters["postId"] = postId
+        self.customParameters["postId"] = postId 
     }
 
 }

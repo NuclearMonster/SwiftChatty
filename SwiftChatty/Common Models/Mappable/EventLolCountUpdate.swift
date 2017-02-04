@@ -3,8 +3,7 @@
 //  SwiftChatty
 //
 //  Created by Andre Bocchini on 1/26/16.
-//  Copyright © 2016 Andre Bocchini. All rights reserved.
-//
+//  Copyright © 2016 Andre Bocchini. All rights reserved.//
 
 import Genome
 
@@ -21,7 +20,7 @@ public struct EventLolCountUpdates: EventDataType {
 /// - SeeAlso: http://winchatty.com/v2/readme#_Toc421451658
 extension EventLolCountUpdates: CommonMappableModel {
 
-    public mutating func sequence(map: Map) throws {
+    public mutating func sequence(_ map: Map) throws {
         try updates <~ map["updates"]
     }
 
@@ -42,7 +41,7 @@ public struct LolCountUpdate {
 
 extension LolCountUpdate: CommonMappableModel {
 
-    public mutating func sequence(map: Map) throws {
+    public mutating func sequence(_ map: Map) throws {
         try postId <~ map["postId"]
 
         var tagString = ""

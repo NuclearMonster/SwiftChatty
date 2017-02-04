@@ -3,14 +3,13 @@
 //  SwiftChatty
 //
 //  Created by Andre Bocchini on 1/21/16.
-//  Copyright © 2016 Andre Bocchini. All rights reserved.
-//
+//  Copyright © 2016 Andre Bocchini. All rights reserved.//
 
 /// - SeeAlso: http://winchatty.com/v2/readme#_Toc421451687
 public struct GetUserRegistrationDateRequest: Request {
 
     public let endpoint: ApiEndpoint = .GetUserRegistrationDate
-    public var parameters: [String : AnyObject] = [:]
+    public var customParameters: [String : Any] = [:]
 
     public init(withUsers users: [String]) {
         if users.count > 0 {
@@ -22,7 +21,7 @@ public struct GetUserRegistrationDateRequest: Request {
                     concatenatedUsers += ("," + users[i])
                 }
             }
-            self.parameters["username"] = concatenatedUsers
+            self.customParameters["username"] = concatenatedUsers 
         }
     }
 

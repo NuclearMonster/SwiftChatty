@@ -1,7 +1,7 @@
 language: swift
 rvm: 2.3.0
 os: osx
-osx_image: xcode8.2.1
+osx_image: xcode8.2
 
 before_install:
   - gem install cocoapods

@@ -1,7 +1,7 @@
 language: swift
 rvm: 2.3.0
 os: osx
-osx_image: xcode8.2
+osx_image: xcode8.3
 
 before_install:
   - gem install cocoapods
@@ -10,6 +10,3 @@ script:
   - xcodebuild -workspace SwiftChatty.xcworkspace -scheme SwiftChatty-OSX CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
   - xcodebuild -workspace SwiftChatty.xcworkspace -scheme SwiftChatty-tvOS CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
   - xcodebuild -workspace SwiftChatty.xcworkspace -scheme SwiftChatty-WatchOS CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
-  
-  #- xctool test -workspace SwiftChatty.xcworkspace -scheme SwiftChatty-iOSTests CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -sdk iphonesimulator
-  #- xctool test -workspace SwiftChatty.xcworkspace -scheme SwiftChatty-OSXTests CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO

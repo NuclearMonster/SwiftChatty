@@ -1,9 +1,8 @@
-EMBEDDED_CONTENT_CONTAINS_SWIFT = YES
-FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/Alamofire-tvOS" "$PODS_CONFIGURATION_BUILD_DIR/Genome-tvOS" "$PODS_CONFIGURATION_BUILD_DIR/PureJsonSerializer-tvOS"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/Alamofire-tvOS" "$PODS_CONFIGURATION_BUILD_DIR/Genome-tvOS"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/Alamofire-tvOS/Alamofire.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Genome-tvOS/Genome.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/PureJsonSerializer-tvOS/PureJsonSerializer.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "Alamofire" -framework "Genome" -framework "PureJsonSerializer"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks' '@executable_path/../../Frameworks'
+OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/Alamofire-tvOS/Alamofire.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Genome-tvOS/Genome.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "Alamofire" -framework "Genome"
 OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
 PODS_BUILD_DIR = $BUILD_DIR
 PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

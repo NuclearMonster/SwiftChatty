@@ -4,7 +4,6 @@
 //
 //  Created by Andre Bocchini on 1/16/16.
 //  Copyright © 2016 Andre Bocchini. All rights reserved.
-//
 
 import Alamofire
 
@@ -14,10 +13,9 @@ public protocol Request: URLRequestConvertible {
     var endpoint: ApiEndpoint { get }
     var timeout: Double { get }
     var headers: [String: String] { get }
-    var httpMethod: Alamofire.Method { get }
+    var httpMethod: HTTPMethod { get }
     var account: Account { get }
-    var parameters: [String : AnyObject] { get }
-    var parametersEncoding: Alamofire.ParameterEncoding { get }
+    var customParameters: [String : Any] { get }
 
 }
 
@@ -35,47 +33,64 @@ public extension Request {
         return [:]
     }
 
-    public var httpMethod: Alamofire.Method {
-        return .GET
+    public var httpMethod: HTTPMethod {
+        return .get
     }
 
     public var account: Account {
         return Account()
     }
 
-    public var parameters: [String : AnyObject] {
+    public var customParameters: [String : Any] {
         return [:]
     }
-
-    public var parametersEncoding: Alamofire.ParameterEncoding {
-        return .URL
+    
+    public var parameters: [String : Any] {
+        if let username = self.account.username, let password = self.account.password {
+            var parameters = self.customParameters
+            
+            parameters["username"] = username 
+            parameters["password"] = password 
+            
+            return parameters
+        } else if self.customParameters.count > 0 {
+            return self.customParameters
+        } else {
+            return [:]
+        }
     }
+    
+    public var encoding: Alamofire.URLEncoding {
+        return .queryString
+    }
+    
 }
 
 public extension Request {
 
-    public var URLRequest: NSMutableURLRequest {
+    /// Returns a URL request or throws if an `Error` was encountered.
+    ///
+    /// - throws: An `Error` if the underlying `URLRequest` is `nil`.
+    ///
+    /// - returns: A URL request.
+    public func asURLRequest() throws -> URLRequest {
         let urlString = self.api.rawValue + self.endpoint.rawValue
-        let url = NSURL(string: urlString)!
-        let urlRequest = NSMutableURLRequest(URL: url, cachePolicy: .ReloadIgnoringLocalCacheData,
-            timeoutInterval: self.timeout)
+        
+        guard let url = URL(string: urlString) else {
+            throw AFError.invalidURL(url: urlString)
+        }
+        
+        var urlRequest = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: self.timeout)
 
-        urlRequest.HTTPMethod = self.httpMethod.rawValue
-
+        urlRequest.httpMethod = self.httpMethod.rawValue
+        
         for (headerName, headerValue) in self.headers {
-            urlRequest.setValue(headerValue, forKey: headerName)
+            urlRequest.setValue(headerValue, forHTTPHeaderField: headerName)
         }
 
-        var customParameters = parameters
-        if let username = self.account.username, let password = self.account.password {
-            customParameters["username"] = username
-            customParameters["password"] = password
-        }
-
-        let (URLRequest, _) = self.parametersEncoding.encode(urlRequest,
-            parameters: customParameters)
-
-        return URLRequest
+        let encodedURLRequest = try URLEncoding.queryString.encode(urlRequest, with: self.parameters)
+        
+        return encodedURLRequest
     }
 
 }

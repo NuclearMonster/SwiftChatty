@@ -3,14 +3,13 @@
 //  SwiftChatty
 //
 //  Created by Andre Bocchini on 1/17/16.
-//  Copyright © 2016 Andre Bocchini. All rights reserved.
-//
+//  Copyright © 2016 Andre Bocchini. All rights reserved.//
 
 /// - SeeAlso: http://winchatty.com/v2/readme#_Toc421451673
 public struct GetParentIdRequest: Request {
 
     public let endpoint: ApiEndpoint = .GetParentId
-    public var parameters: [String : AnyObject] = [:]
+    public var customParameters: [String : Any] = [:]
 
     public init(withPostIds ids: [Int]) {
 
@@ -23,7 +22,7 @@ public struct GetParentIdRequest: Request {
                     concatenatedIds += ("," + String(ids[i]))
                 }
             }
-            self.parameters["id"] = concatenatedIds
+            self.customParameters["id"] = concatenatedIds 
         }
     }
 

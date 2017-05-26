@@ -3,14 +3,13 @@
 //  SwiftChatty
 //
 //  Created by Andre Bocchini on 1/17/16.
-//  Copyright © 2016 Andre Bocchini. All rights reserved.
-//
+//  Copyright © 2016 Andre Bocchini. All rights reserved.//
 
 /// - SeeAlso: http://winchatty.com/v2/readme#_Toc421451667
 public struct GetThreadPostCountRequest: Request {
 
     public let endpoint: ApiEndpoint = .GetThreadPostCount
-    public var parameters: [String : AnyObject] = [:]
+    public var customParameters: [String : Any] = [:]
 
     public init(withThreadIds ids: [Int]) {
         if ids.count > 0 {
@@ -22,7 +21,7 @@ public struct GetThreadPostCountRequest: Request {
                     concatenatedIds += ("," + String(ids[i]))
                 }
             }
-            self.parameters["id"] = concatenatedIds
+            self.customParameters["id"] = concatenatedIds 
         }
     }
 

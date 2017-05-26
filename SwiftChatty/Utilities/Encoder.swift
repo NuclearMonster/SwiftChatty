@@ -3,8 +3,7 @@
 //  SwiftChatty
 //
 //  Created by Andre Bocchini on 1/30/16.
-//  Copyright © 2016 Andre Bocchini. All rights reserved.
-//
+//  Copyright © 2016 Andre Bocchini. All rights reserved.//
 
 import Foundation
 
@@ -23,8 +22,8 @@ extension Encoder {
     /// - paramter string: String to be encoded to base64
     /// - returns: A base64 encoded string
     public func base64EncodedString(withString string: String) -> String? {
-        if let data = string.dataUsingEncoding(NSUTF8StringEncoding) {
-            return data.base64EncodedStringWithOptions([])
+        if let data = string.data(using: String.Encoding.utf8) {
+            return data.base64EncodedString(options: [])
         }
         return nil
     }
@@ -33,8 +32,8 @@ extension Encoder {
     /// - paramter string: base64 encoded string
     /// - return: a plain string
     public func decodedBase64EncodedString(fromString string: String) -> String? {
-        if let data = NSData.init(base64EncodedString: string, options: []) {
-            if let decodedString = String.init(data: data, encoding: NSUTF8StringEncoding) {
+        if let data = Data.init(base64Encoded: string, options: []) {
+            if let decodedString = String.init(data: data, encoding: String.Encoding.utf8) {
                 return decodedString
             }
         }

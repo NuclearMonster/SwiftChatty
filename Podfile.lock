@@ -1,18 +1,24 @@
 PODS:
-  - Alamofire (3.3.0)
-  - Genome (2.0.4):
-    - PureJsonSerializer (~> 1.0.0)
-  - PureJsonSerializer (1.0.2)
+  - Alamofire (4.3.0)
+  - Genome (3.0.2):
+    - Genome/Default (= 3.0.2)
+  - Genome/Core (3.0.2):
+    - Genome/Packages
+  - Genome/Default (3.0.2):
+    - Genome/Core
+    - Genome/Foundation
+  - Genome/Foundation (3.0.2):
+    - Genome/Core
+  - Genome/Packages (3.0.2)
 
 DEPENDENCIES:
-  - Alamofire
-  - Genome
+  - Alamofire (~> 4.3)
+  - Genome (~> 3.0)
 
 SPEC CHECKSUMS:
-  Alamofire: 9054db4a1b1ca9e363223183e01cea380159a27c
-  Genome: ee22f71d87eefac0f622f77e75d1fef7f7fa12e7
-  PureJsonSerializer: 81d6bc0e21ed4b837193279aa3d29981f75f9057
+  Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
+  Genome: 44584c1e971899a5a4b20ee87faee452a5f1ac1a
 
-PODFILE CHECKSUM: 1d1765f8a2c4aaaf287afac6e6efdcb3a9ec4465
+PODFILE CHECKSUM: c0b9525be4d172e73134eded653bd159fa15cd44
 
-COCOAPODS: 1.0.0
+COCOAPODS: 1.2.0

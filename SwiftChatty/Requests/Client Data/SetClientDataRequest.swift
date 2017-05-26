@@ -4,7 +4,6 @@
 //
 //  Created by Andre Bocchini on 1/28/16.
 //  Copyright © 2016 Andre Bocchini. All rights reserved.
-//
 
 import Alamofire
 
@@ -14,13 +13,13 @@ import Alamofire
 public struct SetClientDataRequest: Request {
 
     public let endpoint: ApiEndpoint = .SetClientData
-    public let httpMethod: Alamofire.Method = .POST
-    public var parameters: [String : AnyObject] = [:]
+    public let httpMethod: HTTPMethod = .post
+    public var customParameters: [String : Any] = [:]
 
     public init(withUsername username: String, client: String, data: String) {
-        self.parameters["username"] = username
-        self.parameters["client"] = client
-        self.parameters["data"] = data
+        self.customParameters["username"] = username 
+        self.customParameters["client"] = client 
+        self.customParameters["data"] = data 
     }
 
 }

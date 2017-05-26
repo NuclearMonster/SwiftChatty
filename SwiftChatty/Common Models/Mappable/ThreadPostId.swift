@@ -3,8 +3,7 @@
 //  SwiftChatty
 //
 //  Created by Andre Bocchini on 1/17/16.
-//  Copyright © 2016 Andre Bocchini. All rights reserved.
-//
+//  Copyright © 2016 Andre Bocchini. All rights reserved.//
 
 import Genome
 
@@ -22,7 +21,7 @@ public struct ThreadPostId {
 
 extension ThreadPostId: CommonMappableModel {
 
-    public mutating func sequence(map: Map) throws {
+    public mutating func sequence(_ map: Map) throws {
         var threadIdString: String = ""
         try threadIdString <~ map["threadId"]
         if let idInt = Int(threadIdString) {
